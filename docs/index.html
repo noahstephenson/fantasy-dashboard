@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B1 Boyzz Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>B1 Boyzz Fantasy Dashboard <span id="week-label"></span></h1>
+  <p class="subtitle" id="updated">Loading...</p>
+
+  <h2>This Week's Matchup</h2>
+  <div id="matchup"></div>
+
+  <h2>Recommended Lineup</h2>
+  <div id="lineup"></div>
+
+  <h2>Waiver Targets</h2>
+  <div id="waivers"></div>
+
+  <footer>
+    Data refreshes automatically ~every 4 hours via GitHub Actions.
+    This page re-checks <code>data.json</code> every 5 minutes for new
+    data -- it is not a live connection to ESPN.
+    <br>Trade evaluation isn't on this dashboard (needs specific player
+    picks) -- ask Claude Code for that.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

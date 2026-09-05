@@ -1,0 +1,15 @@
+[project]
+name = "fantasy-bot-tool"
+version = "0.1.0"
+description = "ESPN Fantasy Football draft board + in-season MCP bridge"
+requires-python = ">=3.11"
+dependencies = [
+    "espn_api==0.46.0",
+    "python-dotenv==1.2.3",
+    "requests==2.34.2",
+    "mcp[cli]>=1.0.0,<2.0.0",
+    "httpx",
+]
+
+[tool.setuptools.packages.find]
+include = ["fantasy_mcp*"]

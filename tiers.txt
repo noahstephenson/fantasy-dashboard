@@ -1,0 +1,711 @@
+==============================================================================
+B1 BOYZZ DRAFT BOARD  --  VBD / TIERS  (Milestone 1 fallback sheet)
+Full PPR  |  10 teams  |  2026 season
+==============================================================================
+
+REPLACEMENT LEVELS (derived from this player pool):
+  QB   replacement=QB12   repl_pts= 288.3
+  RB   replacement=RB24   repl_pts= 202.9
+  WR   replacement=WR25   repl_pts= 209.5
+  TE   replacement=TE11   repl_pts= 177.1
+  DST  replacement=DST11   repl_pts= 100.3
+  K    replacement=K11   repl_pts= 144.4
+
+FLEX split assumption: 40% RB / 50% WR / 10% TE
+Null bye weeks shown as '-'.  proj = full-PPR season projection.
+Generated: 2026-08-28T19:25:13+00:00
+
+------------------------------------------------------------------------------
+OVERALL BOARD (by VBD)   -- QB/RB/WR/TE only, top 200
+(K and D/ST are ranked separately below -- do not draft before round 12)
+------------------------------------------------------------------------------
+  #  name                   pos tm  bye   proj     vbd tier 
+------------------------------------------------------------
+  1  Jahmyr Gibbs           RB  DET   6  364.9  162.00 RB1  
+  2  Bijan Robinson         RB  ATL  11  352.8  149.91 RB1  
+  3  Puka Nacua             WR  LAR  11  356.3  146.78 WR1  
+  4  Christian McCaffrey    RB  SF    8  342.8  139.94 RB1  
+  5  Ja'Marr Chase          WR  CIN   6  337.5  127.99 WR2  
+  6  Jaxon Smith-Njigba     WR  SEA  11  326.7  117.23 WR3  
+  7  Amon-Ra St. Brown      WR  DET   6  323.9  114.44 WR3  
+  8  Jonathan Taylor        RB  IND  13  316.5  113.65 RB2  
+  9  De'Von Achane          RB  MIA   6  293.4   90.53 RB3  
+ 10  Justin Jefferson       WR  MIN   6  293.7   84.20 WR4  
+ 11  CeeDee Lamb            WR  DAL  14  293.7   84.18 WR4  
+ 12  Josh Allen             QB  BUF   7  369.7   81.35 QB1  
+ 13  Ashton Jeanty          RB  LV   13  280.9   77.99 RB3  
+ 14  James Cook III         RB  BUF   7  279.6   76.76 RB3  
+ 15  Jeremiyah Love         RB  ARI  14  278.5   75.61 RB3  
+ 16  Derrick Henry          RB  BAL  13  274.7   71.88 RB3  
+ 17  Kenneth Walker III     RB  KC    5  274.2   71.33 RB3  
+ 18  Breece Hall            RB  NYJ  13  274.0   71.13 RB3  
+ 19  Saquon Barkley         RB  PHI  10  273.6   70.75 RB3  
+ 20  Chase Brown            RB  CIN   6  272.1   69.22 RB3  
+ 21  Trey McBride           TE  ARI  14  241.9   64.82 TE1  
+ 22  Brock Bowers           TE  LV   13  240.9   63.89 TE1  
+ 23  Drake London           WR  ATL  11  269.8   60.25 WR5  
+ 24  Omarion Hampton        RB  LAC   7  261.7   58.85 RB3  
+ 25  Javonte Williams       RB  DAL  14  259.7   56.86 RB3  
+ 26  Josh Jacobs            RB  GB   11  259.1   56.24 RB3  
+ 27  Rashee Rice            WR  KC    5  260.5   50.99 WR5  
+ 28  Travis Etienne Jr.     RB  NO    8  246.1   43.27 RB3  
+ 29  Chris Olave            WR  NO    8  250.4   40.93 WR5  
+ 30  Garrett Wilson         WR  NYJ  13  249.4   39.89 WR5  
+ 31  A.J. Brown             WR  NE   11  248.8   39.33 WR5  
+ 32  Nico Collins           WR  HOU   8  248.3   38.75 WR5  
+ 33  Malik Nabers           WR  NYG   8  245.7   36.21 WR5  
+ 34  Lamar Jackson          QB  BAL  13  322.9   34.59 QB2  
+ 35  Tyler Warren           TE  IND  13  210.9   33.82 TE2  
+ 36  Jalen Hurts            QB  PHI  10  320.3   31.95 QB2  
+ 37  Drake Maye             QB  NE   11  319.4   31.05 QB2  
+ 38  Jayden Daniels         QB  WSH   7  318.4   30.04 QB2  
+ 39  DeVonta Smith          WR  PHI  10  239.2   29.73 WR5  
+ 40  Zay Flowers            WR  BAL  13  238.8   29.27 WR5  
+ 41  Kyren Williams         RB  LAR  11  232.1   29.25 RB4  
+ 42  George Pickens         WR  DAL  14  238.6   29.10 WR5  
+ 43  Colston Loveland       TE  CHI  10  205.9   28.87 TE2  
+ 44  Tetairoa McMillan      WR  CAR   5  236.5   26.96 WR5  
+ 45  Quinshon Judkins       RB  CLE  11  227.4   24.57 RB4  
+ 46  Cam Skattebo           RB  NYG   8  227.2   24.29 RB4  
+ 47  Davante Adams          WR  LAR  11  232.3   22.80 WR5  
+ 48  Emeka Egbuka           WR  TB   10  229.0   19.53 WR5  
+ 49  Joe Burrow             QB  CIN   6  304.8   16.42 QB3  
+ 50  Harold Fannin Jr.      TE  CLE  11  189.2   12.13 TE3  
+ 51  George Kittle          TE  SF    8  188.9   11.83 TE3  
+ 52  Sam LaPorta            TE  DET   6  188.6   11.55 TE3  
+ 53  Ladd McConkey          WR  LAC   7  221.0   11.53 WR5  
+ 54  Jaxson Dart            QB  NYG   8  299.8   11.42 QB3  
+ 55  Tee Higgins            WR  CIN   6  219.3    9.83 WR5  
+ 56  Terry McLaurin         WR  WSH   7  218.7    9.21 WR5  
+ 57  D'Andre Swift          RB  CHI  10  211.7    8.82 RB5  
+ 58  Kyle Pitts Sr.         TE  ATL  11  185.1    8.08 TE3  
+ 59  Bo Nix                 QB  DEN  10  296.2    7.88 QB3  
+ 60  Matthew Stafford       QB  LAR  11  293.2    4.86 QB3  
+ 61  Bucky Irving           RB  TB   10  207.1    4.22 RB5  
+ 62  Brock Purdy            QB  SF    8  292.5    4.14 QB3  
+ 63  Jaylen Waddle          WR  DEN  10  213.3    3.77 WR5  
+ 64  Tucker Kraft           TE  GB   11  180.7    3.62 TE3  
+ 65  Rome Odunze            WR  CHI  10  212.6    3.13 WR5  
+ 66  Patrick Mahomes        QB  KC    5  291.3    2.95 QB3  
+ 67  Bhayshul Tuten         RB  JAX   7  205.3    2.43 RB5  
+ 68  Travis Kelce           TE  KC    5  177.9    0.87 TE3  
+ 69  Trevor Lawrence        QB  JAX   7  288.3    0.00 QB3  
+ 70  Rhamondre Stevenson    RB  NE   11  202.9    0.00 RB5  
+ 71  DJ Moore               WR  BUF   7  209.5    0.00 WR5  
+ 72  Dallas Goedert         TE  PHI  10  177.1    0.00 TE3  
+ 73  Jameson Williams       WR  DET   6  208.4   -1.11 WR5  
+ 74  Dak Prescott           QB  DAL  14  286.9   -1.49 QB3  
+ 75  Luther Burden III      WR  CHI  10  205.9   -3.64 WR5  
+ 76  Justin Herbert         QB  LAC   7  283.6   -4.70 QB3  
+ 77  Courtland Sutton       WR  DEN  10  204.3   -5.16 WR5  
+ 78  TreVeyon Henderson     RB  NE   11  197.4   -5.48 RB5  
+ 79  Caleb Williams         QB  CHI  10  281.7   -6.65 QB3  
+ 80  Carnell Tate           WR  TEN   9  202.4   -7.10 WR5  
+ 81  Mark Andrews           TE  BAL  13  169.3   -7.77 TE3  
+ 82  Jadarian Price         RB  SEA  11  194.1   -8.80 RB5  
+ 83  David Montgomery       RB  HOU   8  192.6  -10.30 RB5  
+ 84  Jake Ferguson          TE  DAL  14  166.6  -10.45 TE3  
+ 85  Jaylen Warren          RB  PIT   9  191.7  -11.17 RB5  
+ 86  Michael Pittman Jr.    WR  PIT   9  197.3  -12.17 WR5  
+ 87  DK Metcalf             WR  PIT   9  195.9  -13.57 WR5  
+ 88  Marvin Harrison Jr.    WR  ARI  14  193.8  -15.71 WR5  
+ 89  Rico Dowdle            RB  PIT   9  186.1  -16.77 RB5  
+ 90  Tony Pollard           RB  TEN   9  185.8  -17.06 RB5  
+ 91  T.J. Hockenson         TE  MIN   6  158.2  -18.83 TE3  
+ 92  Jared Goff             QB  DET   6  268.5  -19.80 QB3  
+ 93  Daniel Jones           QB  IND  13  267.2  -21.10 QB3  
+ 94  Isaiah Likely          TE  NYG   8  155.6  -21.50 TE3  
+ 95  Dalton Kincaid         TE  BUF   7  155.4  -21.63 TE3  
+ 96  Parker Washington      WR  JAX   7  187.2  -22.26 WR5  
+ 97  Tyler Shough           QB  NO    8  266.0  -22.35 QB3  
+ 98  Alec Pierce            WR  IND  13  186.7  -22.79 WR5  
+ 99  Baker Mayfield         QB  TB   10  264.8  -23.57 QB3  
+100  Christian Watson       WR  GB   11  185.1  -24.38 WR5  
+101  Matthew Golden         WR  GB   11  185.0  -24.55 WR5  
+102  Kenny Gainwell         RB  TB   10  177.8  -25.03 RB5  
+103  Aaron Jones Sr.        RB  MIN   6  177.0  -25.84 RB5  
+104  Kyle Monangai          RB  CHI  10  176.2  -26.67 RB5  
+105  Hunter Henry           TE  NE   11  150.1  -26.95 TE3  
+106  Jakobi Meyers          WR  JAX   7  182.0  -27.55 WR5  
+107  J.K. Dobbins           RB  DEN  10  175.0  -27.85 RB5  
+108  Mike Evans             WR  SF    8  180.9  -28.64 WR5  
+109  Kenyon Sadiq           TE  NYJ  13  147.9  -29.11 TE3  
+110  Jordan Love            QB  GB   11  259.0  -29.36 QB3  
+111  Chuba Hubbard          RB  CAR   5  172.9  -29.93 RB5  
+112  Jonathon Brooks        RB  CAR   5  170.8  -32.10 RB5  
+113  Brian Thomas Jr.       WR  JAX   7  176.7  -32.86 WR5  
+114  Michael Wilson         WR  ARI  14  176.5  -32.98 WR5  
+115  Juwan Johnson          TE  NO    8  143.4  -33.60 TE3  
+116  Wan'Dale Robinson      WR  TEN   9  175.0  -34.49 WR5  
+117  Brenton Strange        TE  JAX   7  142.5  -34.58 TE3  
+118  Xavier Worthy          WR  KC    5  173.7  -35.79 WR5  
+119  Kyler Murray           QB  MIN   6  250.6  -37.74 QB3  
+120  Rachaad White          RB  WSH   7  164.7  -38.12 RB5  
+121  Khalil Shakir          WR  BUF   7  171.1  -38.39 WR5  
+122  Jordan Addison         WR  MIN   6  170.5  -39.01 WR5  
+123  Jayden Reed            WR  GB   11  170.2  -39.30 WR5  
+124  Pat Freiermuth         TE  PIT   9  136.4  -40.68 TE3  
+125  Terrance Ferguson      TE  LAR  11  135.8  -41.27 TE3  
+126  C.J. Stroud            QB  HOU   8  246.6  -41.77 QB3  
+127  Jacory Croskey-Merritt RB  WSH   7  159.5  -43.32 RB5  
+128  Blake Corum            RB  LAR  11  159.4  -43.49 RB5  
+129  Quentin Johnston       WR  LAC   7  165.4  -44.09 WR5  
+130  Dalton Schultz         TE  HOU   8  132.9  -44.14 TE3  
+131  Stefon Diggs           WR  WSH   7  164.0  -45.51 WR5  
+132  Sam Darnold            QB  SEA  11  242.6  -45.78 QB3  
+133  Tyjae Spears           RB  TEN   9  154.5  -48.40 RB5  
+134  Malik Willis           QB  MIA   6  239.1  -49.25 QB3  
+135  Gunnar Helm            TE  TEN   9  127.0  -50.08 TE3  
+136  Bryce Young            QB  CAR   5  237.5  -50.81 QB3  
+137  Josh Downs             WR  IND  13  157.7  -51.77 WR5  
+138  Chris Godwin Jr.       WR  TB   10  157.4  -52.12 WR5  
+139  Jordan Mason           RB  MIN   6  150.5  -52.33 RB5  
+140  RJ Harvey              RB  DEN  10  149.5  -53.34 RB5  
+141  KC Concepcion          WR  CLE  11  155.9  -53.59 WR5  
+142  Makai Lemon            WR  PHI  10  154.6  -54.90 WR5  
+143  Chig Okonkwo           TE  WSH   7  121.3  -55.78 TE3  
+144  Geno Smith             QB  NYJ  13  232.3  -56.04 QB3  
+145  Greg Dulcich           TE  MIA   6  119.1  -57.96 TE3  
+146  Romeo Doubs            WR  NE   11  150.4  -59.08 WR5  
+147  De'Zhaun Stribling     WR  SF    8  149.9  -59.59 WR5  
+148  Deebo Samuel Sr.       WR  SF    8  149.6  -59.95 WR5  
+149  Jalen Coker            WR  CAR   5  147.2  -62.30 WR5  
+150  Darren Waller          TE  CAR   5  114.6  -62.43 TE3  
+151  AJ Barner              TE  SEA  11  113.8  -63.27 TE3  
+152  Rashid Shaheed         WR  SEA  11  144.5  -65.03 WR5  
+153  Denzel Boston          WR  CLE  11  142.3  -67.18 WR5  
+154  Cam Ward               QB  TEN   9  220.0  -68.36 QB3  
+155  Zach Charbonnet        RB  SEA  11  134.0  -68.87 RB6  
+156  Aaron Rodgers          QB  PIT   9  219.2  -69.11 QB3  
+157  Jerry Jeudy            WR  CLE  11  140.1  -69.44 WR5  
+158  Evan Engram            TE  DEN  10  106.6  -70.45 TE3  
+159  Tre Tucker             WR  LV   13  138.0  -71.53 WR5  
+160  David Njoku            TE  LAC   7  104.3  -72.70 TE3  
+161  Calvin Ridley          WR  TEN   9  135.4  -74.13 WR5  
+162  Cade Otton             TE  TB   10  102.1  -74.95 TE3  
+163  Woody Marks            RB  HOU   8  127.7  -75.18 RB6  
+164  Jalen McMillan         WR  TB   10  132.9  -76.60 WR5  
+165  Isiah Pacheco          RB  DET   6  123.5  -79.33 RB6  
+166  Adonai Mitchell        WR  NYJ  13  127.4  -82.08 WR5  
+167  Keenan Allen           WR  IND  13  124.4  -85.08 WR5  
+168  Jalen Nailor           WR  LV   13  124.2  -85.27 WR5  
+169  Alvin Kamara           RB  NO    8  117.3  -85.51 RB6  
+170  Devaughn Vele          WR  NO    8  123.8  -85.72 WR5  
+171  Rashod Bateman         WR  BAL  13  122.5  -87.01 WR5  
+172  Justice Hill           RB  BAL  13  114.2  -88.67 RB6  
+173  Jacoby Brissett        QB  ARI  14  198.9  -89.41 QB4  
+174  Mike Gesicki           TE  CIN   6   85.8  -91.25 TE4  
+175  Malik Washington       WR  MIA   6  114.9  -94.61 WR5  
+176  Jauan Jennings         WR  MIN   6  114.6  -94.89 WR5  
+177  Caleb Douglas          WR  MIA   6  114.5  -94.96 WR5  
+178  Michael Mayer          TE  LV   13   81.0  -96.08 TE4  
+179  Travis Hunter          WR  JAX   7  113.1  -96.40 WR5  
+180  Kayshon Boutte         WR  HOU   8  110.4  -99.14 WR5  
+181  Oronde Gadsden         TE  LAC   7   77.3  -99.79 TE4  
+182  Germie Bernard         WR  PIT   9  108.8 -100.70 WR5  
+183  Fernando Mendoza       QB  LV   13  187.6 -100.78 QB4  
+184  Dontayvion Wicks       WR  PHI  10  108.2 -101.30 WR5  
+185  Colby Parkinson        TE  LAR  11   75.3 -101.70 TE4  
+186  Samaje Perine          RB  CIN   6  100.5 -102.35 RB7  
+187  Darnell Washington     TE  PIT   9   72.5 -104.55 TE4  
+188  Jaylin Noel            WR  HOU   8  103.7 -105.85 WR5  
+189  Cooper Kupp            WR  SEA  11  101.5 -107.99 WR5  
+190  Dawson Knox            TE  BUF   7   68.2 -108.86 TE4  
+191  Brian Robinson Jr.     RB  ATL  11   94.0 -108.90 RB7  
+192  Mason Taylor           TE  NYJ  13   68.1 -108.92 TE4  
+193  Keaton Mitchell        RB  LAC   7   93.9 -108.97 RB7  
+194  Ja'Kobi Lane           WR  BAL  13  100.5 -109.05 WR5  
+195  Jordyn Tyson           WR  NO    8   99.8 -109.73 WR5  
+196  Tyler Allgeier         RB  ARI  14   91.3 -111.59 RB7  
+197  Tank Dell              WR  HOU   8   95.9 -113.62 WR5  
+198  Dylan Sampson          RB  CLE  11   88.3 -114.54 RB7  
+199  Theo Johnson           TE  NYG   8   61.7 -115.32 TE4  
+200  Xavier Legette         WR  CAR   5   94.1 -115.43 WR5  
+
+------------------------------------------------------------------------------
+KICKERS & DEFENSES  --  draft round 12+ only
+------------------------------------------------------------------------------
+  #  name                   pos tm  bye   proj     vbd tier 
+------------------------------------------------------------
+  1  Broncos D/ST           DST DEN  10  130.6   30.30 DST1 
+  2  Texans D/ST            DST HOU   8  130.3   30.03 DST1 
+  3  Brandon Aubrey         K   DAL  14  171.7   27.25 K1   
+  4  Steelers D/ST          DST PIT   9  122.7   22.44 DST2 
+  5  Seahawks D/ST          DST SEA  11  122.3   22.02 DST2 
+  6  Rams D/ST              DST LAR  11  121.9   21.65 DST2 
+  7  Ravens D/ST            DST BAL  13  120.0   19.72 DST2 
+  8  Cameron Dicker         K   LAC   7  161.9   17.48 K2   
+  9  Harrison Mevis         K   LAR  11  159.5   15.12 K2   
+ 10  Jason Myers            K   SEA  11  158.5   14.10 K2   
+ 11  Ka'imi Fairbairn       K   HOU   8  157.9   13.45 K2   
+ 12  Eddy Pineiro           K   SF    8  155.3   10.91 K2   
+ 13  Lions D/ST             DST DET   6  107.8    7.53 DST3 
+ 14  Eagles D/ST            DST PHI  10  106.7    6.42 DST3 
+ 15  Harrison Butker        K   KC    5  148.8    4.36 K3   
+ 16  Browns D/ST            DST CLE  11  103.9    3.64 DST3 
+ 17  Cam Little             K   JAX   7  146.8    2.44 K3   
+ 18  Tyler Loop             K   BAL  13  146.0    1.62 K3   
+ 19  Jake Bates             K   DET   6  145.8    1.44 K3   
+ 20  Chiefs D/ST            DST KC    5  100.4    0.07 DST3 
+
+------------------------------------------------------------------------------
+BY POSITION
+------------------------------------------------------------------------------
+
+### QB  (replacement QB12 = 288.3 pts, 9 tiers)
+  #  name                   tm  bye   proj     vbd
+--------------------------------------------------
+---- TIER 1 ----
+  1  Josh Allen             BUF   7  369.7   81.35
+---- TIER 2 ----
+  2  Lamar Jackson          BAL  13  322.9   34.59
+  3  Jalen Hurts            PHI  10  320.3   31.95
+  4  Drake Maye             NE   11  319.4   31.05
+  5  Jayden Daniels         WSH   7  318.4   30.04
+---- TIER 3 ----
+  6  Joe Burrow             CIN   6  304.8   16.42
+  7  Jaxson Dart            NYG   8  299.8   11.42
+  8  Bo Nix                 DEN  10  296.2    7.88
+  9  Matthew Stafford       LAR  11  293.2    4.86
+ 10  Brock Purdy            SF    8  292.5    4.14
+ 11  Patrick Mahomes        KC    5  291.3    2.95
+ 12  Trevor Lawrence        JAX   7  288.3    0.00
+ 13  Dak Prescott           DAL  14  286.9   -1.49
+ 14  Justin Herbert         LAC   7  283.6   -4.70
+ 15  Caleb Williams         CHI  10  281.7   -6.65
+ 16  Jared Goff             DET   6  268.5  -19.80
+ 17  Daniel Jones           IND  13  267.2  -21.10
+ 18  Tyler Shough           NO    8  266.0  -22.35
+ 19  Baker Mayfield         TB   10  264.8  -23.57
+ 20  Jordan Love            GB   11  259.0  -29.36
+ 21  Kyler Murray           MIN   6  250.6  -37.74
+ 22  C.J. Stroud            HOU   8  246.6  -41.77
+ 23  Sam Darnold            SEA  11  242.6  -45.78
+ 24  Malik Willis           MIA   6  239.1  -49.25
+ 25  Bryce Young            CAR   5  237.5  -50.81
+ 26  Geno Smith             NYJ  13  232.3  -56.04
+ 27  Cam Ward               TEN   9  220.0  -68.36
+ 28  Aaron Rodgers          PIT   9  219.2  -69.11
+---- TIER 4 ----
+ 29  Jacoby Brissett        ARI  14  198.9  -89.41
+ 30  Fernando Mendoza       LV   13  187.6 -100.78
+---- TIER 5 ----
+ 31  Shedeur Sanders        CLE  11  143.0 -145.37
+---- TIER 6 ----
+ 32  Tua Tagovailoa         ATL  11  114.9 -173.45
+ 33  Michael Penix Jr.      ATL  11  113.6 -174.74
+---- TIER 7 ----
+ 34  Deshaun Watson         CLE  11   78.6 -209.73
+---- TIER 8 ----
+ 35  Kirk Cousins           LV   13   45.8 -242.52
+ 36  J.J. McCarthy          MIN   6   39.8 -248.51
+ 37  Carson Beck            ARI  14   29.3 -259.04
+---- TIER 9 ----
+ 38  Justin Fields          KC    5   10.7 -277.68
+ 39  Joe Flacco             CIN   6   10.5 -277.80
+ 40  Tommy DeVito           NE   11   10.3 -278.03
+ 41  Ty Simpson             LAR  11   10.0 -278.30
+ 42  Drew Allar             PIT   9    9.5 -278.87
+ 43  Jameis Winston         NYG   8    8.6 -279.71
+ 44  Mac Jones              SF    8    8.6 -279.72
+ 45  Philip Rivers          IND   -    0.0 -288.34
+ 46  Anthony Richardson Sr. IND  13    0.0 -288.34
+ 47  Joe Milton III         DAL  14    0.0 -288.34
+
+### RB  (replacement RB24 = 202.9 pts, 7 tiers)
+  #  name                   tm  bye   proj     vbd
+--------------------------------------------------
+---- TIER 1 ----
+  1  Jahmyr Gibbs           DET   6  364.9  162.00
+  2  Bijan Robinson         ATL  11  352.8  149.91
+  3  Christian McCaffrey    SF    8  342.8  139.94
+---- TIER 2 ----
+  4  Jonathan Taylor        IND  13  316.5  113.65
+---- TIER 3 ----
+  5  De'Von Achane          MIA   6  293.4   90.53
+  6  Ashton Jeanty          LV   13  280.9   77.99
+  7  James Cook III         BUF   7  279.6   76.76
+  8  Jeremiyah Love         ARI  14  278.5   75.61
+  9  Derrick Henry          BAL  13  274.7   71.88
+ 10  Kenneth Walker III     KC    5  274.2   71.33
+ 11  Breece Hall            NYJ  13  274.0   71.13
+ 12  Saquon Barkley         PHI  10  273.6   70.75
+ 13  Chase Brown            CIN   6  272.1   69.22
+ 14  Omarion Hampton        LAC   7  261.7   58.85
+ 15  Javonte Williams       DAL  14  259.7   56.86
+ 16  Josh Jacobs            GB   11  259.1   56.24
+ 17  Travis Etienne Jr.     NO    8  246.1   43.27
+---- TIER 4 ----
+ 18  Kyren Williams         LAR  11  232.1   29.25
+ 19  Quinshon Judkins       CLE  11  227.4   24.57
+ 20  Cam Skattebo           NYG   8  227.2   24.29
+---- TIER 5 ----
+ 21  D'Andre Swift          CHI  10  211.7    8.82
+ 22  Bucky Irving           TB   10  207.1    4.22
+ 23  Bhayshul Tuten         JAX   7  205.3    2.43
+ 24  Rhamondre Stevenson    NE   11  202.9    0.00
+ 25  TreVeyon Henderson     NE   11  197.4   -5.48
+ 26  Jadarian Price         SEA  11  194.1   -8.80
+ 27  David Montgomery       HOU   8  192.6  -10.30
+ 28  Jaylen Warren          PIT   9  191.7  -11.17
+ 29  Rico Dowdle            PIT   9  186.1  -16.77
+ 30  Tony Pollard           TEN   9  185.8  -17.06
+ 31  Kenny Gainwell         TB   10  177.8  -25.03
+ 32  Aaron Jones Sr.        MIN   6  177.0  -25.84
+ 33  Kyle Monangai          CHI  10  176.2  -26.67
+ 34  J.K. Dobbins           DEN  10  175.0  -27.85
+ 35  Chuba Hubbard          CAR   5  172.9  -29.93
+ 36  Jonathon Brooks        CAR   5  170.8  -32.10
+ 37  Rachaad White          WSH   7  164.7  -38.12
+ 38  Jacory Croskey-Merritt WSH   7  159.5  -43.32
+ 39  Blake Corum            LAR  11  159.4  -43.49
+ 40  Tyjae Spears           TEN   9  154.5  -48.40
+ 41  Jordan Mason           MIN   6  150.5  -52.33
+ 42  RJ Harvey              DEN  10  149.5  -53.34
+---- TIER 6 ----
+ 43  Zach Charbonnet        SEA  11  134.0  -68.87
+ 44  Woody Marks            HOU   8  127.7  -75.18
+ 45  Isiah Pacheco          DET   6  123.5  -79.33
+ 46  Alvin Kamara           NO    8  117.3  -85.51
+ 47  Justice Hill           BAL  13  114.2  -88.67
+---- TIER 7 ----
+ 48  Samaje Perine          CIN   6  100.5 -102.35
+ 49  Brian Robinson Jr.     ATL  11   94.0 -108.90
+ 50  Keaton Mitchell        LAC   7   93.9 -108.97
+ 51  Tyler Allgeier         ARI  14   91.3 -111.59
+ 52  Dylan Sampson          CLE  11   88.3 -114.54
+ 53  MarShawn Lloyd         GB   11   86.3 -116.58
+ 54  Ty Johnson             BUF   7   84.8 -118.10
+ 55  Najee Harris           NYG   8   78.3 -124.55
+ 56  Braelon Allen          NYJ  13   76.6 -126.22
+ 57  Jonah Coleman          DEN  10   74.5 -128.39
+ 58  Chris Rodriguez Jr.    JAX   7   71.4 -131.42
+ 59  Mike Washington Jr.    LV   13   65.2 -137.69
+ 60  Tank Bigsby            PHI  10   64.2 -138.69
+ 61  Emari Demercado        KC    5   63.9 -139.00
+ 62  Kaelon Black           SF    8   60.5 -142.36
+ 63  Jaydon Blue            DAL  14   55.0 -147.85
+ 64  Isaiah Davis           NYJ  13   51.0 -151.91
+ 65  Emmett Johnson         KC    5   46.6 -156.24
+ 66  LeQuint Allen Jr.      JAX   7   46.4 -156.44
+ 67  Kyle Juszczyk          SF    8   44.8 -158.02
+ 68  Jaylen Wright          MIA   6   43.4 -159.44
+ 69  George Holani          SEA  11   41.5 -161.40
+ 70  Tyrone Tracy Jr.       NYG   8   40.9 -161.98
+ 71  Ray Davis              BUF   7   38.1 -164.73
+ 72  Sean Tucker            TB   10   36.9 -165.93
+ 73  Kimani Vidal           LAC   7   36.4 -166.51
+ 74  DJ Giddens             IND  13   36.0 -166.84
+ 75  Chris Brooks           GB   11   36.0 -166.85
+ 76  Ollie Gordon II        MIA   6   34.9 -167.94
+ 77  Jordan James           SF    8   29.2 -173.65
+ 78  Will Shipley           PHI  10   28.1 -174.81
+ 79  Malik Davis            DAL  14   27.4 -175.44
+ 80  Adam Randall           BAL  13   25.1 -177.78
+ 81  Nicholas Singleton     TEN   9   19.8 -183.04
+ 82  Tahj Brooks            CIN   6   18.4 -184.46
+ 83  Demond Claiborne       MIN   6   16.8 -186.09
+ 84  Trevor Etienne         CAR   5   16.7 -186.13
+ 85  Kendre Miller          NO    8   15.9 -187.00
+ 86  Kaytron Allen          WSH   7   15.8 -187.11
+ 87  Seth McGowan           IND  13   15.7 -187.16
+ 88  Emanuel Wilson         SEA  11    9.9 -192.95
+ 89  Jawhar Jordan          HOU   8    6.9 -195.96
+ 90  Kaleb Johnson          PIT   9    4.8 -198.01
+ 91  Isaac Guerendo         SF    8    1.1 -201.81
+ 92  Brashard Smith         KC    5    1.0 -201.87
+ 93  Bam Knight             ARI  14    0.8 -202.04
+ 94  Dylan Laube            LV   13    0.7 -202.19
+ 95  Tyler Badie            DEN  10    0.3 -202.51
+ 96  James Conner           ARI  14    0.0 -202.86
+ 97  Devin Singletary       NYG   8    0.0 -202.86
+ 98  Trey Benson            ARI  14    0.0 -202.86
+ 99  Kareem Hunt            None   -    0.0 -202.86
+100  Nick Chubb             None   -    0.0 -202.86
+101  Joe Mixon              None   -    0.0 -202.86
+102  Phil Mafah             DAL   -    0.0 -202.86
+
+### WR  (replacement WR25 = 209.5 pts, 6 tiers)
+  #  name                   tm  bye   proj     vbd
+--------------------------------------------------
+---- TIER 1 ----
+  1  Puka Nacua             LAR  11  356.3  146.78
+---- TIER 2 ----
+  2  Ja'Marr Chase          CIN   6  337.5  127.99
+---- TIER 3 ----
+  3  Jaxon Smith-Njigba     SEA  11  326.7  117.23
+  4  Amon-Ra St. Brown      DET   6  323.9  114.44
+---- TIER 4 ----
+  5  Justin Jefferson       MIN   6  293.7   84.20
+  6  CeeDee Lamb            DAL  14  293.7   84.18
+---- TIER 5 ----
+  7  Drake London           ATL  11  269.8   60.25
+  8  Rashee Rice            KC    5  260.5   50.99
+  9  Chris Olave            NO    8  250.4   40.93
+ 10  Garrett Wilson         NYJ  13  249.4   39.89
+ 11  A.J. Brown             NE   11  248.8   39.33
+ 12  Nico Collins           HOU   8  248.3   38.75
+ 13  Malik Nabers           NYG   8  245.7   36.21
+ 14  DeVonta Smith          PHI  10  239.2   29.73
+ 15  Zay Flowers            BAL  13  238.8   29.27
+ 16  George Pickens         DAL  14  238.6   29.10
+ 17  Tetairoa McMillan      CAR   5  236.5   26.96
+ 18  Davante Adams          LAR  11  232.3   22.80
+ 19  Emeka Egbuka           TB   10  229.0   19.53
+ 20  Ladd McConkey          LAC   7  221.0   11.53
+ 21  Tee Higgins            CIN   6  219.3    9.83
+ 22  Terry McLaurin         WSH   7  218.7    9.21
+ 23  Jaylen Waddle          DEN  10  213.3    3.77
+ 24  Rome Odunze            CHI  10  212.6    3.13
+ 25  DJ Moore               BUF   7  209.5    0.00
+ 26  Jameson Williams       DET   6  208.4   -1.11
+ 27  Luther Burden III      CHI  10  205.9   -3.64
+ 28  Courtland Sutton       DEN  10  204.3   -5.16
+ 29  Carnell Tate           TEN   9  202.4   -7.10
+ 30  Michael Pittman Jr.    PIT   9  197.3  -12.17
+ 31  DK Metcalf             PIT   9  195.9  -13.57
+ 32  Marvin Harrison Jr.    ARI  14  193.8  -15.71
+ 33  Parker Washington      JAX   7  187.2  -22.26
+ 34  Alec Pierce            IND  13  186.7  -22.79
+ 35  Christian Watson       GB   11  185.1  -24.38
+ 36  Matthew Golden         GB   11  185.0  -24.55
+ 37  Jakobi Meyers          JAX   7  182.0  -27.55
+ 38  Mike Evans             SF    8  180.9  -28.64
+ 39  Brian Thomas Jr.       JAX   7  176.7  -32.86
+ 40  Michael Wilson         ARI  14  176.5  -32.98
+ 41  Wan'Dale Robinson      TEN   9  175.0  -34.49
+ 42  Xavier Worthy          KC    5  173.7  -35.79
+ 43  Khalil Shakir          BUF   7  171.1  -38.39
+ 44  Jordan Addison         MIN   6  170.5  -39.01
+ 45  Jayden Reed            GB   11  170.2  -39.30
+ 46  Quentin Johnston       LAC   7  165.4  -44.09
+ 47  Stefon Diggs           WSH   7  164.0  -45.51
+ 48  Josh Downs             IND  13  157.7  -51.77
+ 49  Chris Godwin Jr.       TB   10  157.4  -52.12
+ 50  KC Concepcion          CLE  11  155.9  -53.59
+ 51  Makai Lemon            PHI  10  154.6  -54.90
+ 52  Romeo Doubs            NE   11  150.4  -59.08
+ 53  De'Zhaun Stribling     SF    8  149.9  -59.59
+ 54  Deebo Samuel Sr.       SF    8  149.6  -59.95
+ 55  Jalen Coker            CAR   5  147.2  -62.30
+ 56  Rashid Shaheed         SEA  11  144.5  -65.03
+ 57  Denzel Boston          CLE  11  142.3  -67.18
+ 58  Jerry Jeudy            CLE  11  140.1  -69.44
+ 59  Tre Tucker             LV   13  138.0  -71.53
+ 60  Calvin Ridley          TEN   9  135.4  -74.13
+ 61  Jalen McMillan         TB   10  132.9  -76.60
+ 62  Adonai Mitchell        NYJ  13  127.4  -82.08
+ 63  Keenan Allen           IND  13  124.4  -85.08
+ 64  Jalen Nailor           LV   13  124.2  -85.27
+ 65  Devaughn Vele          NO    8  123.8  -85.72
+ 66  Rashod Bateman         BAL  13  122.5  -87.01
+ 67  Malik Washington       MIA   6  114.9  -94.61
+ 68  Jauan Jennings         MIN   6  114.6  -94.89
+ 69  Caleb Douglas          MIA   6  114.5  -94.96
+ 70  Travis Hunter          JAX   7  113.1  -96.40
+ 71  Kayshon Boutte         HOU   8  110.4  -99.14
+ 72  Germie Bernard         PIT   9  108.8 -100.70
+ 73  Dontayvion Wicks       PHI  10  108.2 -101.30
+ 74  Jaylin Noel            HOU   8  103.7 -105.85
+ 75  Cooper Kupp            SEA  11  101.5 -107.99
+ 76  Ja'Kobi Lane           BAL  13  100.5 -109.05
+ 77  Jordyn Tyson           NO    8   99.8 -109.73
+ 78  Tank Dell              HOU   8   95.9 -113.62
+ 79  Xavier Legette         CAR   5   94.1 -115.43
+ 80  Jahan Dotson           ATL  11   92.8 -116.75
+ 81  Tre' Harris            LAC   7   89.9 -119.64
+ 82  Ryan Flournoy          DAL  14   89.4 -120.13
+ 83  Darius Slayton         NYG   8   88.7 -120.86
+ 84  Omar Cooper Jr.        NYJ  13   87.4 -122.11
+ 85  Jalen Tolbert          MIA   6   83.8 -125.75
+ 86  Zachariah Branch       ATL  11   82.5 -126.99
+ 87  DeMario Douglas        NE   11   81.4 -128.10
+ 88  Antonio Williams       WSH   7   77.8 -131.68
+ 89  Tyquan Thornton        KC    5   77.7 -131.83
+ 90  Keon Coleman           BUF   7   75.4 -134.08
+ 91  Isaac TeSlaa           DET   6   72.8 -136.66
+ 92  Pat Bryant             DEN  10   72.8 -136.68
+ 93  Darnell Mooney         NYG   8   71.7 -137.85
+ 94  Chris Bell             MIA   6   70.6 -138.87
+ 95  Marvin Mims Jr.        DEN  10   69.9 -139.60
+ 96  Malachi Fields         NYG   8   68.6 -140.93
+ 97  KaVontae Turpin        DAL  14   66.8 -142.69
+ 98  Jack Bech              LV   13   65.9 -143.57
+ 99  Tory Horton            SEA  11   65.5 -144.02
+100  Ted Hurst III          TB   10   64.9 -144.57
+101  Savion Williams        GB   11   60.6 -148.92
+102  Andrei Iosivas         CIN   6   58.2 -151.35
+103  Mack Hollins           NE   11   56.6 -152.90
+104  Tutu Atwell            LAR  11   55.2 -154.27
+105  Cyrus Allen            KC    5   53.0 -156.47
+106  Kyle Williams          NE   11   51.2 -158.31
+107  Troy Franklin          DEN  10   50.7 -158.77
+108  Xavier Hutchinson      HOU   8   49.8 -159.73
+109  Kalif Raymond          CHI  10   48.0 -161.54
+110  Joshua Palmer          BUF   7   44.8 -164.75
+111  Colbie Young           CIN   6   39.6 -169.90
+112  Bryce Lance            NO    8   39.5 -169.99
+113  Chimere Dike           TEN   9   39.4 -170.07
+114  Zavion Thomas          CHI  10   36.2 -173.33
+115  Hollywood Brown        PHI  10   33.8 -175.75
+116  Elijah Sarratt         BAL  13   33.6 -175.90
+117  Isaiah Bond            CLE  11   30.9 -178.63
+118  Roman Wilson           PIT   9   28.9 -180.64
+119  Skyler Bell            BUF   7   28.5 -181.02
+120  Christian Kirk         SF    8   27.5 -181.99
+121  Brenen Thompson        LAC   7   27.5 -181.99
+122  Odell Beckham Jr.      NYG   8   24.1 -185.42
+123  Elic Ayomanor          TEN   9   23.9 -185.58
+124  Tez Johnson            TB   10   21.6 -187.95
+125  Luke McCaffrey         WSH   7   18.5 -191.04
+---- TIER 6 ----
+126  Jayden Higgins         HOU   -    0.0 -209.51
+127  Ricky Pearsall         SF    8    0.0 -209.51
+128  Tyreek Hill            None   -    0.0 -209.51
+129  Brandon Aiyuk          SF    8    0.0 -209.51
+130  Chris Brazzell II      CAR   -    0.0 -209.51
+131  Lil'Jordan Humphrey    DEN  10    0.0 -209.51
+
+### TE  (replacement TE11 = 177.1 pts, 5 tiers)
+  #  name                   tm  bye   proj     vbd
+--------------------------------------------------
+---- TIER 1 ----
+  1  Trey McBride           ARI  14  241.9   64.82
+  2  Brock Bowers           LV   13  240.9   63.89
+---- TIER 2 ----
+  3  Tyler Warren           IND  13  210.9   33.82
+  4  Colston Loveland       CHI  10  205.9   28.87
+---- TIER 3 ----
+  5  Harold Fannin Jr.      CLE  11  189.2   12.13
+  6  George Kittle          SF    8  188.9   11.83
+  7  Sam LaPorta            DET   6  188.6   11.55
+  8  Kyle Pitts Sr.         ATL  11  185.1    8.08
+  9  Tucker Kraft           GB   11  180.7    3.62
+ 10  Travis Kelce           KC    5  177.9    0.87
+ 11  Dallas Goedert         PHI  10  177.1    0.00
+ 12  Mark Andrews           BAL  13  169.3   -7.77
+ 13  Jake Ferguson          DAL  14  166.6  -10.45
+ 14  T.J. Hockenson         MIN   6  158.2  -18.83
+ 15  Isaiah Likely          NYG   8  155.6  -21.50
+ 16  Dalton Kincaid         BUF   7  155.4  -21.63
+ 17  Hunter Henry           NE   11  150.1  -26.95
+ 18  Kenyon Sadiq           NYJ  13  147.9  -29.11
+ 19  Juwan Johnson          NO    8  143.4  -33.60
+ 20  Brenton Strange        JAX   7  142.5  -34.58
+ 21  Pat Freiermuth         PIT   9  136.4  -40.68
+ 22  Terrance Ferguson      LAR  11  135.8  -41.27
+ 23  Dalton Schultz         HOU   8  132.9  -44.14
+ 24  Gunnar Helm            TEN   9  127.0  -50.08
+ 25  Chig Okonkwo           WSH   7  121.3  -55.78
+ 26  Greg Dulcich           MIA   6  119.1  -57.96
+ 27  Darren Waller          CAR   5  114.6  -62.43
+ 28  AJ Barner              SEA  11  113.8  -63.27
+ 29  Evan Engram            DEN  10  106.6  -70.45
+ 30  David Njoku            LAC   7  104.3  -72.70
+ 31  Cade Otton             TB   10  102.1  -74.95
+---- TIER 4 ----
+ 32  Mike Gesicki           CIN   6   85.8  -91.25
+ 33  Michael Mayer          LV   13   81.0  -96.08
+ 34  Oronde Gadsden         LAC   7   77.3  -99.79
+ 35  Colby Parkinson        LAR  11   75.3 -101.70
+ 36  Darnell Washington     PIT   9   72.5 -104.55
+ 37  Dawson Knox            BUF   7   68.2 -108.86
+ 38  Mason Taylor           NYJ  13   68.1 -108.92
+ 39  Theo Johnson           NYG   8   61.7 -115.32
+ 40  Noah Gray              KC    5   61.0 -116.08
+ 41  Elijah Arroyo          SEA  11   60.6 -116.43
+ 42  Erick All Jr.          CIN   6   60.5 -116.53
+ 43  Cole Kmet              CHI  10   53.6 -123.45
+ 44  Tommy Tremble          CAR   5   43.6 -133.42
+ 45  Ja'Tavion Sanders      CAR   5   42.3 -134.74
+ 46  Tyler Higbee           LAR  11   38.1 -138.96
+ 47  Eli Raridon            NE   11   37.1 -139.97
+ 48  Eli Stowers            PHI  10   29.0 -148.05
+ 49  Jake Tonges            SF    8   25.2 -151.85
+---- TIER 5 ----
+ 50  Max Klare              LAR  11    9.9 -167.10
+
+### DST  (replacement DST11 = 100.3 pts, 3 tiers)
+  #  name                   tm  bye   proj     vbd
+--------------------------------------------------
+---- TIER 1 ----
+  1  Broncos D/ST           DEN  10  130.6   30.30
+  2  Texans D/ST            HOU   8  130.3   30.03
+---- TIER 2 ----
+  3  Steelers D/ST          PIT   9  122.7   22.44
+  4  Seahawks D/ST          SEA  11  122.3   22.02
+  5  Rams D/ST              LAR  11  121.9   21.65
+  6  Ravens D/ST            BAL  13  120.0   19.72
+---- TIER 3 ----
+  7  Lions D/ST             DET   6  107.8    7.53
+  8  Eagles D/ST            PHI  10  106.7    6.42
+  9  Browns D/ST            CLE  11  103.9    3.64
+ 10  Chiefs D/ST            KC    5  100.4    0.07
+ 11  Patriots D/ST          NE   11  100.3    0.00
+ 12  Chargers D/ST          LAC   7   94.8   -5.45
+ 13  Buccaneers D/ST        TB   10   92.8   -7.49
+ 14  Packers D/ST           GB   11   90.3   -9.97
+ 15  Bears D/ST             CHI  10   89.0  -11.33
+ 16  Saints D/ST            NO    8   88.8  -11.48
+ 17  Jets D/ST              NYJ  13   84.5  -15.84
+ 18  49ers D/ST             SF    8   83.0  -17.30
+ 19  Jaguars D/ST           JAX   7   81.4  -18.91
+ 20  Cowboys D/ST           DAL  14   78.7  -21.59
+ 21  Colts D/ST             IND  13   75.2  -25.13
+ 22  Vikings D/ST           MIN   6   74.3  -25.98
+ 23  Bengals D/ST           CIN   6   73.5  -26.82
+ 24  Giants D/ST            NYG   8   70.0  -30.33
+ 25  Titans D/ST            TEN   9   66.7  -33.58
+ 26  Panthers D/ST          CAR   5   62.3  -38.02
+ 27  Commanders D/ST        WSH   7   61.3  -38.95
+ 28  Falcons D/ST           ATL  11   60.6  -39.72
+ 29  Bills D/ST             BUF   7   58.5  -41.76
+ 30  Raiders D/ST           LV   13   53.9  -46.42
+ 31  Cardinals D/ST         ARI  14   50.7  -49.56
+ 32  Dolphins D/ST          MIA   6   44.7  -55.58
+
+### K  (replacement K11 = 144.4 pts, 4 tiers)
+  #  name                   tm  bye   proj     vbd
+--------------------------------------------------
+---- TIER 1 ----
+  1  Brandon Aubrey         DAL  14  171.7   27.25
+---- TIER 2 ----
+  2  Cameron Dicker         LAC   7  161.9   17.48
+  3  Harrison Mevis         LAR  11  159.5   15.12
+  4  Jason Myers            SEA  11  158.5   14.10
+  5  Ka'imi Fairbairn       HOU   8  157.9   13.45
+  6  Eddy Pineiro           SF    8  155.3   10.91
+---- TIER 3 ----
+  7  Harrison Butker        KC    5  148.8    4.36
+  8  Cam Little             JAX   7  146.8    2.44
+  9  Tyler Loop             BAL  13  146.0    1.62
+ 10  Jake Bates             DET   6  145.8    1.44
+ 11  Cairo Santos           CHI  10  144.4    0.00
+ 12  Trey Smack             GB   11  144.0   -0.41
+ 13  Chris Boswell          PIT   9  142.9   -1.55
+ 14  Will Reichard          MIN   6  142.2   -2.18
+ 15  Chase McLaughlin       TB   10  142.2   -2.21
+ 16  Evan McPherson         CIN   6  142.1   -2.27
+ 17  Nick Folk              ATL  11  141.3   -3.14
+ 18  Daniel Carlson         NO    8  137.9   -6.48
+ 19  Dominic Zvada          NYG   8  137.2   -7.23
+ 20  Tyler Bass             BUF   7  136.8   -7.62
+ 21  Wil Lutz               DEN  10  135.9   -8.54
+ 22  Jake Elliott           PHI  10  135.8   -8.65
+ 23  Drew Stevens           WSH   7  133.8  -10.64
+ 24  Blake Grupe            IND  13  132.8  -11.62
+ 25  Andy Borregales        NE   11  129.1  -15.29
+ 26  Jason Sanders          NYJ  13  128.4  -15.99
+ 27  Riley Patterson        MIA   6  127.4  -17.03
+ 28  Matt Gay               LV   13  125.1  -19.31
+ 29  Ryan Fitzgerald        CAR   5  124.1  -20.34
+ 30  Joey Slye              TEN   9  123.4  -21.05
+ 31  Andre Szmyt            CLE  11  121.7  -22.67
+ 32  Chad Ryland            ARI  14  121.7  -22.75
+---- TIER 4 ----
+ 33  Charlie Smyth          NO    -    0.0 -144.41
+ 34  Justin Tucker          None   -    0.0 -144.41
+ 35  Jake Moody             None   -    0.0 -144.41
+ 36  Younghoe Koo           None   -    0.0 -144.41
+ 37  Ben Sauls              NYG   -    0.0 -144.41
+ 38  Spencer Shrader        IND   -    0.0 -144.41

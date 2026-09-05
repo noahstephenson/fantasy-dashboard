@@ -1,0 +1,111 @@
+:root { color-scheme: light dark; }
+
+body {
+  font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1.2rem;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.4;
+}
+
+h1 { font-size: 1.4rem; margin: 0 0 .2rem; }
+h2 {
+  font-size: 1.05rem;
+  margin: 1.6rem 0 .5rem;
+  border-bottom: 2px solid #888;
+  padding-bottom: .25rem;
+}
+
+.subtitle { color: #666; font-size: .85rem; margin: 0 0 1rem; }
+
+.card {
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: .9rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.matchup-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.score { font-size: 1.6rem; font-weight: bold; }
+.score.mine { color: #1e5631; }
+.score.theirs { color: #7b241c; }
+
+.proj { color: #666; font-size: .85rem; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .88rem;
+  margin: .3rem 0 .6rem;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: .3rem .55rem;
+  text-align: left;
+}
+th { background: #ececec; }
+td.num, th.num { text-align: right; }
+
+tr.bench-row td { color: #777; font-style: italic; }
+tr.no-player td { color: #a00; }
+
+.pos-QB { color: #7b241c; } .pos-RB { color: #1e5631; }
+.pos-WR { color: #1a3c6e; } .pos-TE { color: #6b4c00; }
+.pos-DST { color: #4a235a; } .pos-K { color: #555; }
+
+ul.reasoning { margin: .3rem 0; padding-left: 1.2rem; }
+ul.reasoning li { margin-bottom: .25rem; }
+
+.badge {
+  display: inline-block;
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  background: #dff0d8;
+  color: #1e5631;
+  margin-left: .4rem;
+}
+.badge.injury {
+  background: #fcf3cf;
+  color: #7d6608;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #888;
+  font-size: .78rem;
+}
+
+.error {
+  background: #fdecea;
+  border: 1px solid #f5c6cb;
+  color: #7b241c;
+  padding: .8rem 1rem;
+  border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { background: #17181c; color: #e8e8e8; }
+  .card { background: #1f2127; border-color: #333; }
+  th { background: #2a2c33; }
+  th, td { border-color: #333; }
+  h2 { border-bottom-color: #444; }
+  .subtitle, .proj { color: #999; }
+  tr.bench-row td { color: #999; }
+  footer { border-top-color: #333; color: #888; }
+  .badge { background: #234a2f; color: #b6e2c1; }
+  .badge.injury { background: #4a3f10; color: #f1e08a; }
+  .error { background: #3a1f1f; border-color: #6b2c2c; color: #f5c6cb; }
+}

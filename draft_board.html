@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B1 Boyzz Draft Board</title>
+<style>
+/* Explicit color tokens only - no CSS system-color keywords and no blend
+   functions - so it renders on any phone browser, offline, light or dark. */
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff; --fg: #111111;
+  --panel: #f4f4f6;         /* topbar, sticky headers, hover */
+  --row-active: #e7e7ec;
+  --border: #c9c9cf; --border-soft: #e3e3e8;
+  --muted: #6b7280;
+  --qb: #c0392b; --rb: #1f8a4c; --wr: #2673b3; --te: #c15600;
+  --dst: #7c3aad; --k: #6b7280;
+  --accent-green: #2e7d32; --accent-red: #c0392b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16171a; --fg: #e9e9ec;
+    --panel: #212227;
+    --row-active: #2c2d33;
+    --border: #3a3b41; --border-soft: #2a2b31;
+    --muted: #9aa0a6;
+    --qb: #ff6b5e; --rb: #3ecf7a; --wr: #5aa9e6; --te: #ff9d4d;
+    --dst: #c58be6; --k: #9aa0a6;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+       margin: 0; font-size: 14px; line-height: 1.3;
+       background: var(--bg); color: var(--fg);
+       -webkit-tap-highlight-color: transparent; }
+h3 { margin: 0 0 6px; font-size: 14px; }
+
+#topbar { position: sticky; top: 0; z-index: 20; background: var(--panel);
+          border-bottom: 1px solid var(--border); padding: 8px 12px;
+          display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: flex-start; }
+.tb-block { font-size: 13px; }
+.tb-block .lbl { font-weight: 700; display: block; margin-bottom: 2px; }
+#clock.mine { background: var(--accent-green); color: #fff; padding: 3px 8px;
+              border-radius: 4px; display: inline-block; }
+#clock.mine .big { color: #fff; }
+.big { font-size: 16px; font-weight: 700; }
+
+.roster-grid { display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr));
+               gap: 1px 14px; font-size: 12px; }
+.rs { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rs .slot { display: inline-block; width: 42px; color: var(--muted); }
+.rs.filled .slot { color: inherit; }
+
+.counts span { display: inline-block; margin-right: 10px; font-variant-numeric: tabular-nums; }
+.counts .full { color: var(--accent-red); font-weight: 700; }
+
+/* M3: persistent bye-clash warning, sits full-width under the topbar blocks */
+.bye-warn { flex-basis: 100%; background: var(--accent-red); color: #fff;
+            padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 12px; }
+#byeWarn:empty { display: none; }
+
+#main-wrap { display: flex; gap: 14px; padding: 12px; align-items: flex-start; }
+#list-col { flex: 1 1 auto; min-width: 0; }
+#right-col { flex: 0 0 330px; }
+
+.controls { margin-bottom: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+button { font: inherit; padding: 4px 12px; cursor: pointer;
+         background: var(--panel); color: var(--fg);
+         border: 1px solid var(--border); border-radius: 4px; }
+#search { font: inherit; padding: 4px 8px; width: 220px;
+          background: var(--bg); color: var(--fg); border: 1px solid var(--border); }
+#search-wrap { margin-bottom: 8px; }
+
+.plist { max-height: 74vh; overflow: auto; border: 1px solid var(--border-soft);
+         border-radius: 4px; }
+.phead, .prow { display: grid;
+  grid-template-columns: 1.7fr 42px 46px 32px 52px 50px 52px;
+  gap: 6px; padding: 4px 8px; align-items: center; }
+.phead { position: sticky; top: 0; background: var(--panel);
+         border-bottom: 1px solid var(--border); font-weight: 700; font-size: 12px; }
+.prow { cursor: pointer; border-bottom: 1px solid var(--border-soft);
+        font-variant-numeric: tabular-nums; }
+.prow:hover { background: var(--row-active); }
+.prow .num { text-align: right; }
+.prow.excluded { opacity: 0.45; }
+.tiersep { border-top: 2px solid var(--border); }
+
+.pos { font-weight: 700; font-size: 12px; }
+.pos-QB { color: var(--qb); } .pos-RB { color: var(--rb); }
+.pos-WR { color: var(--wr); } .pos-TE { color: var(--te); }
+.pos-DST { color: var(--dst); } .pos-K { color: var(--k); }
+
+#right-col .panel { border: 1px solid var(--border-soft); border-radius: 4px;
+                    padding: 8px 10px; margin-bottom: 12px; }
+.rec { padding: 5px 0; border-bottom: 1px solid var(--border-soft); }
+.rec:last-child { border-bottom: 0; }
+.rec .nm { font-weight: 700; }
+.rec .why { font-size: 12px; color: var(--muted); }
+.bestpos div { padding: 3px 0; font-size: 13px; }
+
+/* Plain view keeps .controls visible so Undo / the toggle stay reachable. */
+body.plain #topbar .chrome, body.plain #right-col,
+body.plain #search-wrap { display: none; }
+body.plain .prow { cursor: default; }
+.done-banner { background: var(--accent-red); color: #fff; padding: 4px 10px;
+               border-radius: 4px; }
+
+/* name cell: ellipsis + min-width:0 so a long name can never widen the grid */
+.pname { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ---- init / setup screen ---- */
+#initScreen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 100;
+              background: var(--bg); display: flex; align-items: flex-start;
+              justify-content: center; overflow-y: auto; padding: 24px 16px; }
+#initScreen.hidden { display: none; }
+.init-card { width: 100%; max-width: 460px; }
+.init-card h2 { margin: 4px 0 16px; }
+.init-q { font-weight: 700; margin: 18px 0 8px; }
+.init-sub { font-weight: 400; color: var(--muted); font-size: 12px; }
+.init-note { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+.team-btns { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.team-btns button { min-height: 48px; font-size: 16px; font-weight: 700;
+                    border: 1px solid var(--border); border-radius: 6px;
+                    background: var(--panel); color: var(--fg); cursor: pointer; }
+.team-btns button.sel { background: var(--accent-green); color: #fff;
+                        border-color: var(--accent-green); }
+#initSlot { min-height: 44px; font: inherit; width: 100%; margin-top: 4px;
+            background: var(--bg); color: var(--fg); border: 1px solid var(--border); }
+.init-start { margin-top: 22px; width: 100%; min-height: 50px; font-size: 16px;
+              font-weight: 700; border: 0; border-radius: 6px;
+              background: var(--accent-green); color: #fff; cursor: pointer; }
+#leagueInfo { font-size: 13px; }
+
+/* ---- phone / narrow screens (<= ~700px): single column ---- */
+@media (max-width: 700px) {
+  body { font-size: 15px; padding-bottom: 76px; }   /* clearance for floating Undo */
+  #topbar { max-height: 42vh; overflow-y: auto; gap: 8px 18px; }
+  #main-wrap { flex-direction: column; padding: 8px; gap: 10px; }
+  #list-col, #right-col { flex: 1 1 auto; width: 100%; min-width: 0; }
+  #right-col { order: -1; }                 /* RECOMMENDED NOW above the list */
+  #right-col .panel { margin-bottom: 8px; }
+  .roster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .controls { gap: 6px; }
+  .controls button { min-height: 44px; padding: 10px 14px; flex: 1 1 auto; }
+  #search { width: 100%; min-height: 44px; }
+  .plist { max-height: 72vh; overflow-x: hidden; }  /* list scrolls independently */
+  .prow, .phead { min-height: 44px; }
+  .prow:active { background: var(--row-active); }
+  /* floating Undo — always reachable without scrolling, vs the 90s pick clock */
+  #undoBtn { position: fixed; right: 14px; bottom: 14px; z-index: 50;
+             min-height: 52px; padding: 0 24px; border-radius: 26px;
+             box-shadow: 0 3px 12px rgba(0,0,0,0.5); background: var(--accent-red);
+             color: #fff; border: 0; font-weight: 700; flex: 0 0 auto; }
+}
+
+/* ---- very narrow (<= 480px): drop Bye + Proj columns ---- */
+@media (max-width: 480px) {
+  /* keep: name / pos / team / VBD / tier */
+  .phead, .prow { grid-template-columns: minmax(0, 1.6fr) 34px 40px 46px 44px; gap: 5px; }
+  .phead > :nth-child(4), .phead > :nth-child(5),
+  .prow  > :nth-child(4), .prow  > :nth-child(5) { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div id="initScreen">
+  <div class="init-card">
+    <h2>B1 Boyzz &mdash; Draft Setup</h2>
+    <p class="init-q">How many teams are in your league?</p>
+    <div id="teamBtns" class="team-btns"></div>
+    <p class="init-note">The league started at 10. If people were added, set the real
+      number here &mdash; it recalculates every player's value and the draft length.</p>
+    <p class="init-q">Your draft slot <span class="init-sub">(optional now &mdash; set it once the order is posted)</span></p>
+    <select id="initSlot"><option value="">-- not set yet --</option></select>
+    <button id="initStart" class="init-start">Start draft board</button>
+  </div>
+</div>
+
+<div id="topbar">
+  <div class="tb-block">
+    <span class="lbl">My draft slot</span>
+    <select id="slotSel"><option value="">-- pick --</option></select>
+  </div>
+  <div class="tb-block chrome">
+    <span class="lbl">League</span>
+    <span id="leagueInfo"></span>
+  </div>
+  <div class="tb-block chrome">
+    <span class="lbl">On the clock</span>
+    <span id="clock"></span>
+  </div>
+  <div class="tb-block chrome">
+    <span class="lbl">My roster</span>
+    <div class="roster-grid" id="rosterGrid"></div>
+  </div>
+  <div class="tb-block chrome">
+    <span class="lbl">Position counts</span>
+    <div class="counts" id="countsRow"></div>
+  </div>
+  <div id="byeWarn" class="bye-warn"></div>
+</div>
+
+<div id="main-wrap">
+  <div id="list-col">
+    <div class="controls">
+      <button id="undoBtn">Undo</button>
+      <button id="resetBtn">Reset</button>
+      <button id="plainBtn">Plain view</button>
+      <button id="setupBtn">&#9881; Setup</button>
+    </div>
+    <div id="search-wrap">
+      <input id="search" type="search" placeholder="filter available players...">
+    </div>
+    <div id="banner"></div>
+    <div class="plist" id="plist"></div>
+  </div>
+  <div id="right-col">
+    <div class="panel">
+      <h3>Recommended now</h3>
+      <div id="recs"></div>
+    </div>
+    <div class="panel">
+      <h3>Best available by position</h3>
+      <div class="bestpos" id="bestpos"></div>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="players">[{"id": 4429795, "name": "Jahmyr Gibbs", "pos": "RB", "pro_team": "DET", "bye": 6, "proj": 364.86, "raw_vbd": 162.0, "tier": 1, "tier_label": "RB1", "espn_draft_rank": 1}, {"id": 4430807, "name": "Bijan Robinson", "pos": "RB", "pro_team": "ATL", "bye": 11, "proj": 352.77, "raw_vbd": 149.91, "tier": 1, "tier_label": "RB1", "espn_draft_rank": 2}, {"id": 4426515, "name": "Puka Nacua", "pos": "WR", "pro_team": "LAR", "bye": 11, "proj": 356.29, "raw_vbd": 146.78, "tier": 1, "tier_label": "WR1", "espn_draft_rank": 4}, {"id": 3117251, "name": "Christian McCaffrey", "pos": "RB", "pro_team": "SF", "bye": 8, "proj": 342.8, "raw_vbd": 139.94, "tier": 1, "tier_label": "RB1", "espn_draft_rank": 6}, {"id": 4362628, "name": "Ja'Marr Chase", "pos": "WR", "pro_team": "CIN", "bye": 6, "proj": 337.5, "raw_vbd": 127.99, "tier": 2, "tier_label": "WR2", "espn_draft_rank": 3}, {"id": 4430878, "name": "Jaxon Smith-Njigba", "pos": "WR", "pro_team": "SEA", "bye": 11, "proj": 326.74, "raw_vbd": 117.23, "tier": 3, "tier_label": "WR3", "espn_draft_rank": 5}, {"id": 4374302, "name": "Amon-Ra St. Brown", "pos": "WR", "pro_team": "DET", "bye": 6, "proj": 323.95, "raw_vbd": 114.44, "tier": 3, "tier_label": "WR3", "espn_draft_rank": 8}, {"id": 4242335, "name": "Jonathan Taylor", "pos": "RB", "pro_team": "IND", "bye": 13, "proj": 316.51, "raw_vbd": 113.65, "tier": 2, "tier_label": "RB2", "espn_draft_rank": 7}, {"id": 4429160, "name": "De'Von Achane", "pos": "RB", "pro_team": "MIA", "bye": 6, "proj": 293.39, "raw_vbd": 90.53, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 13}, {"id": 4262921, "name": "Justin Jefferson", "pos": "WR", "pro_team": "MIN", "bye": 6, "proj": 293.71, "raw_vbd": 84.2, "tier": 4, "tier_label": "WR4", "espn_draft_rank": 10}, {"id": 4241389, "name": "CeeDee Lamb", "pos": "WR", "pro_team": "DAL", "bye": 14, "proj": 293.69, "raw_vbd": 84.18, "tier": 4, "tier_label": "WR4", "espn_draft_rank": 9}, {"id": 3918298, "name": "Josh Allen", "pos": "QB", "pro_team": "BUF", "bye": 7, "proj": 369.69, "raw_vbd": 81.35, "tier": 1, "tier_label": "QB1", "espn_draft_rank": 36}, {"id": 4890973, "name": "Ashton Jeanty", "pos": "RB", "pro_team": "LV", "bye": 13, "proj": 280.85, "raw_vbd": 77.99, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 16}, {"id": 4379399, "name": "James Cook III", "pos": "RB", "pro_team": "BUF", "bye": 7, "proj": 279.62, "raw_vbd": 76.76, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 12}, {"id": 4870808, "name": "Jeremiyah Love", "pos": "RB", "pro_team": "ARI", "bye": 14, "proj": 278.47, "raw_vbd": 75.61, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 17}, {"id": 3043078, "name": "Derrick Henry", "pos": "RB", "pro_team": "BAL", "bye": 13, "proj": 274.74, "raw_vbd": 71.88, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 11}, {"id": 4567048, "name": "Kenneth Walker III", "pos": "RB", "pro_team": "KC", "bye": 5, "proj": 274.19, "raw_vbd": 71.33, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 18}, {"id": 4427366, "name": "Breece Hall", "pos": "RB", "pro_team": "NYJ", "bye": 13, "proj": 273.99, "raw_vbd": 71.13, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 22}, {"id": 3929630, "name": "Saquon Barkley", "pos": "RB", "pro_team": "PHI", "bye": 10, "proj": 273.61, "raw_vbd": 70.75, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 15}, {"id": 4362238, "name": "Chase Brown", "pos": "RB", "pro_team": "CIN", "bye": 6, "proj": 272.08, "raw_vbd": 69.22, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 23}, {"id": 4361307, "name": "Trey McBride", "pos": "TE", "pro_team": "ARI", "bye": 14, "proj": 241.87, "raw_vbd": 64.82, "tier": 1, "tier_label": "TE1", "espn_draft_rank": 20}, {"id": 4432665, "name": "Brock Bowers", "pos": "TE", "pro_team": "LV", "bye": 13, "proj": 240.94, "raw_vbd": 63.89, "tier": 1, "tier_label": "TE1", "espn_draft_rank": 21}, {"id": 4426502, "name": "Drake London", "pos": "WR", "pro_team": "ATL", "bye": 11, "proj": 269.76, "raw_vbd": 60.25, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 14}, {"id": 4685382, "name": "Omarion Hampton", "pos": "RB", "pro_team": "LAC", "bye": 7, "proj": 261.71, "raw_vbd": 58.85, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 19}, {"id": 4361579, "name": "Javonte Williams", "pos": "RB", "pro_team": "DAL", "bye": 14, "proj": 259.72, "raw_vbd": 56.86, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 32}, {"id": 4047365, "name": "Josh Jacobs", "pos": "RB", "pro_team": "GB", "bye": 11, "proj": 259.1, "raw_vbd": 56.24, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 30}, {"id": 4428331, "name": "Rashee Rice", "pos": "WR", "pro_team": "KC", "bye": 5, "proj": 260.5, "raw_vbd": 50.99, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 24}, {"id": 4239996, "name": "Travis Etienne Jr.", "pos": "RB", "pro_team": "NO", "bye": 8, "proj": 246.13, "raw_vbd": 43.27, "tier": 3, "tier_label": "RB3", "espn_draft_rank": 38}, {"id": 4361370, "name": "Chris Olave", "pos": "WR", "pro_team": "NO", "bye": 8, "proj": 250.44, "raw_vbd": 40.93, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 29}, {"id": 4569618, "name": "Garrett Wilson", "pos": "WR", "pro_team": "NYJ", "bye": 13, "proj": 249.4, "raw_vbd": 39.89, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 43}, {"id": 4047646, "name": "A.J. Brown", "pos": "WR", "pro_team": "NE", "bye": 11, "proj": 248.84, "raw_vbd": 39.33, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 26}, {"id": 4258173, "name": "Nico Collins", "pos": "WR", "pro_team": "HOU", "bye": 8, "proj": 248.26, "raw_vbd": 38.75, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 25}, {"id": 4595348, "name": "Malik Nabers", "pos": "WR", "pro_team": "NYG", "bye": 8, "proj": 245.72, "raw_vbd": 36.21, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 27}, {"id": 3916387, "name": "Lamar Jackson", "pos": "QB", "pro_team": "BAL", "bye": 13, "proj": 322.93, "raw_vbd": 34.59, "tier": 2, "tier_label": "QB2", "espn_draft_rank": 58}, {"id": 4431459, "name": "Tyler Warren", "pos": "TE", "pro_team": "IND", "bye": 13, "proj": 210.87, "raw_vbd": 33.82, "tier": 2, "tier_label": "TE2", "espn_draft_rank": 51}, {"id": 4040715, "name": "Jalen Hurts", "pos": "QB", "pro_team": "PHI", "bye": 10, "proj": 320.29, "raw_vbd": 31.95, "tier": 2, "tier_label": "QB2", "espn_draft_rank": 62}, {"id": 4431452, "name": "Drake Maye", "pos": "QB", "pro_team": "NE", "bye": 11, "proj": 319.39, "raw_vbd": 31.05, "tier": 2, "tier_label": "QB2", "espn_draft_rank": 60}, {"id": -16007, "name": "Broncos D/ST", "pos": "DST", "pro_team": "DEN", "bye": 10, "proj": 130.59, "raw_vbd": 30.3, "tier": 1, "tier_label": "DST1", "espn_draft_rank": 225}, {"id": 4426348, "name": "Jayden Daniels", "pos": "QB", "pro_team": "WSH", "bye": 7, "proj": 318.38, "raw_vbd": 30.04, "tier": 2, "tier_label": "QB2", "espn_draft_rank": 56}, {"id": -16034, "name": "Texans D/ST", "pos": "DST", "pro_team": "HOU", "bye": 8, "proj": 130.32, "raw_vbd": 30.03, "tier": 1, "tier_label": "DST1", "espn_draft_rank": 223}, {"id": 4241478, "name": "DeVonta Smith", "pos": "WR", "pro_team": "PHI", "bye": 10, "proj": 239.24, "raw_vbd": 29.73, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 44}, {"id": 4429615, "name": "Zay Flowers", "pos": "WR", "pro_team": "BAL", "bye": 13, "proj": 238.78, "raw_vbd": 29.27, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 35}, {"id": 4430737, "name": "Kyren Williams", "pos": "RB", "pro_team": "LAR", "bye": 11, "proj": 232.11, "raw_vbd": 29.25, "tier": 4, "tier_label": "RB4", "espn_draft_rank": 39}, {"id": 4426354, "name": "George Pickens", "pos": "WR", "pro_team": "DAL", "bye": 14, "proj": 238.61, "raw_vbd": 29.1, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 28}, {"id": 4723086, "name": "Colston Loveland", "pos": "TE", "pro_team": "CHI", "bye": 10, "proj": 205.92, "raw_vbd": 28.87, "tier": 2, "tier_label": "TE2", "espn_draft_rank": 50}, {"id": 3953687, "name": "Brandon Aubrey", "pos": "K", "pro_team": "DAL", "bye": 14, "proj": 171.66, "raw_vbd": 27.25, "tier": 1, "tier_label": "K1", "espn_draft_rank": 240}, {"id": 4685472, "name": "Tetairoa McMillan", "pos": "WR", "pro_team": "CAR", "bye": 5, "proj": 236.47, "raw_vbd": 26.96, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 34}, {"id": 4685702, "name": "Quinshon Judkins", "pos": "RB", "pro_team": "CLE", "bye": 11, "proj": 227.43, "raw_vbd": 24.57, "tier": 4, "tier_label": "RB4", "espn_draft_rank": 40}, {"id": 4696981, "name": "Cam Skattebo", "pos": "RB", "pro_team": "NYG", "bye": 8, "proj": 227.15, "raw_vbd": 24.29, "tier": 4, "tier_label": "RB4", "espn_draft_rank": 41}, {"id": 16800, "name": "Davante Adams", "pos": "WR", "pro_team": "LAR", "bye": 11, "proj": 232.31, "raw_vbd": 22.8, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 31}, {"id": -16023, "name": "Steelers D/ST", "pos": "DST", "pro_team": "PIT", "bye": 9, "proj": 122.73, "raw_vbd": 22.44, "tier": 2, "tier_label": "DST2", "espn_draft_rank": 227}, {"id": -16026, "name": "Seahawks D/ST", "pos": "DST", "pro_team": "SEA", "bye": 11, "proj": 122.31, "raw_vbd": 22.02, "tier": 2, "tier_label": "DST2", "espn_draft_rank": 228}, {"id": -16014, "name": "Rams D/ST", "pos": "DST", "pro_team": "LAR", "bye": 11, "proj": 121.94, "raw_vbd": 21.65, "tier": 2, "tier_label": "DST2", "espn_draft_rank": 229}, {"id": -16033, "name": "Ravens D/ST", "pos": "DST", "pro_team": "BAL", "bye": 13, "proj": 120.01, "raw_vbd": 19.72, "tier": 2, "tier_label": "DST2", "espn_draft_rank": 230}, {"id": 4567750, "name": "Emeka Egbuka", "pos": "WR", "pro_team": "TB", "bye": 10, "proj": 229.04, "raw_vbd": 19.53, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 33}, {"id": 4362081, "name": "Cameron Dicker", "pos": "K", "pro_team": "LAC", "bye": 7, "proj": 161.89, "raw_vbd": 17.48, "tier": 2, "tier_label": "K2", "espn_draft_rank": 241}, {"id": 3915511, "name": "Joe Burrow", "pos": "QB", "pro_team": "CIN", "bye": 6, "proj": 304.76, "raw_vbd": 16.42, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 81}, {"id": 4574716, "name": "Harrison Mevis", "pos": "K", "pro_team": "LAR", "bye": 11, "proj": 159.53, "raw_vbd": 15.12, "tier": 2, "tier_label": "K2", "espn_draft_rank": 243}, {"id": 2473037, "name": "Jason Myers", "pos": "K", "pro_team": "SEA", "bye": 11, "proj": 158.51, "raw_vbd": 14.1, "tier": 2, "tier_label": "K2", "espn_draft_rank": 242}, {"id": 2971573, "name": "Ka'imi Fairbairn", "pos": "K", "pro_team": "HOU", "bye": 8, "proj": 157.86, "raw_vbd": 13.45, "tier": 2, "tier_label": "K2", "espn_draft_rank": 246}, {"id": 5083076, "name": "Harold Fannin Jr.", "pos": "TE", "pro_team": "CLE", "bye": 11, "proj": 189.18, "raw_vbd": 12.13, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 79}, {"id": 3040151, "name": "George Kittle", "pos": "TE", "pro_team": "SF", "bye": 8, "proj": 188.88, "raw_vbd": 11.83, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 124}, {"id": 4430027, "name": "Sam LaPorta", "pos": "TE", "pro_team": "DET", "bye": 6, "proj": 188.6, "raw_vbd": 11.55, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 80}, {"id": 4612826, "name": "Ladd McConkey", "pos": "WR", "pro_team": "LAC", "bye": 7, "proj": 221.04, "raw_vbd": 11.53, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 48}, {"id": 4689114, "name": "Jaxson Dart", "pos": "QB", "pro_team": "NYG", "bye": 8, "proj": 299.76, "raw_vbd": 11.42, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 85}, {"id": 4034949, "name": "Eddy Pineiro", "pos": "K", "pro_team": "SF", "bye": 8, "proj": 155.32, "raw_vbd": 10.91, "tier": 2, "tier_label": "K2", "espn_draft_rank": 248}, {"id": 4239993, "name": "Tee Higgins", "pos": "WR", "pro_team": "CIN", "bye": 6, "proj": 219.34, "raw_vbd": 9.83, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 47}, {"id": 3121422, "name": "Terry McLaurin", "pos": "WR", "pro_team": "WSH", "bye": 7, "proj": 218.72, "raw_vbd": 9.21, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 46}, {"id": 4259545, "name": "D'Andre Swift", "pos": "RB", "pro_team": "CHI", "bye": 10, "proj": 211.68, "raw_vbd": 8.82, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 64}, {"id": 4360248, "name": "Kyle Pitts Sr.", "pos": "TE", "pro_team": "ATL", "bye": 11, "proj": 185.13, "raw_vbd": 8.08, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 78}, {"id": 4426338, "name": "Bo Nix", "pos": "QB", "pro_team": "DEN", "bye": 10, "proj": 296.22, "raw_vbd": 7.88, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 97}, {"id": -16008, "name": "Lions D/ST", "pos": "DST", "pro_team": "DET", "bye": 6, "proj": 107.82, "raw_vbd": 7.53, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 237}, {"id": -16021, "name": "Eagles D/ST", "pos": "DST", "pro_team": "PHI", "bye": 10, "proj": 106.71, "raw_vbd": 6.42, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 232}, {"id": 12483, "name": "Matthew Stafford", "pos": "QB", "pro_team": "LAR", "bye": 11, "proj": 293.2, "raw_vbd": 4.86, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 102}, {"id": 3055899, "name": "Harrison Butker", "pos": "K", "pro_team": "KC", "bye": 5, "proj": 148.77, "raw_vbd": 4.36, "tier": 3, "tier_label": "K3", "espn_draft_rank": 249}, {"id": 4596448, "name": "Bucky Irving", "pos": "RB", "pro_team": "TB", "bye": 10, "proj": 207.08, "raw_vbd": 4.22, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 42}, {"id": 4361741, "name": "Brock Purdy", "pos": "QB", "pro_team": "SF", "bye": 8, "proj": 292.48, "raw_vbd": 4.14, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 99}, {"id": 4372016, "name": "Jaylen Waddle", "pos": "WR", "pro_team": "DEN", "bye": 10, "proj": 213.28, "raw_vbd": 3.77, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 52}, {"id": -16005, "name": "Browns D/ST", "pos": "DST", "pro_team": "CLE", "bye": 11, "proj": 103.93, "raw_vbd": 3.64, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 235}, {"id": 4572680, "name": "Tucker Kraft", "pos": "TE", "pro_team": "GB", "bye": 11, "proj": 180.67, "raw_vbd": 3.62, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 125}, {"id": 4431299, "name": "Rome Odunze", "pos": "WR", "pro_team": "CHI", "bye": 10, "proj": 212.64, "raw_vbd": 3.13, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 45}, {"id": 3139477, "name": "Patrick Mahomes", "pos": "QB", "pro_team": "KC", "bye": 5, "proj": 291.29, "raw_vbd": 2.95, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 114}, {"id": 4686361, "name": "Cam Little", "pos": "K", "pro_team": "JAX", "bye": 7, "proj": 146.85, "raw_vbd": 2.44, "tier": 3, "tier_label": "K3", "espn_draft_rank": 251}, {"id": 4882093, "name": "Bhayshul Tuten", "pos": "RB", "pro_team": "JAX", "bye": 7, "proj": 205.29, "raw_vbd": 2.43, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 66}, {"id": 4697745, "name": "Tyler Loop", "pos": "K", "pro_team": "BAL", "bye": 13, "proj": 146.03, "raw_vbd": 1.62, "tier": 3, "tier_label": "K3", "espn_draft_rank": 255}, {"id": 4689936, "name": "Jake Bates", "pos": "K", "pro_team": "DET", "bye": 6, "proj": 145.85, "raw_vbd": 1.44, "tier": 3, "tier_label": "K3", "espn_draft_rank": 252}, {"id": 15847, "name": "Travis Kelce", "pos": "TE", "pro_team": "KC", "bye": 5, "proj": 177.92, "raw_vbd": 0.87, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 127}, {"id": -16012, "name": "Chiefs D/ST", "pos": "DST", "pro_team": "KC", "bye": 5, "proj": 100.36, "raw_vbd": 0.07, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 238}, {"id": 4360310, "name": "Trevor Lawrence", "pos": "QB", "pro_team": "JAX", "bye": 7, "proj": 288.34, "raw_vbd": 0.0, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 93}, {"id": 3915416, "name": "DJ Moore", "pos": "WR", "pro_team": "BUF", "bye": 7, "proj": 209.51, "raw_vbd": 0.0, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 53}, {"id": 4569173, "name": "Rhamondre Stevenson", "pos": "RB", "pro_team": "NE", "bye": 11, "proj": 202.86, "raw_vbd": 0.0, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 69}, {"id": 3121023, "name": "Dallas Goedert", "pos": "TE", "pro_team": "PHI", "bye": 10, "proj": 177.05, "raw_vbd": 0.0, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 126}, {"id": 17427, "name": "Cairo Santos", "pos": "K", "pro_team": "CHI", "bye": 10, "proj": 144.41, "raw_vbd": 0.0, "tier": 3, "tier_label": "K3", "espn_draft_rank": 256}, {"id": -16017, "name": "Patriots D/ST", "pos": "DST", "pro_team": "NE", "bye": 11, "proj": 100.29, "raw_vbd": 0.0, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 236}, {"id": 4869461, "name": "Trey Smack", "pos": "K", "pro_team": "GB", "bye": 11, "proj": 144.0, "raw_vbd": -0.41, "tier": 3, "tier_label": "K3", "espn_draft_rank": 410}, {"id": 4426388, "name": "Jameson Williams", "pos": "WR", "pro_team": "DET", "bye": 6, "proj": 208.4, "raw_vbd": -1.11, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 49}, {"id": 2577417, "name": "Dak Prescott", "pos": "QB", "pro_team": "DAL", "bye": 14, "proj": 286.85, "raw_vbd": -1.49, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 95}, {"id": 17372, "name": "Chris Boswell", "pos": "K", "pro_team": "PIT", "bye": 9, "proj": 142.86, "raw_vbd": -1.55, "tier": 3, "tier_label": "K3", "espn_draft_rank": 338}, {"id": 4567104, "name": "Will Reichard", "pos": "K", "pro_team": "MIN", "bye": 6, "proj": 142.23, "raw_vbd": -2.18, "tier": 3, "tier_label": "K3", "espn_draft_rank": 259}, {"id": 3150744, "name": "Chase McLaughlin", "pos": "K", "pro_team": "TB", "bye": 10, "proj": 142.2, "raw_vbd": -2.21, "tier": 3, "tier_label": "K3", "espn_draft_rank": 339}, {"id": 4360234, "name": "Evan McPherson", "pos": "K", "pro_team": "CIN", "bye": 6, "proj": 142.14, "raw_vbd": -2.27, "tier": 3, "tier_label": "K3", "espn_draft_rank": 363}, {"id": 10621, "name": "Nick Folk", "pos": "K", "pro_team": "ATL", "bye": 11, "proj": 141.27, "raw_vbd": -3.14, "tier": 3, "tier_label": "K3", "espn_draft_rank": 364}, {"id": 4685278, "name": "Luther Burden III", "pos": "WR", "pro_team": "CHI", "bye": 10, "proj": 205.87, "raw_vbd": -3.64, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 54}, {"id": 4038941, "name": "Justin Herbert", "pos": "QB", "pro_team": "LAC", "bye": 7, "proj": 283.64, "raw_vbd": -4.7, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 112}, {"id": 3128429, "name": "Courtland Sutton", "pos": "WR", "pro_team": "DEN", "bye": 10, "proj": 204.35, "raw_vbd": -5.16, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 55}, {"id": -16024, "name": "Chargers D/ST", "pos": "DST", "pro_team": "LAC", "bye": 7, "proj": 94.84, "raw_vbd": -5.45, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 239}, {"id": 4432710, "name": "TreVeyon Henderson", "pos": "RB", "pro_team": "NE", "bye": 11, "proj": 197.38, "raw_vbd": -5.48, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 120}, {"id": 3051909, "name": "Daniel Carlson", "pos": "K", "pro_team": "NO", "bye": 8, "proj": 137.93, "raw_vbd": -6.48, "tier": 3, "tier_label": "K3", "espn_draft_rank": 487}, {"id": 4431611, "name": "Caleb Williams", "pos": "QB", "pro_team": "CHI", "bye": 10, "proj": 281.69, "raw_vbd": -6.65, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 104}, {"id": 4871023, "name": "Carnell Tate", "pos": "WR", "pro_team": "TEN", "bye": 9, "proj": 202.41, "raw_vbd": -7.1, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 72}, {"id": 5082424, "name": "Dominic Zvada", "pos": "K", "pro_team": "NYG", "bye": 8, "proj": 137.18, "raw_vbd": -7.23, "tier": 3, "tier_label": "K3", "espn_draft_rank": 491}, {"id": -16027, "name": "Buccaneers D/ST", "pos": "DST", "pro_team": "TB", "bye": 10, "proj": 92.8, "raw_vbd": -7.49, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 336}, {"id": 3917232, "name": "Tyler Bass", "pos": "K", "pro_team": "BUF", "bye": 7, "proj": 136.79, "raw_vbd": -7.62, "tier": 3, "tier_label": "K3", "espn_draft_rank": 490}, {"id": 3116365, "name": "Mark Andrews", "pos": "TE", "pro_team": "BAL", "bye": 13, "proj": 169.28, "raw_vbd": -7.77, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 134}, {"id": 2985659, "name": "Wil Lutz", "pos": "K", "pro_team": "DEN", "bye": 10, "proj": 135.87, "raw_vbd": -8.54, "tier": 3, "tier_label": "K3", "espn_draft_rank": 489}, {"id": 3050478, "name": "Jake Elliott", "pos": "K", "pro_team": "PHI", "bye": 10, "proj": 135.76, "raw_vbd": -8.65, "tier": 3, "tier_label": "K3", "espn_draft_rank": 411}, {"id": 4685512, "name": "Jadarian Price", "pos": "RB", "pro_team": "SEA", "bye": 11, "proj": 194.06, "raw_vbd": -8.8, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 68}, {"id": -16009, "name": "Packers D/ST", "pos": "DST", "pro_team": "GB", "bye": 11, "proj": 90.32, "raw_vbd": -9.97, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 337}, {"id": 4035538, "name": "David Montgomery", "pos": "RB", "pro_team": "HOU", "bye": 8, "proj": 192.56, "raw_vbd": -10.3, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 67}, {"id": 4242355, "name": "Jake Ferguson", "pos": "TE", "pro_team": "DAL", "bye": 14, "proj": 166.6, "raw_vbd": -10.45, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 138}, {"id": 5081335, "name": "Drew Stevens", "pos": "K", "pro_team": "WSH", "bye": 7, "proj": 133.77, "raw_vbd": -10.64, "tier": 3, "tier_label": "K3", "espn_draft_rank": 494}, {"id": 4569987, "name": "Jaylen Warren", "pos": "RB", "pro_team": "PIT", "bye": 9, "proj": 191.69, "raw_vbd": -11.17, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 118}, {"id": -16003, "name": "Bears D/ST", "pos": "DST", "pro_team": "CHI", "bye": 10, "proj": 88.96, "raw_vbd": -11.33, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 408}, {"id": -16018, "name": "Saints D/ST", "pos": "DST", "pro_team": "NO", "bye": 8, "proj": 88.81, "raw_vbd": -11.48, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 361}, {"id": 4259619, "name": "Blake Grupe", "pos": "K", "pro_team": "IND", "bye": 13, "proj": 132.79, "raw_vbd": -11.62, "tier": 3, "tier_label": "K3", "espn_draft_rank": 492}, {"id": 4035687, "name": "Michael Pittman Jr.", "pos": "WR", "pro_team": "PIT", "bye": 9, "proj": 197.34, "raw_vbd": -12.17, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 88}, {"id": 4047650, "name": "DK Metcalf", "pos": "WR", "pro_team": "PIT", "bye": 9, "proj": 195.94, "raw_vbd": -13.57, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 73}, {"id": 4569923, "name": "Andy Borregales", "pos": "K", "pro_team": "NE", "bye": 11, "proj": 129.12, "raw_vbd": -15.29, "tier": 3, "tier_label": "K3", "espn_draft_rank": 495}, {"id": 4432708, "name": "Marvin Harrison Jr.", "pos": "WR", "pro_team": "ARI", "bye": 14, "proj": 193.8, "raw_vbd": -15.71, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 74}, {"id": -16020, "name": "Jets D/ST", "pos": "DST", "pro_team": "NYJ", "bye": 13, "proj": 84.45, "raw_vbd": -15.84, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 409}, {"id": 3124679, "name": "Jason Sanders", "pos": "K", "pro_team": "NYJ", "bye": 13, "proj": 128.42, "raw_vbd": -15.99, "tier": 3, "tier_label": "K3", "espn_draft_rank": 504}, {"id": 4038815, "name": "Rico Dowdle", "pos": "RB", "pro_team": "PIT", "bye": 9, "proj": 186.09, "raw_vbd": -16.77, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 70}, {"id": 4243371, "name": "Riley Patterson", "pos": "K", "pro_team": "MIA", "bye": 6, "proj": 127.38, "raw_vbd": -17.03, "tier": 3, "tier_label": "K3", "espn_draft_rank": 496}, {"id": 3916148, "name": "Tony Pollard", "pos": "RB", "pro_team": "TEN", "bye": 9, "proj": 185.8, "raw_vbd": -17.06, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 119}, {"id": -16025, "name": "49ers D/ST", "pos": "DST", "pro_team": "SF", "bye": 8, "proj": 82.99, "raw_vbd": -17.3, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 424}, {"id": 4036133, "name": "T.J. Hockenson", "pos": "TE", "pro_team": "MIN", "bye": 6, "proj": 158.22, "raw_vbd": -18.83, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 207}, {"id": -16030, "name": "Jaguars D/ST", "pos": "DST", "pro_team": "JAX", "bye": 7, "proj": 81.38, "raw_vbd": -18.91, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 359}, {"id": 4249087, "name": "Matt Gay", "pos": "K", "pro_team": "LV", "bye": 13, "proj": 125.1, "raw_vbd": -19.31, "tier": 3, "tier_label": "K3", "espn_draft_rank": 497}, {"id": 3046779, "name": "Jared Goff", "pos": "QB", "pro_team": "DET", "bye": 6, "proj": 268.54, "raw_vbd": -19.8, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 171}, {"id": 4568263, "name": "Ryan Fitzgerald", "pos": "K", "pro_team": "CAR", "bye": 5, "proj": 124.07, "raw_vbd": -20.34, "tier": 3, "tier_label": "K3", "espn_draft_rank": 498}, {"id": 3124084, "name": "Joey Slye", "pos": "K", "pro_team": "TEN", "bye": 9, "proj": 123.36, "raw_vbd": -21.05, "tier": 3, "tier_label": "K3", "espn_draft_rank": 501}, {"id": 3917792, "name": "Daniel Jones", "pos": "QB", "pro_team": "IND", "bye": 13, "proj": 267.24, "raw_vbd": -21.1, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 173}, {"id": 4361050, "name": "Isaiah Likely", "pos": "TE", "pro_team": "NYG", "bye": 8, "proj": 155.55, "raw_vbd": -21.5, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 145}, {"id": -16006, "name": "Cowboys D/ST", "pos": "DST", "pro_team": "DAL", "bye": 14, "proj": 78.7, "raw_vbd": -21.59, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 425}, {"id": 4385690, "name": "Dalton Kincaid", "pos": "TE", "pro_team": "BUF", "bye": 7, "proj": 155.42, "raw_vbd": -21.63, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 135}, {"id": 4432620, "name": "Parker Washington", "pos": "WR", "pro_team": "JAX", "bye": 7, "proj": 187.25, "raw_vbd": -22.26, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 77}, {"id": 4360689, "name": "Tyler Shough", "pos": "QB", "pro_team": "NO", "bye": 8, "proj": 265.99, "raw_vbd": -22.35, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 167}, {"id": 4258620, "name": "Andre Szmyt", "pos": "K", "pro_team": "CLE", "bye": 11, "proj": 121.74, "raw_vbd": -22.67, "tier": 3, "tier_label": "K3", "espn_draft_rank": 503}, {"id": 4363538, "name": "Chad Ryland", "pos": "K", "pro_team": "ARI", "bye": 14, "proj": 121.66, "raw_vbd": -22.75, "tier": 3, "tier_label": "K3", "espn_draft_rank": 502}, {"id": 4360078, "name": "Alec Pierce", "pos": "WR", "pro_team": "IND", "bye": 13, "proj": 186.72, "raw_vbd": -22.79, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 76}, {"id": 3052587, "name": "Baker Mayfield", "pos": "QB", "pro_team": "TB", "bye": 10, "proj": 264.77, "raw_vbd": -23.57, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 191}, {"id": 4248528, "name": "Christian Watson", "pos": "WR", "pro_team": "GB", "bye": 11, "proj": 185.13, "raw_vbd": -24.38, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 75}, {"id": 4701936, "name": "Matthew Golden", "pos": "WR", "pro_team": "GB", "bye": 11, "proj": 184.96, "raw_vbd": -24.55, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 90}, {"id": 4371733, "name": "Kenny Gainwell", "pos": "RB", "pro_team": "TB", "bye": 10, "proj": 177.83, "raw_vbd": -25.03, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 132}, {"id": -16011, "name": "Colts D/ST", "pos": "DST", "pro_team": "IND", "bye": 13, "proj": 75.16, "raw_vbd": -25.13, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 426}, {"id": 3042519, "name": "Aaron Jones Sr.", "pos": "RB", "pro_team": "MIN", "bye": 6, "proj": 177.02, "raw_vbd": -25.84, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 151}, {"id": -16016, "name": "Vikings D/ST", "pos": "DST", "pro_team": "MIN", "bye": 6, "proj": 74.31, "raw_vbd": -25.98, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 427}, {"id": 4608686, "name": "Kyle Monangai", "pos": "RB", "pro_team": "CHI", "bye": 10, "proj": 176.19, "raw_vbd": -26.67, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 131}, {"id": -16004, "name": "Bengals D/ST", "pos": "DST", "pro_team": "CIN", "bye": 6, "proj": 73.47, "raw_vbd": -26.82, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 505}, {"id": 3046439, "name": "Hunter Henry", "pos": "TE", "pro_team": "NE", "bye": 11, "proj": 150.1, "raw_vbd": -26.95, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 146}, {"id": 3916433, "name": "Jakobi Meyers", "pos": "WR", "pro_team": "JAX", "bye": 7, "proj": 181.96, "raw_vbd": -27.55, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 106}, {"id": 4241985, "name": "J.K. Dobbins", "pos": "RB", "pro_team": "DEN", "bye": 10, "proj": 175.01, "raw_vbd": -27.85, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 121}, {"id": 16737, "name": "Mike Evans", "pos": "WR", "pro_team": "SF", "bye": 8, "proj": 180.87, "raw_vbd": -28.64, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 87}, {"id": 5083315, "name": "Kenyon Sadiq", "pos": "TE", "pro_team": "NYJ", "bye": 13, "proj": 147.94, "raw_vbd": -29.11, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 148}, {"id": 4036378, "name": "Jordan Love", "pos": "QB", "pro_team": "GB", "bye": 11, "proj": 258.98, "raw_vbd": -29.36, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 273}, {"id": 4241416, "name": "Chuba Hubbard", "pos": "RB", "pro_team": "CAR", "bye": 5, "proj": 172.93, "raw_vbd": -29.93, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 129}, {"id": -16019, "name": "Giants D/ST", "pos": "DST", "pro_team": "NYG", "bye": 8, "proj": 69.96, "raw_vbd": -30.33, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 506}, {"id": 4678008, "name": "Jonathon Brooks", "pos": "RB", "pro_team": "CAR", "bye": 5, "proj": 170.76, "raw_vbd": -32.1, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 117}, {"id": 4432773, "name": "Brian Thomas Jr.", "pos": "WR", "pro_team": "JAX", "bye": 7, "proj": 176.65, "raw_vbd": -32.86, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 89}, {"id": 4360761, "name": "Michael Wilson", "pos": "WR", "pro_team": "ARI", "bye": 14, "proj": 176.53, "raw_vbd": -32.98, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 107}, {"id": -16010, "name": "Titans D/ST", "pos": "DST", "pro_team": "TEN", "bye": 9, "proj": 66.71, "raw_vbd": -33.58, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 510}, {"id": 3929645, "name": "Juwan Johnson", "pos": "TE", "pro_team": "NO", "bye": 8, "proj": 143.45, "raw_vbd": -33.6, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 262}, {"id": 4569587, "name": "Wan'Dale Robinson", "pos": "WR", "pro_team": "TEN", "bye": 9, "proj": 175.02, "raw_vbd": -34.49, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 139}, {"id": 4430539, "name": "Brenton Strange", "pos": "TE", "pro_team": "JAX", "bye": 7, "proj": 142.47, "raw_vbd": -34.58, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 210}, {"id": 4683062, "name": "Xavier Worthy", "pos": "WR", "pro_team": "KC", "bye": 5, "proj": 173.72, "raw_vbd": -35.79, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 110}, {"id": 3917315, "name": "Kyler Murray", "pos": "QB", "pro_team": "MIN", "bye": 6, "proj": 250.6, "raw_vbd": -37.74, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 165}, {"id": -16029, "name": "Panthers D/ST", "pos": "DST", "pro_team": "CAR", "bye": 5, "proj": 62.27, "raw_vbd": -38.02, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 511}, {"id": 4697815, "name": "Rachaad White", "pos": "RB", "pro_team": "WSH", "bye": 7, "proj": 164.74, "raw_vbd": -38.12, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 150}, {"id": 4373678, "name": "Khalil Shakir", "pos": "WR", "pro_team": "BUF", "bye": 7, "proj": 171.12, "raw_vbd": -38.39, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 140}, {"id": -16028, "name": "Commanders D/ST", "pos": "DST", "pro_team": "WSH", "bye": 7, "proj": 61.34, "raw_vbd": -38.95, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 513}, {"id": 4429205, "name": "Jordan Addison", "pos": "WR", "pro_team": "MIN", "bye": 6, "proj": 170.5, "raw_vbd": -39.01, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 91}, {"id": 4362249, "name": "Jayden Reed", "pos": "WR", "pro_team": "GB", "bye": 11, "proj": 170.21, "raw_vbd": -39.3, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 111}, {"id": -16001, "name": "Falcons D/ST", "pos": "DST", "pro_team": "ATL", "bye": 11, "proj": 60.57, "raw_vbd": -39.72, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 515}, {"id": 4361411, "name": "Pat Freiermuth", "pos": "TE", "pro_team": "PIT", "bye": 9, "proj": 136.37, "raw_vbd": -40.68, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 296}, {"id": 4570037, "name": "Terrance Ferguson", "pos": "TE", "pro_team": "LAR", "bye": 11, "proj": 135.78, "raw_vbd": -41.27, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 147}, {"id": -16002, "name": "Bills D/ST", "pos": "DST", "pro_team": "BUF", "bye": 7, "proj": 58.53, "raw_vbd": -41.76, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 516}, {"id": 4432577, "name": "C.J. Stroud", "pos": "QB", "pro_team": "HOU", "bye": 8, "proj": 246.57, "raw_vbd": -41.77, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 276}, {"id": 4575131, "name": "Jacory Croskey-Merritt", "pos": "RB", "pro_team": "WSH", "bye": 7, "proj": 159.54, "raw_vbd": -43.32, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 123}, {"id": 4429096, "name": "Blake Corum", "pos": "RB", "pro_team": "LAR", "bye": 11, "proj": 159.37, "raw_vbd": -43.49, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 144}, {"id": 4429025, "name": "Quentin Johnston", "pos": "WR", "pro_team": "LAC", "bye": 7, "proj": 165.42, "raw_vbd": -44.09, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 108}, {"id": 3117256, "name": "Dalton Schultz", "pos": "TE", "pro_team": "HOU", "bye": 8, "proj": 132.91, "raw_vbd": -44.14, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 297}, {"id": 2976212, "name": "Stefon Diggs", "pos": "WR", "pro_team": "WSH", "bye": 7, "proj": 164.0, "raw_vbd": -45.51, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 154}, {"id": 3912547, "name": "Sam Darnold", "pos": "QB", "pro_team": "SEA", "bye": 11, "proj": 242.56, "raw_vbd": -45.78, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 280}, {"id": -16013, "name": "Raiders D/ST", "pos": "DST", "pro_team": "LV", "bye": 13, "proj": 53.87, "raw_vbd": -46.42, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 517}, {"id": 4428557, "name": "Tyjae Spears", "pos": "RB", "pro_team": "TEN", "bye": 9, "proj": 154.46, "raw_vbd": -48.4, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 177}, {"id": 4242512, "name": "Malik Willis", "pos": "QB", "pro_team": "MIA", "bye": 6, "proj": 239.09, "raw_vbd": -49.25, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 194}, {"id": -16022, "name": "Cardinals D/ST", "pos": "DST", "pro_team": "ARI", "bye": 14, "proj": 50.73, "raw_vbd": -49.56, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 518}, {"id": 4686728, "name": "Gunnar Helm", "pos": "TE", "pro_team": "TEN", "bye": 9, "proj": 126.97, "raw_vbd": -50.08, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 311}, {"id": 4685720, "name": "Bryce Young", "pos": "QB", "pro_team": "CAR", "bye": 5, "proj": 237.53, "raw_vbd": -50.81, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 313}, {"id": 4688813, "name": "Josh Downs", "pos": "WR", "pro_team": "IND", "bye": 13, "proj": 157.74, "raw_vbd": -51.77, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 156}, {"id": 3116165, "name": "Chris Godwin Jr.", "pos": "WR", "pro_team": "TB", "bye": 10, "proj": 157.39, "raw_vbd": -52.12, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 158}, {"id": 4360569, "name": "Jordan Mason", "pos": "RB", "pro_team": "MIN", "bye": 6, "proj": 150.53, "raw_vbd": -52.33, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 133}, {"id": 4568490, "name": "RJ Harvey", "pos": "RB", "pro_team": "DEN", "bye": 10, "proj": 149.52, "raw_vbd": -53.34, "tier": 5, "tier_label": "RB5", "espn_draft_rank": 175}, {"id": 4870653, "name": "KC Concepcion", "pos": "WR", "pro_team": "CLE", "bye": 11, "proj": 155.92, "raw_vbd": -53.59, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 141}, {"id": 4870795, "name": "Makai Lemon", "pos": "WR", "pro_team": "PHI", "bye": 10, "proj": 154.61, "raw_vbd": -54.9, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 157}, {"id": -16015, "name": "Dolphins D/ST", "pos": "DST", "pro_team": "MIA", "bye": 6, "proj": 44.71, "raw_vbd": -55.58, "tier": 3, "tier_label": "DST3", "espn_draft_rank": 519}, {"id": 4360635, "name": "Chig Okonkwo", "pos": "TE", "pro_team": "WSH", "bye": 7, "proj": 121.27, "raw_vbd": -55.78, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 310}, {"id": 15864, "name": "Geno Smith", "pos": "QB", "pro_team": "NYJ", "bye": 13, "proj": 232.3, "raw_vbd": -56.04, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 379}, {"id": 4367209, "name": "Greg Dulcich", "pos": "TE", "pro_team": "MIA", "bye": 6, "proj": 119.09, "raw_vbd": -57.96, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 366}, {"id": 4361432, "name": "Romeo Doubs", "pos": "WR", "pro_team": "NE", "bye": 11, "proj": 150.43, "raw_vbd": -59.08, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 160}, {"id": 4710714, "name": "De'Zhaun Stribling", "pos": "WR", "pro_team": "SF", "bye": 8, "proj": 149.92, "raw_vbd": -59.59, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 92}, {"id": 3126486, "name": "Deebo Samuel Sr.", "pos": "WR", "pro_team": "SF", "bye": 8, "proj": 149.56, "raw_vbd": -59.95, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 159}, {"id": 4695883, "name": "Jalen Coker", "pos": "WR", "pro_team": "CAR", "bye": 5, "proj": 147.21, "raw_vbd": -62.3, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 162}, {"id": 2576925, "name": "Darren Waller", "pos": "TE", "pro_team": "CAR", "bye": 5, "proj": 114.62, "raw_vbd": -62.43, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 365}, {"id": 4576297, "name": "AJ Barner", "pos": "TE", "pro_team": "SEA", "bye": 11, "proj": 113.78, "raw_vbd": -63.27, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 312}, {"id": 4032473, "name": "Rashid Shaheed", "pos": "WR", "pro_team": "SEA", "bye": 11, "proj": 144.48, "raw_vbd": -65.03, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 163}, {"id": 4832800, "name": "Denzel Boston", "pos": "WR", "pro_team": "CLE", "bye": 11, "proj": 142.33, "raw_vbd": -67.18, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 183}, {"id": 4688380, "name": "Cam Ward", "pos": "QB", "pro_team": "TEN", "bye": 9, "proj": 219.98, "raw_vbd": -68.36, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 315}, {"id": 4426385, "name": "Zach Charbonnet", "pos": "RB", "pro_team": "SEA", "bye": 11, "proj": 133.99, "raw_vbd": -68.87, "tier": 6, "tier_label": "RB6", "espn_draft_rank": 153}, {"id": 8439, "name": "Aaron Rodgers", "pos": "QB", "pro_team": "PIT", "bye": 9, "proj": 219.23, "raw_vbd": -69.11, "tier": 3, "tier_label": "QB3", "espn_draft_rank": 385}, {"id": 4241463, "name": "Jerry Jeudy", "pos": "WR", "pro_team": "CLE", "bye": 11, "proj": 140.07, "raw_vbd": -69.44, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 184}, {"id": 3051876, "name": "Evan Engram", "pos": "TE", "pro_team": "DEN", "bye": 10, "proj": 106.6, "raw_vbd": -70.45, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 413}, {"id": 4428718, "name": "Tre Tucker", "pos": "WR", "pro_team": "LV", "bye": 13, "proj": 137.98, "raw_vbd": -71.53, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 198}, {"id": 3123076, "name": "David Njoku", "pos": "TE", "pro_team": "LAC", "bye": 7, "proj": 104.35, "raw_vbd": -72.7, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 412}, {"id": 3925357, "name": "Calvin Ridley", "pos": "WR", "pro_team": "TEN", "bye": 9, "proj": 135.38, "raw_vbd": -74.13, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 187}, {"id": 4243331, "name": "Cade Otton", "pos": "TE", "pro_team": "TB", "bye": 10, "proj": 102.1, "raw_vbd": -74.95, "tier": 3, "tier_label": "TE3", "espn_draft_rank": 368}, {"id": 4429059, "name": "Woody Marks", "pos": "RB", "pro_team": "HOU", "bye": 8, "proj": 127.68, "raw_vbd": -75.18, "tier": 6, "tier_label": "RB6", "espn_draft_rank": 152}, {"id": 4430834, "name": "Jalen McMillan", "pos": "WR", "pro_team": "TB", "bye": 10, "proj": 132.91, "raw_vbd": -76.6, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 164}, {"id": 4361529, "name": "Isiah Pacheco", "pos": "RB", "pro_team": "DET", "bye": 6, "proj": 123.53, "raw_vbd": -79.33, "tier": 6, "tier_label": "RB6", "espn_draft_rank": 200}, {"id": 4597500, "name": "Adonai Mitchell", "pos": "WR", "pro_team": "NYJ", "bye": 13, "proj": 127.43, "raw_vbd": -82.08, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 189}, {"id": 15818, "name": "Keenan Allen", "pos": "WR", "pro_team": "IND", "bye": 13, "proj": 124.43, "raw_vbd": -85.08, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 212}, {"id": 4382466, "name": "Jalen Nailor", "pos": "WR", "pro_team": "LV", "bye": 13, "proj": 124.24, "raw_vbd": -85.27, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 199}, {"id": 3054850, "name": "Alvin Kamara", "pos": "RB", "pro_team": "NO", "bye": 8, "proj": 117.35, "raw_vbd": -85.51, "tier": 6, "tier_label": "RB6", "espn_draft_rank": 265}, {"id": 4569559, "name": "Devaughn Vele", "pos": "WR", "pro_team": "NO", "bye": 8, "proj": 123.79, "raw_vbd": -85.72, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 215}, {"id": 4360939, "name": "Rashod Bateman", "pos": "WR", "pro_team": "BAL", "bye": 13, "proj": 122.5, "raw_vbd": -87.01, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 213}, {"id": 4038441, "name": "Justice Hill", "pos": "RB", "pro_team": "BAL", "bye": 13, "proj": 114.19, "raw_vbd": -88.67, "tier": 6, "tier_label": "RB6", "espn_draft_rank": 268}, {"id": 2578570, "name": "Jacoby Brissett", "pos": "QB", "pro_team": "ARI", "bye": 14, "proj": 198.93, "raw_vbd": -89.41, "tier": 4, "tier_label": "QB4", "espn_draft_rank": 317}, {"id": 3116164, "name": "Mike Gesicki", "pos": "TE", "pro_team": "CIN", "bye": 6, "proj": 85.8, "raw_vbd": -91.25, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 417}, {"id": 4569603, "name": "Malik Washington", "pos": "WR", "pro_team": "MIA", "bye": 6, "proj": 114.9, "raw_vbd": -94.61, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 305}, {"id": 3886598, "name": "Jauan Jennings", "pos": "WR", "pro_team": "MIN", "bye": 6, "proj": 114.62, "raw_vbd": -94.89, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 283}, {"id": 4869645, "name": "Caleb Douglas", "pos": "WR", "pro_team": "MIA", "bye": 6, "proj": 114.55, "raw_vbd": -94.96, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 190}, {"id": 4429086, "name": "Michael Mayer", "pos": "TE", "pro_team": "LV", "bye": 13, "proj": 80.97, "raw_vbd": -96.08, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 441}, {"id": 4685415, "name": "Travis Hunter", "pos": "WR", "pro_team": "JAX", "bye": 7, "proj": 113.11, "raw_vbd": -96.4, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 109}, {"id": 4429022, "name": "Kayshon Boutte", "pos": "WR", "pro_team": "HOU", "bye": 8, "proj": 110.37, "raw_vbd": -99.14, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 304}, {"id": 4595342, "name": "Oronde Gadsden", "pos": "TE", "pro_team": "LAC", "bye": 7, "proj": 77.26, "raw_vbd": -99.79, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 416}, {"id": 4685261, "name": "Germie Bernard", "pos": "WR", "pro_team": "PIT", "bye": 9, "proj": 108.81, "raw_vbd": -100.7, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 287}, {"id": 4837248, "name": "Fernando Mendoza", "pos": "QB", "pro_team": "LV", "bye": 13, "proj": 187.56, "raw_vbd": -100.78, "tier": 4, "tier_label": "QB4", "espn_draft_rank": 383}, {"id": 4428850, "name": "Dontayvion Wicks", "pos": "WR", "pro_team": "PHI", "bye": 10, "proj": 108.21, "raw_vbd": -101.3, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 214}, {"id": 4242557, "name": "Colby Parkinson", "pos": "TE", "pro_team": "LAR", "bye": 11, "proj": 75.35, "raw_vbd": -101.7, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 418}, {"id": 3116389, "name": "Samaje Perine", "pos": "RB", "pro_team": "CIN", "bye": 6, "proj": 100.51, "raw_vbd": -102.35, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 321}, {"id": 4430802, "name": "Darnell Washington", "pos": "TE", "pro_team": "PIT", "bye": 9, "proj": 72.5, "raw_vbd": -104.55, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 445}, {"id": 4586312, "name": "Jaylin Noel", "pos": "WR", "pro_team": "HOU", "bye": 8, "proj": 103.66, "raw_vbd": -105.85, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 219}, {"id": 2977187, "name": "Cooper Kupp", "pos": "WR", "pro_team": "SEA", "bye": 11, "proj": 101.52, "raw_vbd": -107.99, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 322}, {"id": 3930086, "name": "Dawson Knox", "pos": "TE", "pro_team": "BUF", "bye": 7, "proj": 68.19, "raw_vbd": -108.86, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 460}, {"id": 4241474, "name": "Brian Robinson Jr.", "pos": "RB", "pro_team": "ATL", "bye": 11, "proj": 93.96, "raw_vbd": -108.9, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 179}, {"id": 4808766, "name": "Mason Taylor", "pos": "TE", "pro_team": "NYJ", "bye": 13, "proj": 68.13, "raw_vbd": -108.92, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 464}, {"id": 4596334, "name": "Keaton Mitchell", "pos": "RB", "pro_team": "LAC", "bye": 7, "proj": 93.89, "raw_vbd": -108.97, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 202}, {"id": 4870847, "name": "Ja'Kobi Lane", "pos": "WR", "pro_team": "BAL", "bye": 13, "proj": 100.46, "raw_vbd": -109.05, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 270}, {"id": 4880281, "name": "Jordyn Tyson", "pos": "WR", "pro_team": "NO", "bye": 8, "proj": 99.78, "raw_vbd": -109.73, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 197}, {"id": 4373626, "name": "Tyler Allgeier", "pos": "RB", "pro_team": "ARI", "bye": 14, "proj": 91.27, "raw_vbd": -111.59, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 181}, {"id": 4366031, "name": "Tank Dell", "pos": "WR", "pro_team": "HOU", "bye": 8, "proj": 95.89, "raw_vbd": -113.62, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 285}, {"id": 5081397, "name": "Dylan Sampson", "pos": "RB", "pro_team": "CLE", "bye": 11, "proj": 88.32, "raw_vbd": -114.54, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 222}, {"id": 4429148, "name": "Theo Johnson", "pos": "TE", "pro_team": "NYG", "bye": 8, "proj": 61.73, "raw_vbd": -115.32, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 465}, {"id": 4430034, "name": "Xavier Legette", "pos": "WR", "pro_team": "CAR", "bye": 5, "proj": 94.08, "raw_vbd": -115.43, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 326}, {"id": 4240472, "name": "Noah Gray", "pos": "TE", "pro_team": "KC", "bye": 5, "proj": 60.97, "raw_vbd": -116.08, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 468}, {"id": 4678006, "name": "Elijah Arroyo", "pos": "TE", "pro_team": "SEA", "bye": 11, "proj": 60.62, "raw_vbd": -116.43, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 459}, {"id": 4427834, "name": "Erick All Jr.", "pos": "TE", "pro_team": "CIN", "bye": 6, "proj": 60.52, "raw_vbd": -116.53, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 443}, {"id": 4429023, "name": "MarShawn Lloyd", "pos": "RB", "pro_team": "GB", "bye": 11, "proj": 86.28, "raw_vbd": -116.58, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 182}, {"id": 4361409, "name": "Jahan Dotson", "pos": "WR", "pro_team": "ATL", "bye": 11, "proj": 92.76, "raw_vbd": -116.75, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 327}, {"id": 3915411, "name": "Ty Johnson", "pos": "RB", "pro_team": "BUF", "bye": 7, "proj": 84.76, "raw_vbd": -118.1, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 324}, {"id": 4686612, "name": "Tre' Harris", "pos": "WR", "pro_team": "LAC", "bye": 7, "proj": 89.87, "raw_vbd": -119.64, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 289}, {"id": 5083754, "name": "Ryan Flournoy", "pos": "WR", "pro_team": "DAL", "bye": 14, "proj": 89.38, "raw_vbd": -120.13, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 293}, {"id": 3916945, "name": "Darius Slayton", "pos": "WR", "pro_team": "NYG", "bye": 8, "proj": 88.65, "raw_vbd": -120.86, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 328}, {"id": 4723820, "name": "Omar Cooper Jr.", "pos": "WR", "pro_team": "NYJ", "bye": 13, "proj": 87.4, "raw_vbd": -122.11, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 302}, {"id": 4258595, "name": "Cole Kmet", "pos": "TE", "pro_team": "CHI", "bye": 10, "proj": 53.6, "raw_vbd": -123.45, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 466}, {"id": 4241457, "name": "Najee Harris", "pos": "RB", "pro_team": "NYG", "bye": 8, "proj": 78.31, "raw_vbd": -124.55, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 260}, {"id": 4249417, "name": "Jalen Tolbert", "pos": "WR", "pro_team": "MIA", "bye": 6, "proj": 83.76, "raw_vbd": -125.75, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 329}, {"id": 4685247, "name": "Braelon Allen", "pos": "RB", "pro_team": "NYJ", "bye": 13, "proj": 76.64, "raw_vbd": -126.22, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 206}, {"id": 4870612, "name": "Zachariah Branch", "pos": "WR", "pro_team": "ATL", "bye": 11, "proj": 82.52, "raw_vbd": -126.99, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 300}, {"id": 4427095, "name": "DeMario Douglas", "pos": "WR", "pro_team": "NE", "bye": 11, "proj": 81.41, "raw_vbd": -128.1, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 330}, {"id": 4702555, "name": "Jonah Coleman", "pos": "RB", "pro_team": "DEN", "bye": 10, "proj": 74.47, "raw_vbd": -128.39, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 204}, {"id": 4362619, "name": "Chris Rodriguez Jr.", "pos": "RB", "pro_team": "JAX", "bye": 7, "proj": 71.44, "raw_vbd": -131.42, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 176}, {"id": 5081432, "name": "Antonio Williams", "pos": "WR", "pro_team": "WSH", "bye": 7, "proj": 77.83, "raw_vbd": -131.68, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 332}, {"id": 4362921, "name": "Tyquan Thornton", "pos": "WR", "pro_team": "KC", "bye": 5, "proj": 77.68, "raw_vbd": -131.83, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 333}, {"id": 4372780, "name": "Tommy Tremble", "pos": "TE", "pro_team": "CAR", "bye": 5, "proj": 43.63, "raw_vbd": -133.42, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 472}, {"id": 4635008, "name": "Keon Coleman", "pos": "WR", "pro_team": "BUF", "bye": 7, "proj": 75.43, "raw_vbd": -134.08, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 357}, {"id": 4431588, "name": "Ja'Tavion Sanders", "pos": "TE", "pro_team": "CAR", "bye": 5, "proj": 42.31, "raw_vbd": -134.74, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 467}, {"id": 5123663, "name": "Isaac TeSlaa", "pos": "WR", "pro_team": "DET", "bye": 6, "proj": 72.85, "raw_vbd": -136.66, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 358}, {"id": 4600981, "name": "Pat Bryant", "pos": "WR", "pro_team": "DEN", "bye": 10, "proj": 72.83, "raw_vbd": -136.68, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 369}, {"id": 4686658, "name": "Mike Washington Jr.", "pos": "RB", "pro_team": "LV", "bye": 13, "proj": 65.17, "raw_vbd": -137.69, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 205}, {"id": 4040655, "name": "Darnell Mooney", "pos": "WR", "pro_team": "NYG", "bye": 8, "proj": 71.66, "raw_vbd": -137.85, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 370}, {"id": 4429013, "name": "Tank Bigsby", "pos": "RB", "pro_team": "PHI", "bye": 10, "proj": 64.17, "raw_vbd": -138.69, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 220}, {"id": 4869961, "name": "Chris Bell", "pos": "WR", "pro_team": "MIA", "bye": 6, "proj": 70.64, "raw_vbd": -138.87, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 331}, {"id": 2573401, "name": "Tyler Higbee", "pos": "TE", "pro_team": "LAR", "bye": 11, "proj": 38.09, "raw_vbd": -138.96, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 470}, {"id": 4362478, "name": "Emari Demercado", "pos": "RB", "pro_team": "KC", "bye": 5, "proj": 63.86, "raw_vbd": -139.0, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 355}, {"id": 4686472, "name": "Marvin Mims Jr.", "pos": "WR", "pro_team": "DEN", "bye": 10, "proj": 69.91, "raw_vbd": -139.6, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 371}, {"id": 4831959, "name": "Eli Raridon", "pos": "TE", "pro_team": "NE", "bye": 11, "proj": 37.08, "raw_vbd": -139.97, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 1025}, {"id": 4682648, "name": "Malachi Fields", "pos": "WR", "pro_team": "NYG", "bye": 8, "proj": 68.58, "raw_vbd": -140.93, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 372}, {"id": 4696044, "name": "Kaelon Black", "pos": "RB", "pro_team": "SF", "bye": 8, "proj": 60.5, "raw_vbd": -142.36, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 307}, {"id": 3676833, "name": "KaVontae Turpin", "pos": "WR", "pro_team": "DAL", "bye": 14, "proj": 66.82, "raw_vbd": -142.69, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 390}, {"id": 4603186, "name": "Jack Bech", "pos": "WR", "pro_team": "LV", "bye": 13, "proj": 65.94, "raw_vbd": -143.57, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 391}, {"id": 4597703, "name": "Tory Horton", "pos": "WR", "pro_team": "SEA", "bye": 11, "proj": 65.49, "raw_vbd": -144.02, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 392}, {"id": 5208518, "name": "Charlie Smyth", "pos": "K", "pro_team": "NO", "bye": null, "proj": 0, "raw_vbd": -144.41, "tier": 4, "tier_label": "K4", "espn_draft_rank": null}, {"id": 15683, "name": "Justin Tucker", "pos": "K", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -144.41, "tier": 4, "tier_label": "K4", "espn_draft_rank": null}, {"id": 4372066, "name": "Jake Moody", "pos": "K", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -144.41, "tier": 4, "tier_label": "K4", "espn_draft_rank": null}, {"id": 3049899, "name": "Younghoe Koo", "pos": "K", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -144.41, "tier": 4, "tier_label": "K4", "espn_draft_rank": null}, {"id": 4566158, "name": "Ben Sauls", "pos": "K", "pro_team": "NYG", "bye": null, "proj": 0, "raw_vbd": -144.41, "tier": 4, "tier_label": "K4", "espn_draft_rank": null}, {"id": 4571557, "name": "Spencer Shrader", "pos": "K", "pro_team": "IND", "bye": null, "proj": 0, "raw_vbd": -144.41, "tier": 4, "tier_label": "K4", "espn_draft_rank": null}, {"id": 5220680, "name": "Ted Hurst III", "pos": "WR", "pro_team": "TB", "bye": 10, "proj": 64.94, "raw_vbd": -144.57, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 393}, {"id": 4432762, "name": "Shedeur Sanders", "pos": "QB", "pro_team": "CLE", "bye": 11, "proj": 142.97, "raw_vbd": -145.37, "tier": 5, "tier_label": "QB5", "espn_draft_rank": 429}, {"id": 4685279, "name": "Jaydon Blue", "pos": "RB", "pro_team": "DAL", "bye": 14, "proj": 55.01, "raw_vbd": -147.85, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 340}, {"id": 4431574, "name": "Eli Stowers", "pos": "TE", "pro_team": "PHI", "bye": 10, "proj": 29.0, "raw_vbd": -148.05, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 469}, {"id": 4431487, "name": "Savion Williams", "pos": "WR", "pro_team": "GB", "bye": 11, "proj": 60.59, "raw_vbd": -148.92, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 977}, {"id": 4368003, "name": "Andrei Iosivas", "pos": "WR", "pro_team": "CIN", "bye": 6, "proj": 58.16, "raw_vbd": -151.35, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 395}, {"id": 4259147, "name": "Jake Tonges", "pos": "TE", "pro_team": "SF", "bye": 8, "proj": 25.2, "raw_vbd": -151.85, "tier": 4, "tier_label": "TE4", "espn_draft_rank": 442}, {"id": 4695404, "name": "Isaiah Davis", "pos": "RB", "pro_team": "NYJ", "bye": 13, "proj": 50.95, "raw_vbd": -151.91, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 325}, {"id": 2991662, "name": "Mack Hollins", "pos": "WR", "pro_team": "NE", "bye": 11, "proj": 56.61, "raw_vbd": -152.9, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 406}, {"id": 4360797, "name": "Tutu Atwell", "pos": "WR", "pro_team": "LAR", "bye": 11, "proj": 55.24, "raw_vbd": -154.27, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 419}, {"id": 4832955, "name": "Emmett Johnson", "pos": "RB", "pro_team": "KC", "bye": 5, "proj": 46.62, "raw_vbd": -156.24, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 349}, {"id": 4911851, "name": "LeQuint Allen Jr.", "pos": "RB", "pro_team": "JAX", "bye": 7, "proj": 46.42, "raw_vbd": -156.44, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 350}, {"id": 4912218, "name": "Cyrus Allen", "pos": "WR", "pro_team": "KC", "bye": 5, "proj": 53.04, "raw_vbd": -156.47, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 421}, {"id": 16002, "name": "Kyle Juszczyk", "pos": "RB", "pro_team": "SF", "bye": 8, "proj": 44.84, "raw_vbd": -158.02, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 997}, {"id": 4613202, "name": "Kyle Williams", "pos": "WR", "pro_team": "NE", "bye": 11, "proj": 51.2, "raw_vbd": -158.31, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 978}, {"id": 4431280, "name": "Troy Franklin", "pos": "WR", "pro_team": "DEN", "bye": 10, "proj": 50.74, "raw_vbd": -158.77, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 979}, {"id": 4682745, "name": "Jaylen Wright", "pos": "RB", "pro_team": "MIA", "bye": 6, "proj": 43.42, "raw_vbd": -159.44, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 319}, {"id": 4686422, "name": "Xavier Hutchinson", "pos": "WR", "pro_team": "HOU", "bye": 8, "proj": 49.78, "raw_vbd": -159.73, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 981}, {"id": 4429835, "name": "George Holani", "pos": "RB", "pro_team": "SEA", "bye": 11, "proj": 41.46, "raw_vbd": -161.4, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 351}, {"id": 2973405, "name": "Kalif Raymond", "pos": "WR", "pro_team": "CHI", "bye": 10, "proj": 47.97, "raw_vbd": -161.54, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 983}, {"id": 4360516, "name": "Tyrone Tracy Jr.", "pos": "RB", "pro_team": "NYG", "bye": 8, "proj": 40.88, "raw_vbd": -161.98, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 343}, {"id": 4429501, "name": "Ray Davis", "pos": "RB", "pro_team": "BUF", "bye": 7, "proj": 38.13, "raw_vbd": -164.73, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 221}, {"id": 4242433, "name": "Joshua Palmer", "pos": "WR", "pro_team": "BUF", "bye": 7, "proj": 44.76, "raw_vbd": -164.75, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 998}, {"id": 4430871, "name": "Sean Tucker", "pos": "RB", "pro_team": "TB", "bye": 10, "proj": 36.93, "raw_vbd": -165.93, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 352}, {"id": 4430968, "name": "Kimani Vidal", "pos": "RB", "pro_team": "LAC", "bye": 7, "proj": 36.35, "raw_vbd": -166.51, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 308}, {"id": 4874509, "name": "DJ Giddens", "pos": "RB", "pro_team": "IND", "bye": 13, "proj": 36.02, "raw_vbd": -166.84, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 403}, {"id": 3149687, "name": "Chris Brooks", "pos": "RB", "pro_team": "GB", "bye": 11, "proj": 36.01, "raw_vbd": -166.85, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 376}, {"id": 4833029, "name": "Max Klare", "pos": "TE", "pro_team": "LAR", "bye": 11, "proj": 9.95, "raw_vbd": -167.1, "tier": 5, "tier_label": "TE5", "espn_draft_rank": 471}, {"id": 4711533, "name": "Ollie Gordon II", "pos": "RB", "pro_team": "MIA", "bye": 6, "proj": 34.92, "raw_vbd": -167.94, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 320}, {"id": 5092508, "name": "Colbie Young", "pos": "WR", "pro_team": "CIN", "bye": 6, "proj": 39.61, "raw_vbd": -169.9, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1014}, {"id": 4879276, "name": "Bryce Lance", "pos": "WR", "pro_team": "NO", "bye": 8, "proj": 39.52, "raw_vbd": -169.99, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1016}, {"id": 4431268, "name": "Chimere Dike", "pos": "WR", "pro_team": "TEN", "bye": 9, "proj": 39.44, "raw_vbd": -170.07, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1017}, {"id": 4869748, "name": "Zavion Thomas", "pos": "WR", "pro_team": "CHI", "bye": 10, "proj": 36.18, "raw_vbd": -173.33, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1029}, {"id": 4241479, "name": "Tua Tagovailoa", "pos": "QB", "pro_team": "ATL", "bye": 11, "proj": 114.89, "raw_vbd": -173.45, "tier": 6, "tier_label": "QB6", "espn_draft_rank": 422}, {"id": 4685397, "name": "Jordan James", "pos": "RB", "pro_team": "SF", "bye": 8, "proj": 29.21, "raw_vbd": -173.65, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 306}, {"id": 4360423, "name": "Michael Penix Jr.", "pos": "QB", "pro_team": "ATL", "bye": 11, "proj": 113.6, "raw_vbd": -174.74, "tier": 6, "tier_label": "QB6", "espn_draft_rank": 440}, {"id": 4431545, "name": "Will Shipley", "pos": "RB", "pro_team": "PHI", "bye": 10, "proj": 28.05, "raw_vbd": -174.81, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 396}, {"id": 4240603, "name": "Malik Davis", "pos": "RB", "pro_team": "DAL", "bye": 14, "proj": 27.42, "raw_vbd": -175.44, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 397}, {"id": 4241372, "name": "Hollywood Brown", "pos": "WR", "pro_team": "PHI", "bye": 10, "proj": 33.76, "raw_vbd": -175.75, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1041}, {"id": 5088338, "name": "Elijah Sarratt", "pos": "WR", "pro_team": "BAL", "bye": 13, "proj": 33.61, "raw_vbd": -175.9, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1042}, {"id": 4685526, "name": "Adam Randall", "pos": "RB", "pro_team": "BAL", "bye": 13, "proj": 25.08, "raw_vbd": -177.78, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 346}, {"id": 4808839, "name": "Isaiah Bond", "pos": "WR", "pro_team": "CLE", "bye": 11, "proj": 30.88, "raw_vbd": -178.63, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1037}, {"id": 4431492, "name": "Roman Wilson", "pos": "WR", "pro_team": "PIT", "bye": 9, "proj": 28.87, "raw_vbd": -180.64, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1070}, {"id": 4683153, "name": "Skyler Bell", "pos": "WR", "pro_team": "BUF", "bye": 7, "proj": 28.49, "raw_vbd": -181.02, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1075}, {"id": 3895856, "name": "Christian Kirk", "pos": "WR", "pro_team": "SF", "bye": 8, "proj": 27.52, "raw_vbd": -181.99, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1145}, {"id": 4685553, "name": "Brenen Thompson", "pos": "WR", "pro_team": "LAC", "bye": 7, "proj": 27.52, "raw_vbd": -181.99, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1079}, {"id": 4685555, "name": "Nicholas Singleton", "pos": "RB", "pro_team": "TEN", "bye": 9, "proj": 19.82, "raw_vbd": -183.04, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 344}, {"id": 4429299, "name": "Tahj Brooks", "pos": "RB", "pro_team": "CIN", "bye": 6, "proj": 18.4, "raw_vbd": -184.46, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 399}, {"id": 16733, "name": "Odell Beckham Jr.", "pos": "WR", "pro_team": "NYG", "bye": 8, "proj": 24.09, "raw_vbd": -185.42, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1104}, {"id": 4883647, "name": "Elic Ayomanor", "pos": "WR", "pro_team": "TEN", "bye": 9, "proj": 23.93, "raw_vbd": -185.58, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1105}, {"id": 4832846, "name": "Demond Claiborne", "pos": "RB", "pro_team": "MIN", "bye": 6, "proj": 16.77, "raw_vbd": -186.09, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 345}, {"id": 4685350, "name": "Trevor Etienne", "pos": "RB", "pro_team": "CAR", "bye": 5, "proj": 16.73, "raw_vbd": -186.13, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 402}, {"id": 4599739, "name": "Kendre Miller", "pos": "RB", "pro_team": "NO", "bye": 8, "proj": 15.86, "raw_vbd": -187.0, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 398}, {"id": 4685246, "name": "Kaytron Allen", "pos": "RB", "pro_team": "WSH", "bye": 7, "proj": 15.75, "raw_vbd": -187.11, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 342}, {"id": 4686468, "name": "Seth McGowan", "pos": "RB", "pro_team": "IND", "bye": 13, "proj": 15.7, "raw_vbd": -187.16, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 356}, {"id": 4608810, "name": "Tez Johnson", "pos": "WR", "pro_team": "TB", "bye": 10, "proj": 21.56, "raw_vbd": -187.95, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1117}, {"id": 4426948, "name": "Luke McCaffrey", "pos": "WR", "pro_team": "WSH", "bye": 7, "proj": 18.47, "raw_vbd": -191.04, "tier": 5, "tier_label": "WR5", "espn_draft_rank": 1144}, {"id": 4887558, "name": "Emanuel Wilson", "pos": "RB", "pro_team": "SEA", "bye": 11, "proj": 9.91, "raw_vbd": -192.95, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 378}, {"id": 4429939, "name": "Jawhar Jordan", "pos": "RB", "pro_team": "HOU", "bye": 8, "proj": 6.9, "raw_vbd": -195.96, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 404}, {"id": 4819231, "name": "Kaleb Johnson", "pos": "RB", "pro_team": "PIT", "bye": 9, "proj": 4.85, "raw_vbd": -198.01, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 405}, {"id": 4372561, "name": "Isaac Guerendo", "pos": "RB", "pro_team": "SF", "bye": 8, "proj": 1.05, "raw_vbd": -201.81, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 432}, {"id": 4596602, "name": "Brashard Smith", "pos": "RB", "pro_team": "KC", "bye": 5, "proj": 0.99, "raw_vbd": -201.87, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 434}, {"id": 4427728, "name": "Bam Knight", "pos": "RB", "pro_team": "ARI", "bye": 14, "proj": 0.82, "raw_vbd": -202.04, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 435}, {"id": 4366963, "name": "Dylan Laube", "pos": "RB", "pro_team": "LV", "bye": 13, "proj": 0.67, "raw_vbd": -202.19, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 436}, {"id": 4362748, "name": "Tyler Badie", "pos": "RB", "pro_team": "DEN", "bye": 10, "proj": 0.35, "raw_vbd": -202.51, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 438}, {"id": 3045147, "name": "James Conner", "pos": "RB", "pro_team": "ARI", "bye": 14, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 353}, {"id": 4040761, "name": "Devin Singletary", "pos": "RB", "pro_team": "NYG", "bye": 8, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 1380}, {"id": 4429275, "name": "Trey Benson", "pos": "RB", "pro_team": "ARI", "bye": 14, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": 1523}, {"id": 3059915, "name": "Kareem Hunt", "pos": "RB", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": null}, {"id": 3128720, "name": "Nick Chubb", "pos": "RB", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": null}, {"id": 3116385, "name": "Joe Mixon", "pos": "RB", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": null}, {"id": 4431562, "name": "Phil Mafah", "pos": "RB", "pro_team": "DAL", "bye": null, "proj": 0, "raw_vbd": -202.86, "tier": 7, "tier_label": "RB7", "espn_draft_rank": null}, {"id": 4877706, "name": "Jayden Higgins", "pos": "WR", "pro_team": "HOU", "bye": null, "proj": 0, "raw_vbd": -209.51, "tier": 6, "tier_label": "WR6", "espn_draft_rank": null}, {"id": 4428209, "name": "Ricky Pearsall", "pos": "WR", "pro_team": "SF", "bye": 8, "proj": 0, "raw_vbd": -209.51, "tier": 6, "tier_label": "WR6", "espn_draft_rank": 1522}, {"id": 3116406, "name": "Tyreek Hill", "pos": "WR", "pro_team": "None", "bye": null, "proj": 0, "raw_vbd": -209.51, "tier": 6, "tier_label": "WR6", "espn_draft_rank": null}, {"id": 4360438, "name": "Brandon Aiyuk", "pos": "WR", "pro_team": "SF", "bye": 8, "proj": 0, "raw_vbd": -209.51, "tier": 6, "tier_label": "WR6", "espn_draft_rank": 1400}, {"id": 5091739, "name": "Chris Brazzell II", "pos": "WR", "pro_team": "CAR", "bye": null, "proj": 0, "raw_vbd": -209.51, "tier": 6, "tier_label": "WR6", "espn_draft_rank": null}, {"id": 4039057, "name": "Lil'Jordan Humphrey", "pos": "WR", "pro_team": "DEN", "bye": 10, "proj": 0, "raw_vbd": -209.51, "tier": 6, "tier_label": "WR6", "espn_draft_rank": 1392}, {"id": 3122840, "name": "Deshaun Watson", "pos": "QB", "pro_team": "CLE", "bye": 11, "proj": 78.61, "raw_vbd": -209.73, "tier": 7, "tier_label": "QB7", "espn_draft_rank": 387}, {"id": 14880, "name": "Kirk Cousins", "pos": "QB", "pro_team": "LV", "bye": 13, "proj": 45.82, "raw_vbd": -242.52, "tier": 8, "tier_label": "QB8", "espn_draft_rank": 430}, {"id": 4433970, "name": "J.J. McCarthy", "pos": "QB", "pro_team": "MIN", "bye": 6, "proj": 39.83, "raw_vbd": -248.51, "tier": 8, "tier_label": "QB8", "espn_draft_rank": 448}, {"id": 4430841, "name": "Carson Beck", "pos": "QB", "pro_team": "ARI", "bye": 14, "proj": 29.3, "raw_vbd": -259.04, "tier": 8, "tier_label": "QB8", "espn_draft_rank": 451}, {"id": 4362887, "name": "Justin Fields", "pos": "QB", "pro_team": "KC", "bye": 5, "proj": 10.66, "raw_vbd": -277.68, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 452}, {"id": 11252, "name": "Joe Flacco", "pos": "QB", "pro_team": "CIN", "bye": 6, "proj": 10.54, "raw_vbd": -277.8, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 454}, {"id": 4240391, "name": "Tommy DeVito", "pos": "QB", "pro_team": "NE", "bye": 11, "proj": 10.31, "raw_vbd": -278.03, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 483}, {"id": 4685522, "name": "Ty Simpson", "pos": "QB", "pro_team": "LAR", "bye": 11, "proj": 10.04, "raw_vbd": -278.3, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 476}, {"id": 4714771, "name": "Drew Allar", "pos": "QB", "pro_team": "PIT", "bye": 9, "proj": 9.47, "raw_vbd": -278.87, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 1233}, {"id": 2969939, "name": "Jameis Winston", "pos": "QB", "pro_team": "NYG", "bye": 8, "proj": 8.63, "raw_vbd": -279.71, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 477}, {"id": 4241464, "name": "Mac Jones", "pos": "QB", "pro_team": "SF", "bye": 8, "proj": 8.62, "raw_vbd": -279.72, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 455}, {"id": 5529, "name": "Philip Rivers", "pos": "QB", "pro_team": "IND", "bye": null, "proj": 0, "raw_vbd": -288.34, "tier": 9, "tier_label": "QB9", "espn_draft_rank": null}, {"id": 4429084, "name": "Anthony Richardson Sr.", "pos": "QB", "pro_team": "IND", "bye": 13, "proj": 0, "raw_vbd": -288.34, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 478}, {"id": 4360698, "name": "Joe Milton III", "pos": "QB", "pro_team": "DAL", "bye": 14, "proj": 0, "raw_vbd": -288.34, "tier": 9, "tier_label": "QB9", "espn_draft_rank": 1537}]</script>
+<script type="application/json" id="config">{"POS_MAX": {"QB": 4, "RB": 8, "WR": 8, "TE": 3, "DST": 3, "K": 3}, "repl_pts": {"QB": 288.34, "RB": 202.86, "WR": 209.51, "TE": 177.05, "DST": 100.29, "K": 144.41}, "roster_spots": 16, "default_teams": 10, "vm": {"STARTERS": {"QB": 1, "RB": 2, "WR": 2, "TE": 1, "DST": 1, "K": 1}, "FLEX_SPLIT": {"RB": 0.4, "WR": 0.5, "TE": 0.1}, "REPLACEMENT_BUFFER": {"QB": 2, "RB": 0, "WR": 0, "TE": 0, "DST": 1, "K": 1}, "TIER_FACTOR": 2.2, "TIER_MIN_GAP": 5.0, "TIER_MAX": 9, "TIER_RANGE": {"QB": 18, "RB": 30, "WR": 40, "TE": 16, "DST": 14, "K": 14}}, "generated_at": "2026-08-28T14:10:16.187659+00:00", "built_at": "2026-08-28T19:25:14+00:00"}</script>
+<script>
+(function () {
+  "use strict";
+
+  var PLAYERS = JSON.parse(document.getElementById("players").textContent);
+  var CONFIG = JSON.parse(document.getElementById("config").textContent);
+  var POS_MAX = CONFIG.POS_MAX;
+  var VM = CONFIG.vm;                       // value-model constants for JS recompute
+  var ROSTER_SPOTS = CONFIG.roster_spots || 16;
+  var LS_KEY = "b1boyzz_draft_v1";
+  var TEAMS = CONFIG.default_teams || 10;   // reassigned by setTeams()
+  var TOTAL_PICKS = TEAMS * ROSTER_SPOTS;
+
+  var byId = {};
+  PLAYERS.forEach(function (p) { byId[p.id] = p; });
+
+  // ---- state (everything else is derived by replay, which makes Undo exact) ----
+  var state = { teams: TEAMS, mySlot: null, pickNum: 1, drafted: [] };
+  var ui = { search: "", plain: false };
+
+  // ---- value model: recomputed in-browser so any league size works ----
+  function replacementRank(pos) {
+    return VM.STARTERS[pos] * TEAMS
+         + Math.round((VM.FLEX_SPLIT[pos] || 0) * TEAMS)
+         + (VM.REPLACEMENT_BUFFER[pos] || 0);
+  }
+  function assignTiers(pos, list) {         // list already sorted raw_vbd desc
+    var range = VM.TIER_RANGE[pos] || 20;
+    var rng = list.slice(0, range);
+    var thr = VM.TIER_MIN_GAP;
+    if (rng.length >= 3) {
+      var spread = rng[0].raw_vbd - rng[rng.length - 1].raw_vbd;
+      thr = Math.max(VM.TIER_MIN_GAP, VM.TIER_FACTOR * (spread / (rng.length - 1)));
+    }
+    var tier = 1, prev = null;
+    for (var i = 0; i < list.length; i++) {
+      var p = list[i];
+      if (prev !== null && (prev - p.raw_vbd) > thr) tier = Math.min(tier + 1, VM.TIER_MAX);
+      p.tier = tier; p.tier_label = pos + tier; prev = p.raw_vbd;
+    }
+  }
+  function recomputeValues() {
+    var byPos = { QB: [], RB: [], WR: [], TE: [], DST: [], K: [] };
+    for (var i = 0; i < PLAYERS.length; i++) {
+      if (byPos[PLAYERS[i].pos]) byPos[PLAYERS[i].pos].push(PLAYERS[i]);
+    }
+    ["QB", "RB", "WR", "TE", "DST", "K"].forEach(function (pos) {
+      var list = byPos[pos];
+      list.sort(function (a, b) { return b.proj - a.proj; });   // == raw_vbd desc
+      var idx = Math.min(replacementRank(pos) - 1, list.length - 1);
+      var rp = idx >= 0 ? list[idx].proj : 0;
+      for (var j = 0; j < list.length; j++) {
+        list[j].raw_vbd = Math.round((list[j].proj - rp) * 100) / 100;
+      }
+      assignTiers(pos, list);
+    });
+    PLAYERS.sort(function (a, b) { return b.raw_vbd - a.raw_vbd; });
+    for (var k = 0; k < PLAYERS.length; k++) PLAYERS[k]._vbdRank = k + 1;
+  }
+  function setTeams(n) {
+    n = parseInt(n, 10);
+    if (!(n >= 4 && n <= 20)) return;
+    TEAMS = n;
+    state.teams = n;
+    TOTAL_PICKS = TEAMS * ROSTER_SPOTS;
+    if (state.mySlot && state.mySlot > TEAMS) state.mySlot = null;
+    recomputeValues();
+    renderSlotOptions();
+  }
+  function renderSlotOptions() {
+    var o = "<option value=''>-- pick --</option>";
+    for (var i = 1; i <= TEAMS; i++) o += "<option>" + i + "</option>";
+    var sel = document.getElementById("slotSel");
+    sel.innerHTML = o;
+    sel.value = state.mySlot ? String(state.mySlot) : "";
+  }
+
+  // returns true if a valid saved team count was found (=> skip the setup screen)
+  function load() {
+    try {
+      var raw = localStorage.getItem(LS_KEY);
+      if (!raw) return false;
+      var o = JSON.parse(raw);
+      if (!o || typeof o !== "object") return false;
+      var hadTeams = false;
+      var t = parseInt(o.teams, 10);
+      if (t >= 4 && t <= 20) {
+        TEAMS = t; state.teams = t; TOTAL_PICKS = TEAMS * ROSTER_SPOTS; hadTeams = true;
+      }
+      var s = parseInt(o.mySlot, 10);
+      state.mySlot = (s >= 1 && s <= TEAMS) ? s : null;
+      state.pickNum = (typeof o.pickNum === "number" && o.pickNum >= 1) ? o.pickNum : 1;
+      state.drafted = Array.isArray(o.drafted) ? o.drafted.filter(function (d) {
+        return d && typeof d.playerId !== "undefined" && byId[d.playerId];
+      }) : [];
+      return hadTeams;
+    } catch (e) { return false; }
+  }
+  function save() {
+    try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
+  }
+
+  // ---- snake math ----
+  function teamOnClock(n) {
+    if (n < 1 || n > TOTAL_PICKS) return null;
+    var round = Math.ceil(n / TEAMS);
+    var idx = (n - 1) % TEAMS;               // 0-based position within the round
+    return (round % 2 === 1) ? idx + 1 : TEAMS - idx;
+  }
+  function roundOf(n) { return Math.ceil(n / TEAMS); }
+
+  // Picks until my next MEANINGFUL turn, for opportunity-cost math. On a snake
+  // wrap my next pick is 1-2 away — I won't "miss" a player I can still grab
+  // one pick later, so the real horizon is the turn after that.
+  function picksUntilNextTurn() {
+    var n = state.pickNum;
+    if (!state.mySlot) return 18;               // no slot yet: assume ~mid
+    if (n > TOTAL_PICKS) return 0;
+    var turns = [];
+    for (var k = 1; k <= TOTAL_PICKS - n && turns.length < 2; k++) {
+      if (teamOnClock(n + k) === state.mySlot) turns.push(k);
+    }
+    if (!turns.length) return TOTAL_PICKS - n;
+    if (turns.length > 1 && turns[0] <= 2) return turns[1];
+    return turns[0];
+  }
+
+  // Rough share of upcoming picks that go to each position (early/mid draft).
+  // Used only to estimate what will still be on the board at my next turn.
+  var POS_RUN_RATE = { RB: 0.34, WR: 0.40, QB: 0.11, TE: 0.11, DST: 0.02, K: 0.02 };
+  // How much VONA (value over next available) drives the pick vs raw VBD.
+  var VONA_WEIGHT = 0.6;
+
+  // ---- derived roster ----
+  function draftedIdSet() {
+    var s = {};
+    state.drafted.forEach(function (d) { s[d.playerId] = true; });
+    return s;
+  }
+  function myIds() {
+    var out = [];
+    state.drafted.forEach(function (d) { if (d.team === state.mySlot) out.push(d.playerId); });
+    return out;
+  }
+  function myCount(pos) {
+    var c = 0;
+    myIds().forEach(function (id) { if (byId[id] && byId[id].pos === pos) c++; });
+    return c;
+  }
+
+  var SLOTS = ["QB", "RB1", "RB2", "WR1", "WR2", "TE", "FLEX", "DST", "K",
+               "BN1", "BN2", "BN3", "BN4", "BN5", "BN6", "BN7"];
+  var BENCH = ["BN1", "BN2", "BN3", "BN4", "BN5", "BN6", "BN7"];
+  function eligibleSlots(pos) {
+    if (pos === "QB") return ["QB"];
+    if (pos === "RB") return ["RB1", "RB2", "FLEX"];
+    if (pos === "WR") return ["WR1", "WR2", "FLEX"];
+    if (pos === "TE") return ["TE", "FLEX"];
+    if (pos === "DST") return ["DST"];
+    if (pos === "K") return ["K"];
+    return [];
+  }
+  function computeRoster() {
+    var slots = {};
+    SLOTS.forEach(function (s) { slots[s] = null; });
+    myIds().forEach(function (id) {
+      var p = byId[id];
+      if (!p) return;
+      var placed = false;
+      var elig = eligibleSlots(p.pos);
+      for (var i = 0; i < elig.length; i++) {
+        if (slots[elig[i]] === null) { slots[elig[i]] = id; placed = true; break; }
+      }
+      if (!placed) {
+        for (var b = 0; b < BENCH.length; b++) {
+          if (slots[BENCH[b]] === null) { slots[BENCH[b]] = id; placed = true; break; }
+        }
+      }
+    });
+    return slots;
+  }
+  function rosterNeeds(slots) {
+    return {
+      QB: slots.QB === null,
+      RB: slots.RB1 === null || slots.RB2 === null,
+      WR: slots.WR1 === null || slots.WR2 === null,
+      TE: slots.TE === null,
+      flexEmpty: slots.FLEX === null,
+      anyStarterEmpty: slots.QB === null || slots.RB1 === null || slots.RB2 === null ||
+                       slots.WR1 === null || slots.WR2 === null || slots.TE === null ||
+                       slots.FLEX === null
+    };
+  }
+
+  // ---- recommender ----
+  // Past this many at a position, extra players there are strongly deprioritized
+  // in the recommendations (any round) - stops the VBD board from suggesting a
+  // 3rd QB / 4th TE just because backups elsewhere have gone negative.
+  var SOFT_CAP = { QB: 2, RB: 6, WR: 6, TE: 2, DST: 1, K: 1 };
+
+  // ---- M3: late-round upside tilt ------------------------------------------
+  // League waivers are inverse-standings with no FAAB: a winning team picks
+  // near-last on waivers all season, so late picks should chase UPSIDE and
+  // CONTINGENT value over safe floor. All constants below are retunable.
+  var UPSIDE_MIN_ROUND = 9;    // no upside bonus at all before this round
+  var HANDCUFF_BONUS   = 10;   // p backs up one of MY starting RBs (same NFL team)
+  var ROOKIE_BONUS     = 5;    // base boost for a rookie RB / WR / TE
+  var ROOKIE_RAMP      = 1.5;  // extra rookie boost per round past round 10
+
+  // The NFL teams of the RBs currently in my STARTING lineup (RB1, RB2, and
+  // FLEX when a RB fills it), taken from computeRoster().
+  function myStartingRbs(slots) {
+    var ids = [slots.RB1, slots.RB2];
+    if (slots.FLEX && byId[slots.FLEX] && byId[slots.FLEX].pos === "RB") ids.push(slots.FLEX);
+    var out = [];
+    ids.forEach(function (id) { if (id && byId[id]) out.push(byId[id]); });
+    return out;
+  }
+
+  // Returns { bonus, reason, handcuff }. reason is null when nothing fired.
+  function upsideInfo(p, round, slots) {
+    if (round < UPSIDE_MIN_ROUND) return { bonus: 0, reason: null, handcuff: false };
+    slots = slots || {};
+    var bonus = 0, reason = null, handcuff = false;
+
+    // (a) handcuff to one of my starting RBs: same NFL team, a RB, not the same
+    //     player, and lower-projected than the back I already roster. High-value
+    //     contingent insurance given the waiver rule.
+    if (p.pos === "RB") {
+      var starters = myStartingRbs(slots);
+      for (var i = 0; i < starters.length; i++) {
+        var rb = starters[i];
+        if (rb.id === p.id) continue;
+        if (rb.pro_team && p.pro_team === rb.pro_team && p.proj < rb.proj) {
+          bonus += HANDCUFF_BONUS;
+          reason = "handcuff to your " + p.pro_team + " RB";
+          handcuff = true;
+          break;
+        }
+      }
+    }
+
+    // (b) young upside: a rookie skill player, ramping slightly with the round.
+    if (p.rookie === true && (p.pos === "RB" || p.pos === "WR" || p.pos === "TE")) {
+      bonus += ROOKIE_BONUS + Math.max(0, round - 10) * ROOKIE_RAMP;
+      if (reason === null) reason = "rookie upside";   // handcuff reason wins if set
+    }
+
+    return { bonus: bonus, reason: reason, handcuff: handcuff };
+  }
+
+  // number-only helper, kept for direct unit checks (0 before round 9).
+  function upsideBonus(p, round, slots) {
+    return upsideInfo(p, round, slots).bonus;
+  }
+
+  // ---- M3: display-only tags for the top-5 recs (NEVER change score) --------
+  var CLIFF_VBD_WINDOW = 15;   // "within 15 raw_vbd" == his tier-or-better
+  var CLIFF_MAX_REMAIN = 2;    // <= this many left at that tier => "last of tier"
+  var BYE_CLASH_MIN    = 3;    // N of my starters on one bye week == a clash
+
+  // My projected starters' bye weeks; returns [{week, names:[...]}, ...] for
+  // any single week shared by >= BYE_CLASH_MIN starters (null byes ignored).
+  function byeClashWeeks(slots) {
+    var starterIds = [slots.QB, slots.RB1, slots.RB2, slots.WR1, slots.WR2, slots.TE, slots.FLEX];
+    var weeks = {};
+    starterIds.forEach(function (id) {
+      if (!id || !byId[id]) return;
+      var b = byId[id].bye;
+      if (b === null || typeof b === "undefined") return;
+      (weeks[b] = weeks[b] || []).push(byId[id].name);
+    });
+    var out = [];
+    Object.keys(weeks).forEach(function (w) {
+      if (weeks[w].length >= BYE_CLASH_MIN) out.push({ week: +w, names: weeks[w] });
+    });
+    out.sort(function (a, b) { return a.week - b.week; });
+    return out;
+  }
+
+  // Append the bye-clash and positional-cliff tags to a rec's reason string.
+  function decorateReason(r, board) {
+    var reason = r.reason;
+    var p = r.p;
+    var s = board.slots;
+    var starterIds = [s.QB, s.RB1, s.RB2, s.WR1, s.WR2, s.TE, s.FLEX];
+
+    if (p.bye !== null && typeof p.bye !== "undefined") {
+      var same = 0;
+      starterIds.forEach(function (id) {
+        if (id && byId[id] && byId[id].bye === p.bye) same++;
+      });
+      if (same + 1 >= BYE_CLASH_MIN)
+        reason += " (bye " + p.bye + ": makes " + (same + 1) + ")";
+    }
+
+    var remain = 0;
+    board.rows.forEach(function (x) {
+      if (x.p.pos === p.pos && x.p.id !== p.id &&
+          x.p.raw_vbd >= p.raw_vbd - CLIFF_VBD_WINDOW) remain++;
+    });
+    if (remain <= CLIFF_MAX_REMAIN) reason += " (last of tier)";
+
+    return reason;
+  }
+
+  // Need weighting. A player that fills an EMPTY starter slot gets an ADDITIVE
+  // urgency bonus that ramps with the round — multiplying doesn't work once
+  // late-round players go below replacement (negative VBD), which would make a
+  // needed TE rank below a useless backup WR. See test_board.js case 7.
+  function needInfo(p, slots, needs, round) {
+    var pos = p.pos;
+    var fillsCore =
+      (pos === "QB" && needs.QB) || (pos === "RB" && needs.RB) ||
+      (pos === "WR" && needs.WR) || (pos === "TE" && needs.TE);
+    var fillsKDST =
+      (pos === "DST" && slots.DST === null) || (pos === "K" && slots.K === null);
+
+    if (fillsCore) {
+      var b = 10 + Math.max(0, round - 6) * 7;   // r6:+10  r10:+38  r14:+66
+      return { mult: 1.0, bonus: b, reason: "fills your empty " + pos + " starter" };
+    }
+    if (fillsKDST) {
+      if (round < 12)
+        return { mult: 0.20, bonus: 0, reason: "kicker/defense — can wait" };
+      var kb = 8 + Math.max(0, round - 11) * 10;  // r12:+18  r14:+38  r16:+58
+      return { mult: 1.0, bonus: kb, reason: "you still need a " + pos };
+    }
+    // FLEX boost goes to RB/WR (and TE only if I don't already have a TE1 —
+    // a 2nd TE in the flex is rarely right in full PPR).
+    if (needs.flexEmpty &&
+        (pos === "RB" || pos === "WR" || (pos === "TE" && myCount("TE") === 0))) {
+      var fb = 6 + Math.max(0, round - 7) * 4;
+      return { mult: 1.0, bonus: fb, reason: "FLEX need (" + p.tier_label + ")" };
+    }
+    if (myCount(pos) >= (SOFT_CAP[pos] || 99))
+      return { mult: 0.35, bonus: 0, reason: "you're set at " + pos };
+    // a 2nd QB or TE is a luxury while startable RB/WR/FLEX value is on the
+    // board - deprioritize it until the mid-late rounds.
+    if ((pos === "QB" || pos === "TE") && myCount(pos) >= 1 && round < 11)
+      return { mult: 0.5, bonus: 0, reason: "you already have your " + pos + "1" };
+    if ((pos === "K" || pos === "DST") && round < 13)
+      return { mult: 0.20, bonus: 0, reason: "kicker/defense — can wait" };
+    return { mult: 1.00, bonus: 0, reason: "best value available (" + p.tier_label + ")" };
+  }
+
+  function hardExcluded(p, needs, round) {
+    if (myCount(p.pos) >= (POS_MAX[p.pos] || 99)) return true;
+    // block K/DST while a real starter slot is open — but only up to round 12;
+    // after that you need K/DST too and can't keep waiting forever.
+    if ((p.pos === "K" || p.pos === "DST") && needs.anyStarterEmpty && round < 12)
+      return true;
+    // past a sensible count at a position, keep it out of the recommendations
+    // (still fully click-draftable) so the VBD board can't push a 3rd QB.
+    if (myCount(p.pos) >= (SOFT_CAP[p.pos] || 99)) return true;
+    return false;
+  }
+
+  // Best raw_vbd still on the board per position, sorted desc.
+  function availByPos(dset) {
+    var m = { QB: [], RB: [], WR: [], TE: [], DST: [], K: [] };
+    PLAYERS.forEach(function (p) { if (!dset[p.id] && m[p.pos]) m[p.pos].push(p); });
+    return m;                                   // PLAYERS is already vbd-desc
+  }
+
+  // The raw_vbd I can still realistically get at this position at my NEXT turn,
+  // after the expected run of picks there. This is what makes the engine value
+  // scarcity: waiting on QB costs little (deep), waiting on elite RB costs a lot.
+  function nextTurnVbd(pos, abp) {
+    var list = abp[pos] || [];
+    if (!list.length) return -400;
+    var gone = Math.round(picksUntilNextTurn() * (POS_RUN_RATE[pos] || 0));
+    return list[Math.min(gone, list.length - 1)].raw_vbd;
+  }
+
+  function scoreBoard() {
+    var round = roundOf(state.pickNum);
+    var slots = computeRoster();
+    var needs = rosterNeeds(slots);
+    var dset = draftedIdSet();
+    var abp = availByPos(dset);
+    var nextVbd = {};
+    ["QB", "RB", "WR", "TE", "DST", "K"].forEach(function (pos) {
+      nextVbd[pos] = nextTurnVbd(pos, abp);
+    });
+
+    var rows = [];
+    PLAYERS.forEach(function (p) {
+      if (dset[p.id]) return;
+      var ni = needInfo(p, slots, needs, round);
+      var ui = upsideInfo(p, round, slots);
+      // VONA: how much better is p than what I could get here next time around.
+      var vona = p.raw_vbd - nextVbd[p.pos];
+      // market-vs-projection upside: ADP rates him well above the board (late only)
+      var adpDelta = p.espn_draft_rank ? (p._vbdRank - p.espn_draft_rank) : 0;
+      var adpBonus = 0, adpReason = null;
+      if (round >= 11 && adpDelta > 20) {
+        adpBonus = Math.min(adpDelta * 0.18, 12);
+        adpReason = "market rates him higher — breakout upside";
+      }
+      // reason priority: handcuff > need/upside (larger bonus) > adp upside
+      var reason = ni.reason;
+      if (ui.reason && (ui.handcuff || ui.bonus > ni.bonus)) reason = ui.reason;
+      else if (adpReason && adpBonus > ni.bonus) reason = adpReason;
+
+      var blended = VONA_WEIGHT * vona + (1 - VONA_WEIGHT) * p.raw_vbd;
+      rows.push({
+        p: p,
+        score: blended * ni.mult + ni.bonus + ui.bonus + adpBonus,
+        vona: vona,
+        reason: reason,
+        excluded: hardExcluded(p, needs, round)
+      });
+    });
+    rows.sort(function (a, b) { return b.score - a.score; });
+    return { rows: rows, slots: slots, needs: needs, round: round };
+  }
+
+  // ---- mutations ----
+  function draftPlayer(id) {
+    if (state.pickNum > TOTAL_PICKS) return;
+    if (draftedIdSet()[id]) return;
+    var team = teamOnClock(state.pickNum);
+    state.drafted.push({ playerId: id, overallPick: state.pickNum, team: team });
+    state.pickNum += 1;
+    save();
+    render();
+  }
+  function undo() {
+    if (state.drafted.length === 0) return;
+    state.drafted.pop();
+    state.pickNum -= 1;
+    if (state.pickNum < 1) state.pickNum = 1;
+    save();
+    render();
+  }
+  function reset() {
+    if (!window.confirm("Reset the entire draft? This clears all picks.")) return;
+    state.drafted = [];
+    state.pickNum = 1;
+    try { localStorage.removeItem(LS_KEY); } catch (e) { /* ignore */ }
+    save();
+    render();
+  }
+
+  // ---- rendering ----
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+  function byeStr(b) { return (b === null || typeof b === "undefined") ? "-" : String(b); }
+
+  function renderClock() {
+    var el = document.getElementById("clock");
+    if (state.pickNum > TOTAL_PICKS) {
+      el.className = "";
+      el.innerHTML = "<span class='big'>Draft complete</span>";
+      return;
+    }
+    var team = teamOnClock(state.pickNum);
+    var mine = (team === state.mySlot);
+    el.className = mine ? "mine" : "";
+    el.innerHTML =
+      "<span class='big'>R" + roundOf(state.pickNum) + " &middot; Pick " + state.pickNum + "</span><br>" +
+      "Team " + team + (mine ? " (YOU)" : "");
+  }
+
+  function renderRoster(slots) {
+    var labels = {
+      QB: "QB", RB1: "RB1", RB2: "RB2", WR1: "WR1", WR2: "WR2", TE: "TE",
+      FLEX: "FLEX", DST: "DST", K: "K",
+      BN1: "BN", BN2: "BN", BN3: "BN", BN4: "BN", BN5: "BN", BN6: "BN", BN7: "BN"
+    };
+    var html = "";
+    SLOTS.forEach(function (s) {
+      var id = slots[s];
+      var nm = id ? esc(byId[id].name) : "—";
+      html += "<div class='rs" + (id ? " filled" : "") + "'>" +
+              "<span class='slot'>" + labels[s] + "</span>" + nm + "</div>";
+    });
+    document.getElementById("rosterGrid").innerHTML = html;
+  }
+
+  function renderCounts() {
+    var order = ["QB", "RB", "WR", "TE", "DST", "K"];
+    var html = "";
+    order.forEach(function (pos) {
+      var c = myCount(pos), m = POS_MAX[pos];
+      html += "<span class='" + (c >= m ? "full" : "") + "'>" + pos + " " + c + "/" + m + "</span>";
+    });
+    document.getElementById("countsRow").innerHTML = html;
+  }
+
+  function rowHtml(r, rank, prevTier) {
+    var p = r.p;
+    var sep = (prevTier !== null && prevTier !== p.tier_label) ? " tiersep" : "";
+    return "<div class='prow" + sep + (r.excluded ? " excluded" : "") +
+           "' data-id='" + p.id + "'>" +
+           "<span class='pname'>" + esc(p.name) + "</span>" +
+           "<span class='pos pos-" + p.pos + "'>" + p.pos + "</span>" +
+           "<span>" + esc(p.pro_team) + "</span>" +
+           "<span class='num'>" + byeStr(p.bye) + "</span>" +
+           "<span class='num'>" + p.proj.toFixed(1) + "</span>" +
+           "<span class='num'>" + p.raw_vbd.toFixed(1) + "</span>" +
+           "<span>" + p.tier_label + "</span>" +
+           "</div>";
+  }
+
+  function renderList(board) {
+    var term = ui.search.trim().toLowerCase();
+    var rows = board.rows;
+    if (term) {
+      rows = rows.filter(function (r) {
+        return r.p.name.toLowerCase().indexOf(term) !== -1 ||
+               r.p.pro_team.toLowerCase().indexOf(term) !== -1 ||
+               r.p.pos.toLowerCase() === term;
+      });
+    }
+    var head = "<div class='phead'><span class='pname'>Player</span><span>Pos</span><span>Tm</span>" +
+               "<span>Bye</span><span>Proj</span><span>VBD</span><span>Tier</span></div>";
+    var body = "";
+    var prevTier = null;
+    for (var i = 0; i < rows.length; i++) {
+      body += rowHtml(rows[i], i + 1, prevTier);
+      prevTier = rows[i].p.tier_label;
+    }
+    if (!rows.length) body = "<div class='prow'>no matching players</div>";
+    document.getElementById("plist").innerHTML = head + body;
+  }
+
+  function renderRecs(board) {
+    var picks = [];
+    for (var i = 0; i < board.rows.length && picks.length < 5; i++) {
+      if (!board.rows[i].excluded) picks.push(board.rows[i]);
+    }
+    // roster essentially set - nothing un-excluded left. Show best bench upside
+    // (highest VBD still available) rather than an empty panel.
+    if (!picks.length) {
+      for (var j = 0; j < board.rows.length && picks.length < 5; j++) {
+        var r = board.rows[j];
+        if (myCount(r.p.pos) < (POS_MAX[r.p.pos] || 99)) {
+          r.reason = "roster set - best bench value left";
+          picks.push(r);
+        }
+      }
+    }
+    var html = "";
+    if (state.pickNum > TOTAL_PICKS) {
+      html = "<div class='rec'>Draft complete.</div>";
+    } else {
+      picks.forEach(function (r) {
+        html += "<div class='rec'><span class='nm'>" + esc(r.p.name) + "</span> " +
+                "<span class='pos pos-" + r.p.pos + "'>" + r.p.pos + "</span> " +
+                r.p.pro_team + " &middot; VBD " + r.p.raw_vbd.toFixed(1) +
+                "<div class='why'>" + esc(decorateReason(r, board)) + "</div></div>";
+      });
+      if (!picks.length) html = "<div class='rec'>No recommendation.</div>";
+    }
+    document.getElementById("recs").innerHTML = html;
+
+    // best available by position
+    var showLate = board.round >= 12;
+    var positions = ["QB", "RB", "WR", "TE"];
+    if (showLate) positions = positions.concat(["DST", "K"]);
+    var seen = {};
+    board.rows.forEach(function (r) {
+      if (!seen[r.p.pos]) seen[r.p.pos] = r;
+    });
+    var bp = "";
+    positions.forEach(function (pos) {
+      var r = seen[pos];
+      bp += "<div><span class='pos pos-" + pos + "'>" + pos + "</span> " +
+            (r ? esc(r.p.name) + " (VBD " + r.p.raw_vbd.toFixed(1) + ", " + r.p.tier_label + ")"
+               : "—") + "</div>";
+    });
+    document.getElementById("bestpos").innerHTML = bp;
+  }
+
+  function renderByeWarn(slots) {
+    var clashes = byeClashWeeks(slots);
+    document.getElementById("byeWarn").innerHTML = clashes.map(function (c) {
+      return "Bye clash: " + c.names.length + " starters on bye week " + c.week +
+             " (" + c.names.map(esc).join(", ") + ")";
+    }).join("<br>");
+  }
+
+  function renderBanner() {
+    var el = document.getElementById("banner");
+    if (state.pickNum > TOTAL_PICKS) {
+      el.innerHTML = "<div class='done-banner'>All " + TOTAL_PICKS +
+                     " picks made &mdash; draft complete.</div>";
+    } else {
+      el.innerHTML = "";
+    }
+  }
+
+  function render() {
+    var board = scoreBoard();
+    document.getElementById("slotSel").value = state.mySlot ? String(state.mySlot) : "";
+    document.getElementById("leagueInfo").innerHTML =
+      TEAMS + " teams &middot; " + ROSTER_SPOTS + " rounds &middot; " + TOTAL_PICKS + " picks";
+    document.body.classList.toggle("plain", ui.plain);
+    renderClock();
+    renderRoster(board.slots);
+    renderByeWarn(board.slots);
+    renderCounts();
+    renderBanner();
+    renderList(board);
+    renderRecs(board);
+  }
+
+  // ---- setup / init screen ----
+  var initSel = TEAMS;   // pending team count while the setup screen is open
+
+  function renderTeamBtns() {
+    var html = "";
+    for (var n = 8; n <= 16; n++) {
+      html += "<button data-n='" + n + "'" + (n === initSel ? " class='sel'" : "") +
+              ">" + n + "</button>";
+    }
+    document.getElementById("teamBtns").innerHTML = html;
+  }
+  function renderInitSlot() {
+    var el = document.getElementById("initSlot");
+    var keep = el.value;
+    var o = "<option value=''>-- not set yet --</option>";
+    for (var i = 1; i <= initSel; i++) o += "<option>" + i + "</option>";
+    el.innerHTML = o;
+    if (keep && parseInt(keep, 10) <= initSel) el.value = keep;
+  }
+  function openInit() {
+    initSel = TEAMS;
+    renderTeamBtns();
+    renderInitSlot();
+    document.getElementById("initSlot").value = state.mySlot ? String(state.mySlot) : "";
+    document.getElementById("initScreen").className = "";
+  }
+  function closeInit() { document.getElementById("initScreen").className = "hidden"; }
+
+  document.getElementById("teamBtns").addEventListener("click", function (e) {
+    var b = e.target && e.target.closest ? e.target.closest("button[data-n]") : null;
+    if (!b) return;
+    initSel = parseInt(b.getAttribute("data-n"), 10);
+    renderTeamBtns();
+    renderInitSlot();
+  });
+  document.getElementById("initStart").addEventListener("click", function () {
+    var slot = parseInt(document.getElementById("initSlot").value, 10);
+    setTeams(initSel);
+    if (slot >= 1 && slot <= TEAMS) state.mySlot = slot;
+    if (state.mySlot && state.mySlot > TEAMS) state.mySlot = null;
+    save();
+    closeInit();
+    render();
+  });
+  document.getElementById("setupBtn").addEventListener("click", openInit);
+
+  // ---- events ----
+  document.getElementById("slotSel").addEventListener("change", function (e) {
+    var v = parseInt(e.target.value, 10);
+    state.mySlot = (v >= 1 && v <= TEAMS) ? v : null;
+    save();
+    render();
+  });
+  document.getElementById("plist").addEventListener("click", function (e) {
+    if (ui.plain) return;
+    var row = e.target.closest ? e.target.closest(".prow") : null;
+    if (!row) return;
+    var id = row.getAttribute("data-id");
+    if (id) draftPlayer(isNaN(+id) ? id : +id);
+  });
+  document.getElementById("search").addEventListener("input", function (e) {
+    ui.search = e.target.value;
+    render();
+  });
+  document.getElementById("undoBtn").addEventListener("click", undo);
+  document.getElementById("resetBtn").addEventListener("click", reset);
+  document.getElementById("plainBtn").addEventListener("click", function () {
+    ui.plain = !ui.plain;
+    render();
+  });
+
+  // test hook — used by the headless harness only; harmless in the browser.
+  if (typeof window !== "undefined") {
+    window.__board = {
+      scoreBoard: scoreBoard, upsideInfo: upsideInfo, upsideBonus: upsideBonus,
+      computeRoster: computeRoster, byeClashWeeks: byeClashWeeks, state: state,
+      setTeams: setTeams, recomputeValues: recomputeValues
+    };
+  }
+
+  var hadConfig = load();
+  recomputeValues();              // always recompute for the active team count
+  renderSlotOptions();
+  if (hadConfig) { closeInit(); } else { openInit(); }
+  render();
+})();
+</script>
+</body>
+</html>
