@@ -76,15 +76,20 @@ function renderLineup(data) {
   document.getElementById("lineup").innerHTML = `
     <div class="card">
       <p class="proj">Projected total: <strong>${fmt(l.projected_total, 2)}</strong> pts</p>
-      <table>
-        <thead><tr><th>Slot</th><th>Player</th><th>Pos</th><th class="num">Proj</th><th></th></tr></thead>
-        <tbody>${starterRows}</tbody>
-      </table>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Slot</th><th>Player</th><th>Pos</th><th class="num">Proj</th><th></th></tr></thead>
+          <tbody>${starterRows}</tbody>
+        </table>
+      </div>
       ${reasoning}
       <h3 style="font-size:.9rem;margin:1rem 0 .3rem;">Bench</h3>
-      <table>
-        <tbody>${benchRows}</tbody>
-      </table>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th colspan="2">Player</th><th>Pos</th><th class="num">Proj</th><th></th></tr></thead>
+          <tbody>${benchRows}</tbody>
+        </table>
+      </div>
     </div>
   `;
 }
@@ -97,24 +102,26 @@ function renderWaivers(data) {
       <td class="num">${fmt(t.proj_value, 2)}</td>
       <td class="num">${t.percent_owned != null ? fmt(t.percent_owned, 0) + "%" : "-"}</td>
       <td class="num">${t.percent_started != null ? fmt(t.percent_started, 0) + "%" : "-"}</td>
-      <td>${t.recent_activity_note ? esc(t.recent_activity_note) : ""}</td>
+      <td class="muted">${t.recent_activity_note ? esc(t.recent_activity_note) : "—"}</td>
     </tr>
   `).join("");
 
   document.getElementById("waivers").innerHTML = `
     <div class="card">
-      <table>
-        <thead>
-          <tr><th>Name</th><th>Pos</th><th class="num">Value</th><th class="num">Own%</th><th class="num">Start%</th><th>Recent activity</th></tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Pos</th><th class="num">Value</th><th class="num">Own%</th><th class="num">Start%</th><th>Recent activity</th></tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
     </div>
   `;
 }
 
 function render(data) {
-  document.getElementById("week-label").textContent = `Week ${data.week}`;
+  document.getElementById("week-label").textContent = `— Week ${data.week}`;
   document.getElementById("updated").textContent =
     "Last updated: " + new Date(data.generated_at).toLocaleString();
   renderMatchup(data);

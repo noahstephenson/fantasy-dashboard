@@ -42,12 +42,19 @@ h2 {
 
 .proj { color: #666; font-size: .85rem; }
 
+.table-scroll {
+  overflow-x: auto;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
+  min-width: 480px;
   font-size: .88rem;
   margin: .3rem 0 .6rem;
 }
+
+.muted { color: #999; }
 th, td {
   border: 1px solid #ddd;
   padding: .3rem .55rem;
