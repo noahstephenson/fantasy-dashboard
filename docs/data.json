@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T03:37:21.260283+00:00",
+  "generated_at": "2026-09-08T08:41:53.170831+00:00",
   "week": 1,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -274,8 +274,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 2.04,
-      "percent_owned": 85.36,
-      "percent_started": 22.52,
+      "percent_owned": 85.26,
+      "percent_started": 22.48,
       "recent_activity_note": null
     },
     {
@@ -283,8 +283,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.43,
-      "percent_owned": 67.98,
-      "percent_started": 12.05,
+      "percent_owned": 67.99,
+      "percent_started": 12.09,
       "recent_activity_note": null
     },
     {
@@ -292,8 +292,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -13.58,
-      "percent_owned": 60.36,
-      "percent_started": 9.88,
+      "percent_owned": 60.5,
+      "percent_started": 9.9,
       "recent_activity_note": null
     },
     {
@@ -301,7 +301,7 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -16.58,
-      "percent_owned": 75.59,
+      "percent_owned": 75.6,
       "percent_started": 17.77,
       "recent_activity_note": null
     },
@@ -310,8 +310,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": -16.94,
-      "percent_owned": 81.46,
-      "percent_started": 28.01,
+      "percent_owned": 81.51,
+      "percent_started": 28.08,
       "recent_activity_note": null
     },
     {
@@ -319,8 +319,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -21.28,
-      "percent_owned": 69.7,
-      "percent_started": 13.15,
+      "percent_owned": 69.77,
+      "percent_started": 13.21,
       "recent_activity_note": null
     },
     {
@@ -328,7 +328,7 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -21.91,
-      "percent_owned": 55.9,
+      "percent_owned": 55.88,
       "percent_started": 7.35,
       "recent_activity_note": null
     },
@@ -337,7 +337,7 @@
       "name": "Daniel Jones",
       "pos": "QB",
       "proj_value": -23.42,
-      "percent_owned": 36.93,
+      "percent_owned": 36.85,
       "percent_started": 2.78,
       "recent_activity_note": null
     },
@@ -346,7 +346,7 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -24.49,
-      "percent_owned": 49.09,
+      "percent_owned": 48.84,
       "percent_started": 4.29,
       "recent_activity_note": null
     },
@@ -355,8 +355,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -25.26,
-      "percent_owned": 57.81,
-      "percent_started": 9.87,
+      "percent_owned": 58.01,
+      "percent_started": 9.91,
       "recent_activity_note": null
     },
     {
@@ -364,8 +364,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.29,
-      "percent_owned": 45.68,
-      "percent_started": 8.23,
+      "percent_owned": 45.95,
+      "percent_started": 8.28,
       "recent_activity_note": null
     },
     {
@@ -373,8 +373,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -26.03,
-      "percent_owned": 39.54,
-      "percent_started": 2.6,
+      "percent_owned": 39.45,
+      "percent_started": 2.57,
       "recent_activity_note": null
     },
     {
@@ -382,8 +382,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -26.92,
-      "percent_owned": 42.42,
-      "percent_started": 5.95,
+      "percent_owned": 42.57,
+      "percent_started": 5.96,
       "recent_activity_note": null
     },
     {
@@ -391,7 +391,7 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -29.46,
-      "percent_owned": 23.2,
+      "percent_owned": 23.25,
       "percent_started": 2.54,
       "recent_activity_note": null
     },
@@ -400,8 +400,8 @@
       "name": "Pat Freiermuth",
       "pos": "TE",
       "proj_value": -35.76,
-      "percent_owned": 14.01,
-      "percent_started": 1.73,
+      "percent_owned": 14.08,
+      "percent_started": 1.74,
       "recent_activity_note": null
     }
   ]
