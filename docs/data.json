@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T22:36:47.375104+00:00",
+  "generated_at": "2026-09-08T03:37:21.260283+00:00",
   "week": 1,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -274,8 +274,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 2.04,
-      "percent_owned": 85.18,
-      "percent_started": 22.45,
+      "percent_owned": 85.36,
+      "percent_started": 22.52,
       "recent_activity_note": null
     },
     {
@@ -283,8 +283,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.43,
-      "percent_owned": 67.56,
-      "percent_started": 11.93,
+      "percent_owned": 67.98,
+      "percent_started": 12.05,
       "recent_activity_note": null
     },
     {
@@ -292,8 +292,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -13.58,
-      "percent_owned": 61.03,
-      "percent_started": 10.13,
+      "percent_owned": 60.36,
+      "percent_started": 9.88,
       "recent_activity_note": null
     },
     {
@@ -301,8 +301,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -16.58,
-      "percent_owned": 75.47,
-      "percent_started": 17.7,
+      "percent_owned": 75.59,
+      "percent_started": 17.77,
       "recent_activity_note": null
     },
     {
@@ -310,8 +310,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": -16.94,
-      "percent_owned": 81.41,
-      "percent_started": 27.84,
+      "percent_owned": 81.46,
+      "percent_started": 28.01,
       "recent_activity_note": null
     },
     {
@@ -319,8 +319,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -21.28,
-      "percent_owned": 69.65,
-      "percent_started": 13.09,
+      "percent_owned": 69.7,
+      "percent_started": 13.15,
       "recent_activity_note": null
     },
     {
@@ -328,8 +328,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -21.91,
-      "percent_owned": 56.05,
-      "percent_started": 7.41,
+      "percent_owned": 55.9,
+      "percent_started": 7.35,
       "recent_activity_note": null
     },
     {
@@ -337,8 +337,8 @@
       "name": "Daniel Jones",
       "pos": "QB",
       "proj_value": -23.42,
-      "percent_owned": 36.73,
-      "percent_started": 2.75,
+      "percent_owned": 36.93,
+      "percent_started": 2.78,
       "recent_activity_note": null
     },
     {
@@ -346,8 +346,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -24.49,
-      "percent_owned": 48.59,
-      "percent_started": 4.24,
+      "percent_owned": 49.09,
+      "percent_started": 4.29,
       "recent_activity_note": null
     },
     {
@@ -355,8 +355,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -25.26,
-      "percent_owned": 57.74,
-      "percent_started": 9.91,
+      "percent_owned": 57.81,
+      "percent_started": 9.87,
       "recent_activity_note": null
     },
     {
@@ -364,8 +364,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.29,
-      "percent_owned": 45.15,
-      "percent_started": 8.14,
+      "percent_owned": 45.68,
+      "percent_started": 8.23,
       "recent_activity_note": null
     },
     {
@@ -373,8 +373,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -26.03,
-      "percent_owned": 40.79,
-      "percent_started": 2.76,
+      "percent_owned": 39.54,
+      "percent_started": 2.6,
       "recent_activity_note": null
     },
     {
@@ -382,8 +382,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -26.92,
-      "percent_owned": 42.08,
-      "percent_started": 5.93,
+      "percent_owned": 42.42,
+      "percent_started": 5.95,
       "recent_activity_note": null
     },
     {
@@ -391,8 +391,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -29.46,
-      "percent_owned": 23.37,
-      "percent_started": 2.6,
+      "percent_owned": 23.2,
+      "percent_started": 2.54,
       "recent_activity_note": null
     },
     {
@@ -400,8 +400,8 @@
       "name": "Pat Freiermuth",
       "pos": "TE",
       "proj_value": -35.76,
-      "percent_owned": 14.15,
-      "percent_started": 1.8,
+      "percent_owned": 14.01,
+      "percent_started": 1.73,
       "recent_activity_note": null
     }
   ]
