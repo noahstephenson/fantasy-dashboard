@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-09T16:08:11.609856+00:00",
+  "generated_at": "2026-09-09T22:20:29.004334+00:00",
   "week": 1,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Adolf ",
     "my_score": 0.0,
     "opp_score": 0.0,
-    "my_projected": 127.23,
-    "opp_projected": 120.77
+    "my_projected": 127.43,
+    "opp_projected": 120.85
   },
   "lineup": {
     "recommended_starters": [
@@ -37,7 +37,7 @@
           "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 19.28,
+          "proj_week_pts": 19.31,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -54,7 +54,7 @@
           "pro_team": "MIA",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 18.22,
+          "proj_week_pts": 18.21,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -71,7 +71,7 @@
           "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 15.1,
+          "proj_week_pts": 15.12,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -82,14 +82,14 @@
       {
         "slot": "WR",
         "player": {
-          "id": 4361370,
-          "name": "Chris Olave",
+          "id": 4569618,
+          "name": "Garrett Wilson",
           "pos": "WR",
-          "pro_team": "NO",
+          "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
           "proj_week_pts": 14.79,
-          "lineup_slot": "WR",
+          "lineup_slot": "RB/WR/TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -107,7 +107,7 @@
           "proj_pts": 0,
           "proj_week_pts": 10.95,
           "lineup_slot": "TE",
-          "injury_status": "QUESTIONABLE",
+          "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -122,7 +122,7 @@
           "pro_team": "PHI",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 6.17,
+          "proj_week_pts": 6.34,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -150,14 +150,14 @@
       {
         "slot": "RB/WR/TE",
         "player": {
-          "id": 4569618,
-          "name": "Garrett Wilson",
+          "id": 4361370,
+          "name": "Chris Olave",
           "pos": "WR",
-          "pro_team": "NYJ",
+          "pro_team": "NO",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 14.79,
-          "lineup_slot": "RB/WR/TE",
+          "proj_week_pts": 14.78,
+          "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -187,7 +187,7 @@
         "pro_team": "NYG",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 13.67,
+        "proj_week_pts": 13.7,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -201,9 +201,9 @@
         "pro_team": "JAX",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 12.86,
+        "proj_week_pts": 12.85,
         "lineup_slot": "BE",
-        "injury_status": "QUESTIONABLE",
+        "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -259,23 +259,23 @@
         "proj_pts": 0,
         "proj_week_pts": 8.86,
         "lineup_slot": "BE",
-        "injury_status": "QUESTIONABLE",
+        "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
       }
     ],
     "reasoning": [],
-    "projected_total": 127.23
+    "projected_total": 127.43
   },
   "waiver_targets": [
     {
       "id": 4361741,
       "name": "Brock Purdy",
       "pos": "QB",
-      "proj_value": 2.04,
-      "percent_owned": 86.43,
-      "percent_started": 22.41,
+      "proj_value": 2.06,
+      "percent_owned": 86.18,
+      "percent_started": 22.13,
       "recent_activity_note": null
     },
     {
@@ -283,8 +283,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.43,
-      "percent_owned": 70.14,
-      "percent_started": 12.89,
+      "percent_owned": 69.97,
+      "percent_started": 13.01,
       "recent_activity_note": null
     },
     {
@@ -292,8 +292,17 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -13.58,
-      "percent_owned": 60.69,
-      "percent_started": 10.21,
+      "percent_owned": 61.02,
+      "percent_started": 11.48,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4361050,
+      "name": "Isaiah Likely",
+      "pos": "TE",
+      "proj_value": -16.29,
+      "percent_owned": 83.4,
+      "percent_started": 31.37,
       "recent_activity_note": null
     },
     {
@@ -301,26 +310,17 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -16.58,
-      "percent_owned": 77.26,
-      "percent_started": 18.47,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4361050,
-      "name": "Isaiah Likely",
-      "pos": "TE",
-      "proj_value": -16.94,
-      "percent_owned": 83.29,
-      "percent_started": 29.69,
+      "percent_owned": 77.18,
+      "percent_started": 19.37,
       "recent_activity_note": null
     },
     {
       "id": 3046779,
       "name": "Jared Goff",
       "pos": "QB",
-      "proj_value": -21.28,
-      "percent_owned": 71.34,
-      "percent_started": 14.3,
+      "proj_value": -21.3,
+      "percent_owned": 71.17,
+      "percent_started": 14.55,
       "recent_activity_note": null
     },
     {
@@ -328,35 +328,35 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -21.91,
-      "percent_owned": 56.47,
-      "percent_started": 7.79,
+      "percent_owned": 56.49,
+      "percent_started": 9.04,
       "recent_activity_note": null
     },
     {
       "id": 3917792,
       "name": "Daniel Jones",
       "pos": "QB",
-      "proj_value": -23.42,
-      "percent_owned": 37.43,
-      "percent_started": 2.9,
+      "proj_value": -23.41,
+      "percent_owned": 37.13,
+      "percent_started": 2.89,
       "recent_activity_note": null
     },
     {
       "id": 4360689,
       "name": "Tyler Shough",
       "pos": "QB",
-      "proj_value": -24.49,
-      "percent_owned": 49.9,
-      "percent_started": 4.45,
+      "proj_value": -24.48,
+      "percent_owned": 49.53,
+      "percent_started": 4.44,
       "recent_activity_note": null
     },
     {
       "id": 3052587,
       "name": "Baker Mayfield",
       "pos": "QB",
-      "proj_value": -25.26,
-      "percent_owned": 60.08,
-      "percent_started": 10.87,
+      "proj_value": -25.25,
+      "percent_owned": 60.07,
+      "percent_started": 11.29,
       "recent_activity_note": null
     },
     {
@@ -364,8 +364,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.29,
-      "percent_owned": 48.77,
-      "percent_started": 9.42,
+      "percent_owned": 50.25,
+      "percent_started": 11.57,
       "recent_activity_note": null
     },
     {
@@ -373,8 +373,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -26.03,
-      "percent_owned": 37.71,
-      "percent_started": 2.16,
+      "percent_owned": 37.08,
+      "percent_started": 2.24,
       "recent_activity_note": null
     },
     {
@@ -382,26 +382,26 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -26.92,
-      "percent_owned": 44.05,
-      "percent_started": 6.14,
+      "percent_owned": 43.8,
+      "percent_started": 6.12,
       "recent_activity_note": null
     },
     {
       "id": 4430539,
       "name": "Brenton Strange",
       "pos": "TE",
-      "proj_value": -29.46,
-      "percent_owned": 23.68,
-      "percent_started": 2.64,
+      "proj_value": -29.47,
+      "percent_owned": 23.89,
+      "percent_started": 3.26,
       "recent_activity_note": null
     },
     {
       "id": 4361411,
       "name": "Pat Freiermuth",
       "pos": "TE",
-      "proj_value": -35.76,
-      "percent_owned": 14.43,
-      "percent_started": 1.81,
+      "proj_value": -35.75,
+      "percent_owned": 14.79,
+      "percent_started": 2.27,
       "recent_activity_note": null
     }
   ]
