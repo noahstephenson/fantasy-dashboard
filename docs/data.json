@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T03:41:59.873031+00:00",
+  "generated_at": "2026-09-12T08:28:26.785536+00:00",
   "week": 1,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -283,8 +283,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.23,
-      "percent_owned": 68.21,
-      "percent_started": 12.9,
+      "percent_owned": 68.22,
+      "percent_started": 12.91,
       "recent_activity_note": null
     },
     {
@@ -301,8 +301,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": -16.71,
-      "percent_owned": 82.49,
-      "percent_started": 33.95,
+      "percent_owned": 82.5,
+      "percent_started": 33.97,
       "recent_activity_note": null
     },
     {
@@ -310,7 +310,7 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -16.72,
-      "percent_owned": 75.45,
+      "percent_owned": 75.44,
       "percent_started": 20.51,
       "recent_activity_note": null
     },
@@ -328,8 +328,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -22.75,
-      "percent_owned": 69.91,
-      "percent_started": 14.93,
+      "percent_owned": 69.92,
+      "percent_started": 14.94,
       "recent_activity_note": null
     },
     {
@@ -337,7 +337,7 @@
       "name": "Daniel Jones",
       "pos": "QB",
       "proj_value": -23.85,
-      "percent_owned": 35.49,
+      "percent_owned": 35.48,
       "percent_started": 2.78,
       "recent_activity_note": null
     },
@@ -355,8 +355,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -24.99,
-      "percent_owned": 59.54,
-      "percent_started": 11.84,
+      "percent_owned": 59.57,
+      "percent_started": 11.85,
       "recent_activity_note": null
     },
     {
@@ -364,7 +364,7 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -25.22,
-      "percent_owned": 47.12,
+      "percent_owned": 47.1,
       "percent_started": 4.27,
       "recent_activity_note": null
     },
@@ -373,8 +373,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.6,
-      "percent_owned": 51.51,
-      "percent_started": 15.19,
+      "percent_owned": 51.55,
+      "percent_started": 15.22,
       "recent_activity_note": null
     },
     {
@@ -382,7 +382,7 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -26.01,
-      "percent_owned": 35.36,
+      "percent_owned": 35.35,
       "percent_started": 2.49,
       "recent_activity_note": null
     },
