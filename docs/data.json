@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T18:11:54.654223+00:00",
+  "generated_at": "2026-09-12T21:59:10.871919+00:00",
   "week": 1,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -274,8 +274,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 1.87,
-      "percent_owned": 84.5,
-      "percent_started": 21.45,
+      "percent_owned": 84.48,
+      "percent_started": 21.46,
       "recent_activity_note": null
     },
     {
@@ -283,7 +283,7 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.23,
-      "percent_owned": 68.21,
+      "percent_owned": 68.19,
       "percent_started": 12.92,
       "recent_activity_note": null
     },
@@ -292,8 +292,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -13.84,
-      "percent_owned": 60.53,
-      "percent_started": 13.66,
+      "percent_owned": 60.48,
+      "percent_started": 13.64,
       "recent_activity_note": null
     },
     {
@@ -301,7 +301,7 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": -16.71,
-      "percent_owned": 82.51,
+      "percent_owned": 82.48,
       "percent_started": 34.01,
       "recent_activity_note": null
     },
@@ -310,8 +310,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -16.72,
-      "percent_owned": 75.41,
-      "percent_started": 20.47,
+      "percent_owned": 75.36,
+      "percent_started": 20.43,
       "recent_activity_note": null
     },
     {
@@ -319,8 +319,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -17.35,
-      "percent_owned": 55.04,
-      "percent_started": 10.19,
+      "percent_owned": 55.01,
+      "percent_started": 10.18,
       "recent_activity_note": null
     },
     {
@@ -328,8 +328,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -22.75,
-      "percent_owned": 69.93,
-      "percent_started": 14.99,
+      "percent_owned": 69.91,
+      "percent_started": 15.01,
       "recent_activity_note": null
     },
     {
@@ -337,7 +337,7 @@
       "name": "Daniel Jones",
       "pos": "QB",
       "proj_value": -23.85,
-      "percent_owned": 35.45,
+      "percent_owned": 35.41,
       "percent_started": 2.77,
       "recent_activity_note": null
     },
@@ -346,7 +346,7 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -24.92,
-      "percent_owned": 84.34,
+      "percent_owned": 84.31,
       "percent_started": 11.3,
       "recent_activity_note": "DROPPED by Eddie's Energetic Team"
     },
@@ -356,7 +356,7 @@
       "pos": "QB",
       "proj_value": -24.99,
       "percent_owned": 59.61,
-      "percent_started": 11.91,
+      "percent_started": 11.94,
       "recent_activity_note": null
     },
     {
@@ -364,8 +364,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -25.22,
-      "percent_owned": 47.06,
-      "percent_started": 4.27,
+      "percent_owned": 47.02,
+      "percent_started": 4.28,
       "recent_activity_note": null
     },
     {
@@ -373,8 +373,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.6,
-      "percent_owned": 51.61,
-      "percent_started": 15.31,
+      "percent_owned": 51.63,
+      "percent_started": 15.37,
       "recent_activity_note": null
     },
     {
@@ -382,8 +382,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -26.01,
-      "percent_owned": 35.3,
-      "percent_started": 2.48,
+      "percent_owned": 35.24,
+      "percent_started": 2.47,
       "recent_activity_note": null
     },
     {
@@ -391,7 +391,7 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -28.26,
-      "percent_owned": 42.35,
+      "percent_owned": 42.32,
       "percent_started": 5.89,
       "recent_activity_note": null
     },
@@ -400,8 +400,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -29.87,
-      "percent_owned": 22.95,
-      "percent_started": 3.81,
+      "percent_owned": 22.91,
+      "percent_started": 3.79,
       "recent_activity_note": null
     }
   ]
