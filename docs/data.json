@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T03:57:19.098888+00:00",
+  "generated_at": "2026-09-14T09:46:00.245239+00:00",
   "week": 1,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -274,8 +274,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 1.93,
-      "percent_owned": 84.37,
-      "percent_started": 21.51,
+      "percent_owned": 84.36,
+      "percent_started": 21.52,
       "recent_activity_note": null
     },
     {
@@ -383,7 +383,7 @@
       "pos": "TE",
       "proj_value": -25.63,
       "percent_owned": 51.76,
-      "percent_started": 16.01,
+      "percent_started": 16.0,
       "recent_activity_note": null
     },
     {
@@ -391,7 +391,7 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -28.2,
-      "percent_owned": 42.1,
+      "percent_owned": 42.09,
       "percent_started": 5.92,
       "recent_activity_note": null
     },
@@ -400,7 +400,7 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -29.89,
-      "percent_owned": 22.68,
+      "percent_owned": 22.67,
       "percent_started": 3.76,
       "recent_activity_note": null
     }
