@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-18T16:01:49.504582+00:00",
+  "generated_at": "2026-09-18T22:22:48.632886+00:00",
   "week": 2,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Eddie's Energetic Team",
     "my_score": 17.2,
     "opp_score": 20.9,
-    "my_projected": 137.03,
-    "opp_projected": 124.37
+    "my_projected": 136.58,
+    "opp_projected": 124.52
   },
   "lineup": {
     "recommended_starters": [
@@ -20,7 +20,7 @@
           "pro_team": "NYG",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 18.24,
+          "proj_week_pts": 18.23,
           "lineup_slot": "QB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -37,7 +37,7 @@
           "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 22.29,
+          "proj_week_pts": 22.93,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -54,7 +54,7 @@
           "pro_team": "MIA",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 17.15,
+          "proj_week_pts": 17.14,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -71,7 +71,7 @@
           "pro_team": "NO",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 15.83,
+          "proj_week_pts": 15.9,
           "lineup_slot": "WR",
           "injury_status": "QUESTIONABLE",
           "percent_owned": -1,
@@ -88,7 +88,7 @@
           "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 15.8,
+          "proj_week_pts": 15.86,
           "lineup_slot": "RB/WR/TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -105,7 +105,7 @@
           "pro_team": "DET",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 11.24,
+          "proj_week_pts": 11.25,
           "lineup_slot": "TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -122,7 +122,7 @@
           "pro_team": "PHI",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 7.2,
+          "proj_week_pts": 7.08,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -150,14 +150,14 @@
       {
         "slot": "RB/WR/TE",
         "player": {
-          "id": 4426502,
-          "name": "Drake London",
+          "id": 16800,
+          "name": "Davante Adams",
           "pos": "WR",
-          "pro_team": "ATL",
+          "pro_team": "LAR",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 13.92,
-          "lineup_slot": "WR",
+          "proj_week_pts": 13.67,
+          "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -167,14 +167,14 @@
     ],
     "bench": [
       {
-        "id": 16800,
-        "name": "Davante Adams",
+        "id": 4426502,
+        "name": "Drake London",
         "pos": "WR",
-        "pro_team": "LAR",
+        "pro_team": "ATL",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 13.66,
-        "lineup_slot": "BE",
+        "proj_week_pts": 12.85,
+        "lineup_slot": "WR",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
@@ -188,20 +188,6 @@
         "bye": null,
         "proj_pts": 0,
         "proj_week_pts": 12.83,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 3121422,
-        "name": "Terry McLaurin",
-        "pos": "WR",
-        "pro_team": "WSH",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 12.52,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -223,13 +209,27 @@
         "total_points": 0
       },
       {
+        "id": 3121422,
+        "name": "Terry McLaurin",
+        "pos": "WR",
+        "pro_team": "WSH",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 12.44,
+        "lineup_slot": "BE",
+        "injury_status": "ACTIVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
         "id": 2976212,
         "name": "Stefon Diggs",
         "pos": "WR",
         "pro_team": "WSH",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 10.4,
+        "proj_week_pts": 10.33,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -257,7 +257,7 @@
         "pro_team": "WSH",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 7.57,
+        "proj_week_pts": 7.56,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -265,8 +265,10 @@
         "total_points": 0
       }
     ],
-    "reasoning": [],
-    "projected_total": 131.08
+    "reasoning": [
+      "Start Davante Adams (WR) in RB/WR/TE -- 13.7 proj pts, currently on bench."
+    ],
+    "projected_total": 131.47
   },
   "waiver_targets": [
     {
@@ -274,8 +276,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 1.93,
-      "percent_owned": 89.67,
-      "percent_started": 49.93,
+      "percent_owned": 89.75,
+      "percent_started": 50.32,
       "recent_activity_note": null
     },
     {
@@ -283,8 +285,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.15,
-      "percent_owned": 51.7,
-      "percent_started": 1.98,
+      "percent_owned": 51.43,
+      "percent_started": 1.78,
       "recent_activity_note": null
     },
     {
@@ -292,8 +294,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -13.79,
-      "percent_owned": 64.64,
-      "percent_started": 18.6,
+      "percent_owned": 64.82,
+      "percent_started": 19.25,
       "recent_activity_note": null
     },
     {
@@ -301,8 +303,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -16.18,
-      "percent_owned": 51.25,
-      "percent_started": 7.92,
+      "percent_owned": 51.21,
+      "percent_started": 8.12,
       "recent_activity_note": null
     },
     {
@@ -310,8 +312,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": -16.68,
-      "percent_owned": 90.66,
-      "percent_started": 60.05,
+      "percent_owned": 90.78,
+      "percent_started": 60.69,
       "recent_activity_note": null
     },
     {
@@ -328,8 +330,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -22.68,
-      "percent_owned": 69.42,
-      "percent_started": 16.78,
+      "percent_owned": 69.41,
+      "percent_started": 16.77,
       "recent_activity_note": null
     },
     {
@@ -337,8 +339,8 @@
       "name": "Daniel Jones",
       "pos": "QB",
       "proj_value": -23.83,
-      "percent_owned": 29.85,
-      "percent_started": 2.0,
+      "percent_owned": 29.75,
+      "percent_started": 1.98,
       "recent_activity_note": null
     },
     {
@@ -346,8 +348,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -24.91,
-      "percent_owned": 57.69,
-      "percent_started": 13.57,
+      "percent_owned": 57.71,
+      "percent_started": 13.7,
       "recent_activity_note": null
     },
     {
@@ -355,8 +357,8 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -25.04,
-      "percent_owned": 82.64,
-      "percent_started": 15.16,
+      "percent_owned": 82.63,
+      "percent_started": 15.42,
       "recent_activity_note": "DROPPED by Eddie's Energetic Team"
     },
     {
@@ -364,8 +366,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -25.13,
-      "percent_owned": 37.85,
-      "percent_started": 4.54,
+      "percent_owned": 37.91,
+      "percent_started": 4.73,
       "recent_activity_note": null
     },
     {
@@ -373,8 +375,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -25.22,
-      "percent_owned": 49.8,
-      "percent_started": 5.53,
+      "percent_owned": 49.81,
+      "percent_started": 5.52,
       "recent_activity_note": null
     },
     {
@@ -382,8 +384,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.63,
-      "percent_owned": 53.11,
-      "percent_started": 12.98,
+      "percent_owned": 53.08,
+      "percent_started": 13.52,
       "recent_activity_note": null
     },
     {
@@ -391,8 +393,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -28.2,
-      "percent_owned": 44.32,
-      "percent_started": 8.98,
+      "percent_owned": 44.39,
+      "percent_started": 9.05,
       "recent_activity_note": null
     },
     {
@@ -400,8 +402,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -29.89,
-      "percent_owned": 22.3,
-      "percent_started": 3.47,
+      "percent_owned": 22.25,
+      "percent_started": 3.57,
       "recent_activity_note": null
     }
   ]
