@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T15:34:22.862282+00:00",
+  "generated_at": "2026-09-19T18:28:07.636745+00:00",
   "week": 2,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -276,8 +276,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 1.93,
-      "percent_owned": 89.86,
-      "percent_started": 50.87,
+      "percent_owned": 89.88,
+      "percent_started": 50.98,
       "recent_activity_note": null
     },
     {
@@ -285,8 +285,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -6.15,
-      "percent_owned": 50.99,
-      "percent_started": 1.61,
+      "percent_owned": 50.91,
+      "percent_started": 1.57,
       "recent_activity_note": null
     },
     {
@@ -294,8 +294,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -13.79,
-      "percent_owned": 64.98,
-      "percent_started": 19.83,
+      "percent_owned": 65.01,
+      "percent_started": 19.96,
       "recent_activity_note": null
     },
     {
@@ -303,8 +303,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -16.18,
-      "percent_owned": 51.05,
-      "percent_started": 8.25,
+      "percent_owned": 51.03,
+      "percent_started": 8.27,
       "recent_activity_note": null
     },
     {
@@ -312,8 +312,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": -16.68,
-      "percent_owned": 90.92,
-      "percent_started": 61.34,
+      "percent_owned": 90.94,
+      "percent_started": 61.46,
       "recent_activity_note": null
     },
     {
@@ -339,8 +339,8 @@
       "name": "Daniel Jones",
       "pos": "QB",
       "proj_value": -23.83,
-      "percent_owned": 29.56,
-      "percent_started": 1.96,
+      "percent_owned": 29.53,
+      "percent_started": 1.95,
       "recent_activity_note": null
     },
     {
@@ -348,8 +348,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -24.91,
-      "percent_owned": 57.72,
-      "percent_started": 13.89,
+      "percent_owned": 57.73,
+      "percent_started": 13.93,
       "recent_activity_note": null
     },
     {
@@ -358,7 +358,7 @@
       "pos": "RB",
       "proj_value": -25.04,
       "percent_owned": 82.61,
-      "percent_started": 15.72,
+      "percent_started": 15.8,
       "recent_activity_note": "DROPPED by Eddie's Energetic Team"
     },
     {
@@ -366,8 +366,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -25.13,
-      "percent_owned": 37.89,
-      "percent_started": 4.85,
+      "percent_owned": 37.9,
+      "percent_started": 4.88,
       "recent_activity_note": null
     },
     {
@@ -375,8 +375,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -25.22,
-      "percent_owned": 49.8,
-      "percent_started": 5.52,
+      "percent_owned": 49.79,
+      "percent_started": 5.51,
       "recent_activity_note": null
     },
     {
@@ -384,8 +384,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -25.63,
-      "percent_owned": 52.97,
-      "percent_started": 13.98,
+      "percent_owned": 52.96,
+      "percent_started": 14.05,
       "recent_activity_note": null
     },
     {
@@ -393,8 +393,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -28.2,
-      "percent_owned": 44.46,
-      "percent_started": 9.15,
+      "percent_owned": 44.47,
+      "percent_started": 9.17,
       "recent_activity_note": null
     },
     {
@@ -402,7 +402,7 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -29.89,
-      "percent_owned": 22.13,
+      "percent_owned": 22.11,
       "percent_started": 3.62,
       "recent_activity_note": null
     }
