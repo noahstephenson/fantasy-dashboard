@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:48:51.482348+00:00",
+  "generated_at": "2026-09-21T18:00:12.913298+00:00",
   "week": 2,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -274,8 +274,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": 24.02,
-      "percent_owned": 91.39,
-      "percent_started": 63.48,
+      "percent_owned": 91.37,
+      "percent_started": 63.5,
       "recent_activity_note": null
     },
     {
@@ -283,8 +283,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": 20.83,
-      "percent_owned": 81.87,
-      "percent_started": 42.35,
+      "percent_owned": 81.85,
+      "percent_started": 42.34,
       "recent_activity_note": null
     },
     {
@@ -292,7 +292,7 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 15.21,
-      "percent_owned": 49.83,
+      "percent_owned": 49.8,
       "percent_started": 1.12,
       "recent_activity_note": null
     },
@@ -301,8 +301,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 11.5,
-      "percent_owned": 90.2,
-      "percent_started": 53.43,
+      "percent_owned": 90.19,
+      "percent_started": 53.45,
       "recent_activity_note": null
     },
     {
@@ -311,7 +311,7 @@
       "pos": "QB",
       "proj_value": 7.2,
       "percent_owned": 49.67,
-      "percent_started": 5.48,
+      "percent_started": 5.49,
       "recent_activity_note": null
     },
     {
@@ -319,7 +319,7 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -5.3,
-      "percent_owned": 50.64,
+      "percent_owned": 50.61,
       "percent_started": 8.55,
       "recent_activity_note": null
     },
@@ -328,8 +328,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -9.09,
-      "percent_owned": 65.05,
-      "percent_started": 20.3,
+      "percent_owned": 65.01,
+      "percent_started": 20.29,
       "recent_activity_note": null
     },
     {
@@ -337,7 +337,7 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -9.16,
-      "percent_owned": 69.28,
+      "percent_owned": 69.27,
       "percent_started": 16.74,
       "recent_activity_note": null
     },
@@ -346,8 +346,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -11.22,
-      "percent_owned": 21.33,
-      "percent_started": 6.22,
+      "percent_owned": 21.36,
+      "percent_started": 6.25,
       "recent_activity_note": null
     },
     {
@@ -355,8 +355,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -13.66,
-      "percent_owned": 57.89,
-      "percent_started": 15.03,
+      "percent_owned": 57.86,
+      "percent_started": 15.04,
       "recent_activity_note": null
     },
     {
@@ -364,8 +364,8 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -16.32,
-      "percent_owned": 82.6,
-      "percent_started": 19.07,
+      "percent_owned": 82.58,
+      "percent_started": 19.1,
       "recent_activity_note": "DROPPED by Eddie's Energetic Team"
     },
     {
@@ -373,8 +373,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -17.11,
-      "percent_owned": 52.62,
-      "percent_started": 14.75,
+      "percent_owned": 52.59,
+      "percent_started": 14.76,
       "recent_activity_note": null
     },
     {
@@ -382,7 +382,7 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -19.02,
-      "percent_owned": 44.62,
+      "percent_owned": 44.59,
       "percent_started": 9.54,
       "recent_activity_note": null
     },
@@ -391,8 +391,8 @@
       "name": "Bryce Young",
       "pos": "QB",
       "proj_value": -22.24,
-      "percent_owned": 34.27,
-      "percent_started": 9.31,
+      "percent_owned": 34.28,
+      "percent_started": 9.33,
       "recent_activity_note": null
     },
     {
@@ -401,7 +401,7 @@
       "pos": "WR",
       "proj_value": -23.59,
       "percent_owned": 74.78,
-      "percent_started": 15.05,
+      "percent_started": 15.09,
       "recent_activity_note": null
     }
   ]
