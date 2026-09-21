@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-20T22:15:24.210493+00:00",
+  "generated_at": "2026-09-21T03:56:48.507637+00:00",
   "week": 2,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Eddie's Energetic Team",
-    "my_score": 83.7,
-    "opp_score": 119.9,
-    "my_projected": 132.44,
-    "opp_projected": 142.31
+    "my_score": 83.9,
+    "opp_score": 155.06,
+    "my_projected": 126.98,
+    "opp_projected": 155.06
   },
   "lineup": {
     "recommended_starters": [
@@ -270,138 +270,138 @@
   },
   "waiver_targets": [
     {
-      "id": 4361741,
-      "name": "Brock Purdy",
-      "pos": "QB",
-      "proj_value": 1.93,
-      "percent_owned": 90.23,
-      "percent_started": 53.46,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3917315,
-      "name": "Kyler Murray",
-      "pos": "QB",
-      "proj_value": -6.15,
-      "percent_owned": 49.85,
-      "percent_started": 1.12,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4036133,
-      "name": "T.J. Hockenson",
-      "pos": "TE",
-      "proj_value": -13.79,
-      "percent_owned": 65.12,
-      "percent_started": 20.34,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3046439,
-      "name": "Hunter Henry",
-      "pos": "TE",
-      "proj_value": -16.18,
-      "percent_owned": 50.7,
-      "percent_started": 8.56,
-      "recent_activity_note": null
-    },
-    {
       "id": 4361050,
       "name": "Isaiah Likely",
       "pos": "TE",
-      "proj_value": -16.68,
-      "percent_owned": 91.42,
-      "percent_started": 63.45,
+      "proj_value": 24.02,
+      "percent_owned": 91.38,
+      "percent_started": 63.48,
       "recent_activity_note": null
     },
     {
       "id": 4385690,
       "name": "Dalton Kincaid",
       "pos": "TE",
-      "proj_value": -18.4,
-      "percent_owned": 81.9,
-      "percent_started": 42.35,
+      "proj_value": 20.83,
+      "percent_owned": 81.87,
+      "percent_started": 42.34,
       "recent_activity_note": null
     },
     {
-      "id": 3046779,
-      "name": "Jared Goff",
+      "id": 3917315,
+      "name": "Kyler Murray",
       "pos": "QB",
-      "proj_value": -22.68,
-      "percent_owned": 69.31,
-      "percent_started": 16.75,
+      "proj_value": 15.21,
+      "percent_owned": 49.83,
+      "percent_started": 1.12,
       "recent_activity_note": null
     },
     {
-      "id": 3917792,
-      "name": "Daniel Jones",
+      "id": 4361741,
+      "name": "Brock Purdy",
       "pos": "QB",
-      "proj_value": -23.83,
-      "percent_owned": 28.97,
-      "percent_started": 1.83,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3052587,
-      "name": "Baker Mayfield",
-      "pos": "QB",
-      "proj_value": -24.91,
-      "percent_owned": 57.95,
-      "percent_started": 15.05,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4241985,
-      "name": "J.K. Dobbins",
-      "pos": "RB",
-      "proj_value": -25.04,
-      "percent_owned": 82.66,
-      "percent_started": 19.1,
-      "recent_activity_note": "DROPPED by Eddie's Energetic Team"
-    },
-    {
-      "id": 5083315,
-      "name": "Kenyon Sadiq",
-      "pos": "TE",
-      "proj_value": -25.13,
-      "percent_owned": 37.87,
-      "percent_started": 5.19,
+      "proj_value": 11.5,
+      "percent_owned": 90.2,
+      "percent_started": 53.43,
       "recent_activity_note": null
     },
     {
       "id": 4360689,
       "name": "Tyler Shough",
       "pos": "QB",
-      "proj_value": -25.22,
+      "proj_value": 7.2,
       "percent_owned": 49.67,
       "percent_started": 5.48,
       "recent_activity_note": null
     },
     {
+      "id": 3046439,
+      "name": "Hunter Henry",
+      "pos": "TE",
+      "proj_value": -5.3,
+      "percent_owned": 50.65,
+      "percent_started": 8.55,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4036133,
+      "name": "T.J. Hockenson",
+      "pos": "TE",
+      "proj_value": -9.09,
+      "percent_owned": 65.05,
+      "percent_started": 20.31,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3046779,
+      "name": "Jared Goff",
+      "pos": "QB",
+      "proj_value": -9.16,
+      "percent_owned": 69.28,
+      "percent_started": 16.74,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3117256,
+      "name": "Dalton Schultz",
+      "pos": "TE",
+      "proj_value": -11.22,
+      "percent_owned": 21.33,
+      "percent_started": 6.22,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3052587,
+      "name": "Baker Mayfield",
+      "pos": "QB",
+      "proj_value": -13.66,
+      "percent_owned": 57.89,
+      "percent_started": 15.03,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4241985,
+      "name": "J.K. Dobbins",
+      "pos": "RB",
+      "proj_value": -16.32,
+      "percent_owned": 82.6,
+      "percent_started": 19.07,
+      "recent_activity_note": "DROPPED by Eddie's Energetic Team"
+    },
+    {
       "id": 3929645,
       "name": "Juwan Johnson",
       "pos": "TE",
-      "proj_value": -25.63,
-      "percent_owned": 52.67,
-      "percent_started": 14.77,
+      "proj_value": -17.11,
+      "percent_owned": 52.62,
+      "percent_started": 14.75,
       "recent_activity_note": null
     },
     {
       "id": 4036378,
       "name": "Jordan Love",
       "pos": "QB",
-      "proj_value": -28.2,
-      "percent_owned": 44.67,
-      "percent_started": 9.55,
+      "proj_value": -19.02,
+      "percent_owned": 44.62,
+      "percent_started": 9.54,
       "recent_activity_note": null
     },
     {
-      "id": 4430539,
-      "name": "Brenton Strange",
-      "pos": "TE",
-      "proj_value": -29.89,
-      "percent_owned": 21.9,
-      "percent_started": 3.77,
+      "id": 4685720,
+      "name": "Bryce Young",
+      "pos": "QB",
+      "proj_value": -22.24,
+      "percent_owned": 34.27,
+      "percent_started": 9.31,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4683062,
+      "name": "Xavier Worthy",
+      "pos": "WR",
+      "proj_value": -23.59,
+      "percent_owned": 74.78,
+      "percent_started": 15.05,
       "recent_activity_note": null
     }
   ]
