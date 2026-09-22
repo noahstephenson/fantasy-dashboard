@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T16:31:37.492244+00:00",
+  "generated_at": "2026-09-22T22:47:38.720840+00:00",
   "week": 3,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -276,8 +276,8 @@
       "name": "Isaiah Likely",
       "pos": "TE",
       "proj_value": 42.11,
-      "percent_owned": 91.23,
-      "percent_started": 62.19,
+      "percent_owned": 91.21,
+      "percent_started": 61.75,
       "recent_activity_note": null
     },
     {
@@ -285,8 +285,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": 22.87,
-      "percent_owned": 81.88,
-      "percent_started": 48.57,
+      "percent_owned": 81.89,
+      "percent_started": 50.69,
       "recent_activity_note": null
     },
     {
@@ -294,8 +294,8 @@
       "name": "Brock Purdy",
       "pos": "QB",
       "proj_value": 18.43,
-      "percent_owned": 90.17,
-      "percent_started": 56.31,
+      "percent_owned": 90.18,
+      "percent_started": 57.48,
       "recent_activity_note": null
     },
     {
@@ -303,8 +303,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 12.73,
-      "percent_owned": 49.67,
-      "percent_started": 4.25,
+      "percent_owned": 49.63,
+      "percent_started": 5.65,
       "recent_activity_note": null
     },
     {
@@ -312,8 +312,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": 7.11,
-      "percent_owned": 49.75,
-      "percent_started": 11.78,
+      "percent_owned": 49.8,
+      "percent_started": 13.84,
       "recent_activity_note": null
     },
     {
@@ -321,8 +321,8 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -6.68,
-      "percent_owned": 82.35,
-      "percent_started": 16.44,
+      "percent_owned": 82.27,
+      "percent_started": 15.5,
       "recent_activity_note": "DROPPED by Eddie's Energetic Team"
     },
     {
@@ -330,8 +330,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -6.69,
-      "percent_owned": 50.47,
-      "percent_started": 9.93,
+      "percent_owned": 50.43,
+      "percent_started": 10.46,
       "recent_activity_note": null
     },
     {
@@ -339,8 +339,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -9.01,
-      "percent_owned": 21.52,
-      "percent_started": 7.74,
+      "percent_owned": 21.55,
+      "percent_started": 8.29,
       "recent_activity_note": null
     },
     {
@@ -348,8 +348,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -9.46,
-      "percent_owned": 64.77,
-      "percent_started": 19.7,
+      "percent_owned": 64.7,
+      "percent_started": 19.59,
       "recent_activity_note": null
     },
     {
@@ -358,7 +358,7 @@
       "pos": "QB",
       "proj_value": -9.54,
       "percent_owned": 69.26,
-      "percent_started": 21.39,
+      "percent_started": 23.21,
       "recent_activity_note": null
     },
     {
@@ -366,8 +366,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -10.9,
-      "percent_owned": 52.48,
-      "percent_started": 15.97,
+      "percent_owned": 52.46,
+      "percent_started": 16.4,
       "recent_activity_note": null
     },
     {
@@ -375,8 +375,8 @@
       "name": "Bryce Young",
       "pos": "QB",
       "proj_value": -11.2,
-      "percent_owned": 34.43,
-      "percent_started": 14.25,
+      "percent_owned": 34.48,
+      "percent_started": 15.74,
       "recent_activity_note": null
     },
     {
@@ -384,8 +384,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -16.53,
-      "percent_owned": 57.47,
-      "percent_started": 13.99,
+      "percent_owned": 57.33,
+      "percent_started": 13.97,
       "recent_activity_note": null
     },
     {
@@ -393,8 +393,8 @@
       "name": "Xavier Worthy",
       "pos": "WR",
       "proj_value": -19.96,
-      "percent_owned": 74.69,
-      "percent_started": 16.63,
+      "percent_owned": 74.67,
+      "percent_started": 17.27,
       "recent_activity_note": null
     },
     {
@@ -402,8 +402,8 @@
       "name": "Denzel Boston",
       "pos": "WR",
       "proj_value": -21.26,
-      "percent_owned": 26.59,
-      "percent_started": 5.06,
+      "percent_owned": 26.64,
+      "percent_started": 6.14,
       "recent_activity_note": null
     }
   ]
