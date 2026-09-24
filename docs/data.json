@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T09:05:36.280353+00:00",
+  "generated_at": "2026-09-24T16:43:22.970036+00:00",
   "week": 3,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -290,8 +290,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 12.71,
-      "percent_owned": 57.0,
-      "percent_started": 14.0,
+      "percent_owned": 57.79,
+      "percent_started": 15.31,
       "recent_activity_note": null
     },
     {
@@ -299,8 +299,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": 7.06,
-      "percent_owned": 75.69,
-      "percent_started": 35.3,
+      "percent_owned": 77.05,
+      "percent_started": 38.08,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -6.69,
-      "percent_owned": 50.79,
-      "percent_started": 13.05,
+      "percent_owned": 51.04,
+      "percent_started": 13.68,
       "recent_activity_note": null
     },
     {
@@ -317,8 +317,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": -7.43,
-      "percent_owned": 85.62,
-      "percent_started": 25.98,
+      "percent_owned": 85.16,
+      "percent_started": 22.34,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -326,8 +326,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -9.01,
-      "percent_owned": 54.88,
-      "percent_started": 26.84,
+      "percent_owned": 56.72,
+      "percent_started": 29.11,
       "recent_activity_note": null
     },
     {
@@ -335,8 +335,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -9.46,
-      "percent_owned": 62.03,
-      "percent_started": 17.79,
+      "percent_owned": 61.9,
+      "percent_started": 17.55,
       "recent_activity_note": null
     },
     {
@@ -344,8 +344,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -9.56,
-      "percent_owned": 77.47,
-      "percent_started": 32.12,
+      "percent_owned": 77.92,
+      "percent_started": 33.31,
       "recent_activity_note": null
     },
     {
@@ -353,8 +353,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -10.9,
-      "percent_owned": 54.43,
-      "percent_started": 18.04,
+      "percent_owned": 54.68,
+      "percent_started": 18.27,
       "recent_activity_note": null
     },
     {
@@ -362,8 +362,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -16.58,
-      "percent_owned": 51.02,
-      "percent_started": 11.22,
+      "percent_owned": 50.7,
+      "percent_started": 10.86,
       "recent_activity_note": null
     },
     {
@@ -371,8 +371,8 @@
       "name": "Courtland Sutton",
       "pos": "WR",
       "proj_value": -18.03,
-      "percent_owned": 86.55,
-      "percent_started": 24.74,
+      "percent_owned": 86.38,
+      "percent_started": 23.87,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -380,8 +380,8 @@
       "name": "Xavier Worthy",
       "pos": "WR",
       "proj_value": -19.96,
-      "percent_owned": 75.59,
-      "percent_started": 18.93,
+      "percent_owned": 75.75,
+      "percent_started": 19.38,
       "recent_activity_note": null
     },
     {
@@ -389,8 +389,8 @@
       "name": "Denzel Boston",
       "pos": "WR",
       "proj_value": -21.25,
-      "percent_owned": 65.64,
-      "percent_started": 18.69,
+      "percent_owned": 67.28,
+      "percent_started": 20.54,
       "recent_activity_note": null
     },
     {
@@ -398,8 +398,8 @@
       "name": "Brian Thomas Jr.",
       "pos": "WR",
       "proj_value": -22.72,
-      "percent_owned": 76.94,
-      "percent_started": 7.37,
+      "percent_owned": 76.84,
+      "percent_started": 7.47,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -407,8 +407,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -22.87,
-      "percent_owned": 52.07,
-      "percent_started": 21.15,
+      "percent_owned": 53.23,
+      "percent_started": 22.88,
       "recent_activity_note": null
     },
     {
@@ -416,8 +416,8 @@
       "name": "Terrance Ferguson",
       "pos": "TE",
       "proj_value": -23.56,
-      "percent_owned": 21.26,
-      "percent_started": 2.81,
+      "percent_owned": 21.48,
+      "percent_started": 2.83,
       "recent_activity_note": null
     }
   ]
