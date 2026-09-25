@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-25T16:48:17.808450+00:00",
+  "generated_at": "2026-09-25T23:09:39.649844+00:00",
   "week": 3,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Full Chubb",
     "my_score": 35.3,
     "opp_score": 0.0,
-    "my_projected": 152.48,
-    "opp_projected": 114.79
+    "my_projected": 152.43,
+    "opp_projected": 114.81
   },
   "lineup": {
     "recommended_starters": [
@@ -54,7 +54,7 @@
           "pro_team": "MIA",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 19.47,
+          "proj_week_pts": 19.42,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -215,7 +215,7 @@
         "pro_team": "WSH",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 11.89,
+        "proj_week_pts": 11.81,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -243,7 +243,7 @@
         "pro_team": "WSH",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 10.83,
+        "proj_week_pts": 10.81,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -257,7 +257,7 @@
         "pro_team": "WSH",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 9.33,
+        "proj_week_pts": 9.3,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -282,7 +282,7 @@
     "reasoning": [
       "Start Drake London (WR) in RB/WR/TE -- 15.4 proj pts, currently on bench."
     ],
-    "projected_total": 137.38
+    "projected_total": 137.33
   },
   "waiver_targets": [
     {
@@ -290,8 +290,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 12.7,
-      "percent_owned": 59.38,
-      "percent_started": 18.1,
+      "percent_owned": 59.5,
+      "percent_started": 18.28,
       "recent_activity_note": null
     },
     {
@@ -299,8 +299,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -6.03,
-      "percent_owned": 51.11,
-      "percent_started": 14.67,
+      "percent_owned": 51.06,
+      "percent_started": 14.69,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": -7.43,
-      "percent_owned": 83.9,
-      "percent_started": 13.09,
+      "percent_owned": 83.76,
+      "percent_started": 12.6,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -317,8 +317,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -7.54,
-      "percent_owned": 62.36,
-      "percent_started": 36.75,
+      "percent_owned": 63.1,
+      "percent_started": 37.76,
       "recent_activity_note": null
     },
     {
@@ -326,8 +326,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -9.46,
-      "percent_owned": 61.46,
-      "percent_started": 17.03,
+      "percent_owned": 61.37,
+      "percent_started": 16.98,
       "recent_activity_note": null
     },
     {
@@ -335,8 +335,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -9.57,
-      "percent_owned": 78.85,
-      "percent_started": 36.22,
+      "percent_owned": 78.92,
+      "percent_started": 36.4,
       "recent_activity_note": null
     },
     {
@@ -353,17 +353,17 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -16.59,
-      "percent_owned": 50.07,
-      "percent_started": 10.23,
+      "percent_owned": 49.97,
+      "percent_started": 10.16,
       "recent_activity_note": null
     },
     {
       "id": 3128429,
       "name": "Courtland Sutton",
       "pos": "WR",
-      "proj_value": -18.03,
-      "percent_owned": 85.97,
-      "percent_started": 23.1,
+      "proj_value": -18.01,
+      "percent_owned": 85.9,
+      "percent_started": 23.07,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -371,8 +371,8 @@
       "name": "Xavier Worthy",
       "pos": "WR",
       "proj_value": -19.96,
-      "percent_owned": 76.19,
-      "percent_started": 21.98,
+      "percent_owned": 76.24,
+      "percent_started": 22.23,
       "recent_activity_note": null
     },
     {
@@ -380,8 +380,8 @@
       "name": "Terrance Ferguson",
       "pos": "TE",
       "proj_value": -20.92,
-      "percent_owned": 25.52,
-      "percent_started": 5.92,
+      "percent_owned": 26.67,
+      "percent_started": 6.62,
       "recent_activity_note": null
     },
     {
@@ -389,8 +389,8 @@
       "name": "Brian Thomas Jr.",
       "pos": "WR",
       "proj_value": -22.72,
-      "percent_owned": 76.6,
-      "percent_started": 8.61,
+      "percent_owned": 76.57,
+      "percent_started": 8.73,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -398,8 +398,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -22.88,
-      "percent_owned": 55.07,
-      "percent_started": 26.13,
+      "percent_owned": 55.05,
+      "percent_started": 26.12,
       "recent_activity_note": null
     },
     {
@@ -407,8 +407,8 @@
       "name": "KC Concepcion",
       "pos": "WR",
       "proj_value": -27.66,
-      "percent_owned": 55.17,
-      "percent_started": 6.49,
+      "percent_owned": 55.2,
+      "percent_started": 6.63,
       "recent_activity_note": null
     },
     {
@@ -416,8 +416,8 @@
       "name": "Adonai Mitchell",
       "pos": "WR",
       "proj_value": -28.19,
-      "percent_owned": 34.0,
-      "percent_started": 8.26,
+      "percent_owned": 34.07,
+      "percent_started": 8.14,
       "recent_activity_note": null
     }
   ]
