@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-26T12:45:18.412847+00:00",
+  "generated_at": "2026-09-26T19:05:44.145865+00:00",
   "week": 3,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Full Chubb",
     "my_score": 35.3,
     "opp_score": 0.0,
-    "my_projected": 152.43,
-    "opp_projected": 114.81
+    "my_projected": 151.15,
+    "opp_projected": 114.79
   },
   "lineup": {
     "recommended_starters": [
@@ -20,7 +20,7 @@
           "pro_team": "SF",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 20.8,
+          "proj_week_pts": 20.81,
           "lineup_slot": "QB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -71,7 +71,7 @@
           "pro_team": "NO",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 17.76,
+          "proj_week_pts": 17.75,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -88,7 +88,7 @@
           "pro_team": "LAR",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 16.89,
+          "proj_week_pts": 15.62,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -105,7 +105,7 @@
           "pro_team": "DET",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 11.2,
+          "proj_week_pts": 11.19,
           "lineup_slot": "TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -282,16 +282,16 @@
     "reasoning": [
       "Start Drake London (WR) in RB/WR/TE -- 15.4 proj pts, currently on bench."
     ],
-    "projected_total": 137.33
+    "projected_total": 136.05
   },
   "waiver_targets": [
     {
       "id": 3917315,
       "name": "Kyler Murray",
       "pos": "QB",
-      "proj_value": 12.7,
-      "percent_owned": 59.71,
-      "percent_started": 18.49,
+      "proj_value": 12.71,
+      "percent_owned": 59.84,
+      "percent_started": 18.64,
       "recent_activity_note": null
     },
     {
@@ -299,8 +299,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -6.03,
-      "percent_owned": 51.04,
-      "percent_started": 14.71,
+      "percent_owned": 51.0,
+      "percent_started": 14.72,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": -7.43,
-      "percent_owned": 83.65,
-      "percent_started": 12.06,
+      "percent_owned": 83.54,
+      "percent_started": 11.69,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -317,8 +317,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -7.54,
-      "percent_owned": 63.93,
-      "percent_started": 38.69,
+      "percent_owned": 64.48,
+      "percent_started": 39.38,
       "recent_activity_note": null
     },
     {
@@ -326,17 +326,17 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -9.46,
-      "percent_owned": 61.3,
-      "percent_started": 16.93,
+      "percent_owned": 61.24,
+      "percent_started": 16.9,
       "recent_activity_note": null
     },
     {
       "id": 3046779,
       "name": "Jared Goff",
       "pos": "QB",
-      "proj_value": -9.57,
-      "percent_owned": 79.04,
-      "percent_started": 36.63,
+      "proj_value": -9.56,
+      "percent_owned": 79.1,
+      "percent_started": 36.78,
       "recent_activity_note": null
     },
     {
@@ -344,7 +344,7 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -10.9,
-      "percent_owned": 55.04,
+      "percent_owned": 55.06,
       "percent_started": 18.65,
       "recent_activity_note": null
     },
@@ -352,18 +352,18 @@
       "id": 3052587,
       "name": "Baker Mayfield",
       "pos": "QB",
-      "proj_value": -16.59,
-      "percent_owned": 49.9,
-      "percent_started": 10.09,
+      "proj_value": -16.58,
+      "percent_owned": 49.82,
+      "percent_started": 10.03,
       "recent_activity_note": null
     },
     {
       "id": 3128429,
       "name": "Courtland Sutton",
       "pos": "WR",
-      "proj_value": -18.01,
-      "percent_owned": 85.87,
-      "percent_started": 23.0,
+      "proj_value": -18.0,
+      "percent_owned": 85.82,
+      "percent_started": 22.92,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -371,17 +371,17 @@
       "name": "Xavier Worthy",
       "pos": "WR",
       "proj_value": -19.96,
-      "percent_owned": 76.32,
-      "percent_started": 22.42,
+      "percent_owned": 76.36,
+      "percent_started": 22.56,
       "recent_activity_note": null
     },
     {
       "id": 4570037,
       "name": "Terrance Ferguson",
       "pos": "TE",
-      "proj_value": -20.92,
-      "percent_owned": 27.84,
-      "percent_started": 7.29,
+      "proj_value": -20.89,
+      "percent_owned": 28.66,
+      "percent_started": 7.79,
       "recent_activity_note": null
     },
     {
@@ -389,8 +389,8 @@
       "name": "Brian Thomas Jr.",
       "pos": "WR",
       "proj_value": -22.72,
-      "percent_owned": 76.55,
-      "percent_started": 8.81,
+      "percent_owned": 76.53,
+      "percent_started": 8.86,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -398,17 +398,17 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -22.88,
-      "percent_owned": 55.05,
-      "percent_started": 26.12,
+      "percent_owned": 55.04,
+      "percent_started": 26.11,
       "recent_activity_note": null
     },
     {
       "id": 4870653,
       "name": "KC Concepcion",
       "pos": "WR",
-      "proj_value": -27.66,
-      "percent_owned": 55.28,
-      "percent_started": 6.72,
+      "proj_value": -27.65,
+      "percent_owned": 55.32,
+      "percent_started": 6.79,
       "recent_activity_note": null
     },
     {
@@ -416,8 +416,8 @@
       "name": "Adonai Mitchell",
       "pos": "WR",
       "proj_value": -28.19,
-      "percent_owned": 34.17,
-      "percent_started": 8.01,
+      "percent_owned": 34.23,
+      "percent_started": 7.87,
       "recent_activity_note": null
     }
   ]
