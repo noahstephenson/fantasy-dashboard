@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T04:05:01.948723+00:00",
+  "generated_at": "2026-09-26T12:45:18.412847+00:00",
   "week": 3,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -290,8 +290,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 12.7,
-      "percent_owned": 59.58,
-      "percent_started": 18.39,
+      "percent_owned": 59.71,
+      "percent_started": 18.49,
       "recent_activity_note": null
     },
     {
@@ -299,8 +299,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -6.03,
-      "percent_owned": 51.03,
-      "percent_started": 14.69,
+      "percent_owned": 51.04,
+      "percent_started": 14.71,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": -7.43,
-      "percent_owned": 83.67,
-      "percent_started": 12.28,
+      "percent_owned": 83.65,
+      "percent_started": 12.06,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -317,8 +317,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -7.54,
-      "percent_owned": 63.53,
-      "percent_started": 38.28,
+      "percent_owned": 63.93,
+      "percent_started": 38.69,
       "recent_activity_note": null
     },
     {
@@ -326,8 +326,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -9.46,
-      "percent_owned": 61.31,
-      "percent_started": 16.95,
+      "percent_owned": 61.3,
+      "percent_started": 16.93,
       "recent_activity_note": null
     },
     {
@@ -335,8 +335,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -9.57,
-      "percent_owned": 78.96,
-      "percent_started": 36.52,
+      "percent_owned": 79.04,
+      "percent_started": 36.63,
       "recent_activity_note": null
     },
     {
@@ -344,8 +344,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": -10.9,
-      "percent_owned": 54.99,
-      "percent_started": 18.64,
+      "percent_owned": 55.04,
+      "percent_started": 18.65,
       "recent_activity_note": null
     },
     {
@@ -354,7 +354,7 @@
       "pos": "QB",
       "proj_value": -16.59,
       "percent_owned": 49.9,
-      "percent_started": 10.11,
+      "percent_started": 10.09,
       "recent_activity_note": null
     },
     {
@@ -362,8 +362,8 @@
       "name": "Courtland Sutton",
       "pos": "WR",
       "proj_value": -18.01,
-      "percent_owned": 85.85,
-      "percent_started": 23.02,
+      "percent_owned": 85.87,
+      "percent_started": 23.0,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -371,8 +371,8 @@
       "name": "Xavier Worthy",
       "pos": "WR",
       "proj_value": -19.96,
-      "percent_owned": 76.26,
-      "percent_started": 22.33,
+      "percent_owned": 76.32,
+      "percent_started": 22.42,
       "recent_activity_note": null
     },
     {
@@ -380,8 +380,8 @@
       "name": "Terrance Ferguson",
       "pos": "TE",
       "proj_value": -20.92,
-      "percent_owned": 27.32,
-      "percent_started": 7.0,
+      "percent_owned": 27.84,
+      "percent_started": 7.29,
       "recent_activity_note": null
     },
     {
@@ -389,8 +389,8 @@
       "name": "Brian Thomas Jr.",
       "pos": "WR",
       "proj_value": -22.72,
-      "percent_owned": 76.54,
-      "percent_started": 8.78,
+      "percent_owned": 76.55,
+      "percent_started": 8.81,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -398,8 +398,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -22.88,
-      "percent_owned": 55.04,
-      "percent_started": 26.11,
+      "percent_owned": 55.05,
+      "percent_started": 26.12,
       "recent_activity_note": null
     },
     {
@@ -407,8 +407,8 @@
       "name": "KC Concepcion",
       "pos": "WR",
       "proj_value": -27.66,
-      "percent_owned": 55.22,
-      "percent_started": 6.68,
+      "percent_owned": 55.28,
+      "percent_started": 6.72,
       "recent_activity_note": null
     },
     {
@@ -416,8 +416,8 @@
       "name": "Adonai Mitchell",
       "pos": "WR",
       "proj_value": -28.19,
-      "percent_owned": 34.1,
-      "percent_started": 8.05,
+      "percent_owned": 34.17,
+      "percent_started": 8.01,
       "recent_activity_note": null
     }
   ]
