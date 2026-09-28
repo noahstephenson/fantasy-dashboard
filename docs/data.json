@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T04:19:44.926435+00:00",
+  "generated_at": "2026-09-28T16:33:26.842313+00:00",
   "week": 3,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -56,7 +56,7 @@
           "proj_pts": 0,
           "proj_week_pts": 19.42,
           "lineup_slot": "RB",
-          "injury_status": "DOUBTFUL",
+          "injury_status": "OUT",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -288,8 +288,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 7.92,
-      "percent_owned": 60.89,
-      "percent_started": 20.08,
+      "percent_owned": 60.9,
+      "percent_started": 20.09,
       "recent_activity_note": null
     },
     {
@@ -297,8 +297,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 82.49,
-      "percent_started": 7.59,
+      "percent_owned": 82.43,
+      "percent_started": 7.39,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -307,7 +307,7 @@
       "pos": "QB",
       "proj_value": -7.31,
       "percent_owned": 79.48,
-      "percent_started": 38.17,
+      "percent_started": 38.18,
       "recent_activity_note": null
     },
     {
@@ -316,7 +316,7 @@
       "pos": "TE",
       "proj_value": -7.93,
       "percent_owned": 55.21,
-      "percent_started": 18.12,
+      "percent_started": 18.09,
       "recent_activity_note": null
     },
     {
@@ -324,8 +324,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -13.87,
-      "percent_owned": 50.86,
-      "percent_started": 14.81,
+      "percent_owned": 50.83,
+      "percent_started": 14.79,
       "recent_activity_note": null
     },
     {
@@ -334,7 +334,7 @@
       "pos": "TE",
       "proj_value": -17.69,
       "percent_owned": 2.91,
-      "percent_started": 0.71,
+      "percent_started": 0.7,
       "recent_activity_note": null
     },
     {
@@ -342,7 +342,7 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -18.37,
-      "percent_owned": 33.49,
+      "percent_owned": 33.48,
       "percent_started": 5.09,
       "recent_activity_note": null
     },
@@ -351,8 +351,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -19.35,
-      "percent_owned": 67.46,
-      "percent_started": 43.76,
+      "percent_owned": 67.49,
+      "percent_started": 43.82,
       "recent_activity_note": null
     },
     {
@@ -360,8 +360,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -21.56,
-      "percent_owned": 49.42,
-      "percent_started": 9.55,
+      "percent_owned": 49.39,
+      "percent_started": 9.53,
       "recent_activity_note": null
     },
     {
@@ -369,8 +369,8 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": -23.61,
-      "percent_owned": 50.53,
-      "percent_started": 0.13,
+      "percent_owned": 50.51,
+      "percent_started": 0.14,
       "recent_activity_note": null
     },
     {
@@ -378,8 +378,8 @@
       "name": "Terrance Ferguson",
       "pos": "TE",
       "proj_value": -25.14,
-      "percent_owned": 34.95,
-      "percent_started": 11.58,
+      "percent_owned": 35.03,
+      "percent_started": 11.63,
       "recent_activity_note": null
     },
     {
@@ -387,8 +387,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -26.11,
-      "percent_owned": 60.88,
-      "percent_started": 16.19,
+      "percent_owned": 60.85,
+      "percent_started": 16.16,
       "recent_activity_note": null
     },
     {
@@ -396,8 +396,8 @@
       "name": "Courtland Sutton",
       "pos": "WR",
       "proj_value": -26.49,
-      "percent_owned": 85.52,
-      "percent_started": 22.01,
+      "percent_owned": 85.51,
+      "percent_started": 21.99,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -406,7 +406,7 @@
       "pos": "WR",
       "proj_value": -28.19,
       "percent_owned": 55.68,
-      "percent_started": 7.45,
+      "percent_started": 7.46,
       "recent_activity_note": null
     },
     {
@@ -414,8 +414,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -28.19,
-      "percent_owned": 17.99,
-      "percent_started": 2.43,
+      "percent_owned": 17.97,
+      "percent_started": 2.42,
       "recent_activity_note": null
     }
   ]
