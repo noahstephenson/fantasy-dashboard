@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T17:49:57.223083+00:00",
+  "generated_at": "2026-09-29T23:31:48.438158+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -7,7 +7,7 @@
     "my_score": 0.0,
     "opp_score": 0.0,
     "my_projected": 112.28,
-    "opp_projected": 123.11
+    "opp_projected": 120.05
   },
   "lineup": {
     "recommended_starters": [
@@ -291,8 +291,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 3.17,
-      "percent_owned": 82.16,
-      "percent_started": 7.28,
+      "percent_owned": 82.09,
+      "percent_started": 7.22,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -300,8 +300,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 2.63,
-      "percent_owned": 60.73,
-      "percent_started": 21.43,
+      "percent_owned": 60.68,
+      "percent_started": 21.87,
       "recent_activity_note": null
     },
     {
@@ -309,8 +309,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": 0.33,
-      "percent_owned": 79.43,
-      "percent_started": 39.27,
+      "percent_owned": 79.42,
+      "percent_started": 39.67,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 55.29,
-      "percent_started": 23.21,
+      "percent_owned": 55.3,
+      "percent_started": 24.41,
       "recent_activity_note": null
     },
     {
@@ -327,8 +327,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -10.03,
-      "percent_owned": 33.6,
-      "percent_started": 7.21,
+      "percent_owned": 33.62,
+      "percent_started": 7.74,
       "recent_activity_note": null
     },
     {
@@ -336,8 +336,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -16.53,
-      "percent_owned": 54.72,
-      "percent_started": 24.06,
+      "percent_owned": 54.66,
+      "percent_started": 23.57,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -18.04,
-      "percent_owned": 1.57,
-      "percent_started": 0.24,
+      "percent_owned": 1.63,
+      "percent_started": 0.28,
       "recent_activity_note": null
     },
     {
@@ -354,8 +354,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -19.65,
-      "percent_owned": 50.53,
-      "percent_started": 13.7,
+      "percent_owned": 50.44,
+      "percent_started": 13.4,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -21.02,
-      "percent_owned": 67.07,
-      "percent_started": 37.63,
+      "percent_owned": 66.92,
+      "percent_started": 36.44,
       "recent_activity_note": null
     },
     {
@@ -373,7 +373,7 @@
       "pos": "WR",
       "proj_value": -27.21,
       "percent_owned": 13.37,
-      "percent_started": 3.23,
+      "percent_started": 3.3,
       "recent_activity_note": null
     },
     {
@@ -382,7 +382,7 @@
       "pos": "TE",
       "proj_value": -28.01,
       "percent_owned": 4.95,
-      "percent_started": 0.91,
+      "percent_started": 0.93,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "RJ Harvey",
       "pos": "RB",
       "proj_value": -28.33,
-      "percent_owned": 68.82,
-      "percent_started": 6.27,
+      "percent_owned": 68.8,
+      "percent_started": 6.97,
       "recent_activity_note": null
     },
     {
@@ -400,7 +400,7 @@
       "pos": "WR",
       "proj_value": -28.33,
       "percent_owned": 69.89,
-      "percent_started": 6.61,
+      "percent_started": 7.36,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -408,8 +408,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -28.46,
-      "percent_owned": 17.9,
-      "percent_started": 2.58,
+      "percent_owned": 17.88,
+      "percent_started": 2.62,
       "recent_activity_note": null
     },
     {
