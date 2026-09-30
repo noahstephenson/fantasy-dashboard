@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T14:43:15.087630+00:00",
+  "generated_at": "2026-09-30T20:37:56.736701+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -291,8 +291,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 3.17,
-      "percent_owned": 80.35,
-      "percent_started": 7.0,
+      "percent_owned": 80.08,
+      "percent_started": 6.86,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -300,8 +300,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 2.63,
-      "percent_owned": 61.2,
-      "percent_started": 23.28,
+      "percent_owned": 61.64,
+      "percent_started": 24.29,
       "recent_activity_note": null
     },
     {
@@ -309,8 +309,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": 0.34,
-      "percent_owned": 80.68,
-      "percent_started": 40.82,
+      "percent_owned": 80.92,
+      "percent_started": 41.54,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 66.78,
-      "percent_started": 31.5,
+      "percent_owned": 68.41,
+      "percent_started": 34.18,
       "recent_activity_note": null
     },
     {
@@ -327,8 +327,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -10.03,
-      "percent_owned": 51.89,
-      "percent_started": 13.5,
+      "percent_owned": 53.97,
+      "percent_started": 14.81,
       "recent_activity_note": null
     },
     {
@@ -336,8 +336,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -16.53,
-      "percent_owned": 53.69,
-      "percent_started": 21.52,
+      "percent_owned": 53.3,
+      "percent_started": 20.7,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -18.04,
-      "percent_owned": 51.75,
-      "percent_started": 9.37,
+      "percent_owned": 55.56,
+      "percent_started": 11.34,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -354,8 +354,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -19.65,
-      "percent_owned": 47.4,
-      "percent_started": 11.99,
+      "percent_owned": 46.87,
+      "percent_started": 11.53,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -21.02,
-      "percent_owned": 61.57,
-      "percent_started": 31.83,
+      "percent_owned": 60.9,
+      "percent_started": 30.65,
       "recent_activity_note": null
     },
     {
@@ -372,8 +372,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -27.21,
-      "percent_owned": 17.66,
-      "percent_started": 3.82,
+      "percent_owned": 18.88,
+      "percent_started": 4.09,
       "recent_activity_note": null
     },
     {
@@ -381,8 +381,8 @@
       "name": "AJ Barner",
       "pos": "TE",
       "proj_value": -28.01,
-      "percent_owned": 6.56,
-      "percent_started": 1.64,
+      "percent_owned": 7.01,
+      "percent_started": 1.92,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "RJ Harvey",
       "pos": "RB",
       "proj_value": -28.33,
-      "percent_owned": 69.1,
-      "percent_started": 8.25,
+      "percent_owned": 69.36,
+      "percent_started": 8.87,
       "recent_activity_note": null
     },
     {
@@ -399,8 +399,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -28.33,
-      "percent_owned": 72.85,
-      "percent_started": 9.1,
+      "percent_owned": 73.37,
+      "percent_started": 9.93,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -408,8 +408,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -28.46,
-      "percent_owned": 17.36,
-      "percent_started": 2.74,
+      "percent_owned": 17.28,
+      "percent_started": 2.78,
       "recent_activity_note": null
     },
     {
@@ -417,8 +417,8 @@
       "name": "Cade Otton",
       "pos": "TE",
       "proj_value": -28.63,
-      "percent_owned": 2.98,
-      "percent_started": 0.8,
+      "percent_owned": 3.03,
+      "percent_started": 0.83,
       "recent_activity_note": null
     }
   ]
