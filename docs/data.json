@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T04:48:08.851934+00:00",
+  "generated_at": "2026-10-01T15:12:08.271748+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -291,8 +291,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 3.17,
-      "percent_owned": 79.75,
-      "percent_started": 6.69,
+      "percent_owned": 79.63,
+      "percent_started": 6.59,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -300,8 +300,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 2.67,
-      "percent_owned": 62.11,
-      "percent_started": 25.28,
+      "percent_owned": 62.68,
+      "percent_started": 25.94,
       "recent_activity_note": null
     },
     {
@@ -309,8 +309,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": 0.39,
-      "percent_owned": 81.13,
-      "percent_started": 42.16,
+      "percent_owned": 81.36,
+      "percent_started": 42.52,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 69.86,
-      "percent_started": 36.44,
+      "percent_owned": 70.98,
+      "percent_started": 37.92,
       "recent_activity_note": null
     },
     {
@@ -327,8 +327,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -9.48,
-      "percent_owned": 55.26,
-      "percent_started": 15.46,
+      "percent_owned": 56.48,
+      "percent_started": 16.09,
       "recent_activity_note": null
     },
     {
@@ -336,8 +336,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -16.48,
-      "percent_owned": 52.95,
-      "percent_started": 19.99,
+      "percent_owned": 52.75,
+      "percent_started": 19.55,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -19.65,
-      "percent_owned": 46.32,
-      "percent_started": 11.06,
+      "percent_owned": 45.88,
+      "percent_started": 10.75,
       "recent_activity_note": null
     },
     {
@@ -354,8 +354,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -21.02,
-      "percent_owned": 60.27,
-      "percent_started": 29.57,
+      "percent_owned": 60.06,
+      "percent_started": 28.95,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -23.97,
-      "percent_owned": 58.2,
-      "percent_started": 12.43,
+      "percent_owned": 60.75,
+      "percent_started": 13.37,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -372,8 +372,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -27.37,
-      "percent_owned": 19.8,
-      "percent_started": 4.3,
+      "percent_owned": 20.58,
+      "percent_started": 4.44,
       "recent_activity_note": null
     },
     {
@@ -381,8 +381,8 @@
       "name": "AJ Barner",
       "pos": "TE",
       "proj_value": -28.01,
-      "percent_owned": 7.26,
-      "percent_started": 2.08,
+      "percent_owned": 7.46,
+      "percent_started": 2.19,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -28.33,
-      "percent_owned": 73.54,
-      "percent_started": 10.11,
+      "percent_owned": 73.84,
+      "percent_started": 10.29,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -399,7 +399,7 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -28.46,
-      "percent_owned": 17.18,
+      "percent_owned": 17.09,
       "percent_started": 2.8,
       "recent_activity_note": null
     },
@@ -408,8 +408,8 @@
       "name": "Cade Otton",
       "pos": "TE",
       "proj_value": -28.64,
-      "percent_owned": 3.05,
-      "percent_started": 0.84,
+      "percent_owned": 3.06,
+      "percent_started": 0.85,
       "recent_activity_note": null
     },
     {
@@ -417,8 +417,8 @@
       "name": "RJ Harvey",
       "pos": "RB",
       "proj_value": -28.88,
-      "percent_owned": 69.63,
-      "percent_started": 9.53,
+      "percent_owned": 70.04,
+      "percent_started": 9.88,
       "recent_activity_note": null
     }
   ]
