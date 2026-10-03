@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-02T20:26:51.422174+00:00",
+  "generated_at": "2026-10-03T04:22:23.408822+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Gaza Goyim",
     "my_score": 0.0,
     "opp_score": 0.0,
-    "my_projected": 129.51,
-    "opp_projected": 128.47
+    "my_projected": 129.62,
+    "opp_projected": 128.5
   },
   "lineup": {
     "recommended_starters": [
@@ -54,7 +54,7 @@
           "pro_team": "NYG",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 16.11,
+          "proj_week_pts": 16.12,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -122,7 +122,7 @@
           "pro_team": "PHI",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 4.12,
+          "proj_week_pts": 4.03,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -156,7 +156,7 @@
           "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 16.48,
+          "proj_week_pts": 16.49,
           "lineup_slot": "RB/WR/TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -173,7 +173,7 @@
         "pro_team": "LAR",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 14.66,
+        "proj_week_pts": 14.85,
         "lineup_slot": "WR",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -282,7 +282,7 @@
     "reasoning": [
       "Start Drake London (WR) in WR -- 16.7 proj pts, currently on bench."
     ],
-    "projected_total": 131.56
+    "projected_total": 131.49
   },
   "waiver_targets": [
     {
@@ -290,8 +290,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 2.95,
-      "percent_owned": 64.14,
-      "percent_started": 28.83,
+      "percent_owned": 64.26,
+      "percent_started": 29.02,
       "recent_activity_note": null
     },
     {
@@ -299,8 +299,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 2.9,
-      "percent_owned": 78.97,
-      "percent_started": 5.97,
+      "percent_owned": 78.8,
+      "percent_started": 5.85,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -308,8 +308,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 81.95,
-      "percent_started": 43.95,
+      "percent_owned": 81.99,
+      "percent_started": 44.07,
       "recent_activity_note": null
     },
     {
@@ -317,26 +317,35 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 73.65,
-      "percent_started": 42.64,
+      "percent_owned": 74.02,
+      "percent_started": 43.24,
       "recent_activity_note": null
     },
     {
       "id": 5083315,
       "name": "Kenyon Sadiq",
       "pos": "TE",
-      "proj_value": -9.61,
-      "percent_owned": 57.75,
-      "percent_started": 17.06,
+      "proj_value": -9.6,
+      "percent_owned": 57.87,
+      "percent_started": 17.11,
       "recent_activity_note": null
     },
     {
       "id": 4036378,
       "name": "Jordan Love",
       "pos": "QB",
-      "proj_value": -17.16,
-      "percent_owned": 52.03,
-      "percent_started": 17.96,
+      "proj_value": -17.17,
+      "percent_owned": 51.87,
+      "percent_started": 17.79,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3912547,
+      "name": "Sam Darnold",
+      "pos": "QB",
+      "proj_value": -17.43,
+      "percent_owned": 51.39,
+      "percent_started": 23.61,
       "recent_activity_note": null
     },
     {
@@ -344,17 +353,17 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -19.93,
-      "percent_owned": 44.73,
-      "percent_started": 9.76,
+      "percent_owned": 44.52,
+      "percent_started": 9.68,
       "recent_activity_note": null
     },
     {
       "id": 3117256,
       "name": "Dalton Schultz",
       "pos": "TE",
-      "proj_value": -21.2,
-      "percent_owned": 59.16,
-      "percent_started": 27.14,
+      "proj_value": -21.19,
+      "percent_owned": 58.84,
+      "percent_started": 26.84,
       "recent_activity_note": null
     },
     {
@@ -362,17 +371,26 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -22.56,
-      "percent_owned": 62.87,
-      "percent_started": 14.18,
+      "percent_owned": 62.74,
+      "percent_started": 14.21,
       "recent_activity_note": "DROPPED by Epstein Elementary"
+    },
+    {
+      "id": 4576297,
+      "name": "AJ Barner",
+      "pos": "TE",
+      "proj_value": -24.69,
+      "percent_owned": 8.09,
+      "percent_started": 2.61,
+      "recent_activity_note": null
     },
     {
       "id": 4569603,
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -26.4,
-      "percent_owned": 23.92,
-      "percent_started": 6.1,
+      "percent_owned": 24.53,
+      "percent_started": 6.65,
       "recent_activity_note": null
     },
     {
@@ -381,7 +399,7 @@
       "pos": "RB",
       "proj_value": -27.71,
       "percent_owned": 71.02,
-      "percent_started": 12.0,
+      "percent_started": 12.25,
       "recent_activity_note": null
     },
     {
@@ -389,8 +407,8 @@
       "name": "Jacoby Brissett",
       "pos": "QB",
       "proj_value": -27.8,
-      "percent_owned": 8.87,
-      "percent_started": 3.51,
+      "percent_owned": 9.04,
+      "percent_started": 3.62,
       "recent_activity_note": null
     },
     {
@@ -398,27 +416,9 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -27.84,
-      "percent_owned": 74.24,
-      "percent_started": 11.18,
+      "percent_owned": 74.42,
+      "percent_started": 12.18,
       "recent_activity_note": "DROPPED by Torta pounders"
-    },
-    {
-      "id": 4426385,
-      "name": "Zach Charbonnet",
-      "pos": "RB",
-      "proj_value": -28.02,
-      "percent_owned": 55.39,
-      "percent_started": 0.14,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3122840,
-      "name": "Deshaun Watson",
-      "pos": "QB",
-      "proj_value": -28.06,
-      "percent_owned": 8.57,
-      "percent_started": 3.57,
-      "recent_activity_note": null
     }
   ]
 }
