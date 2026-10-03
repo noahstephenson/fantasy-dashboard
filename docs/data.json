@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-03T13:08:16.933104+00:00",
+  "generated_at": "2026-10-03T19:05:40.879864+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Gaza Goyim",
     "my_score": 0.0,
     "opp_score": 0.0,
-    "my_projected": 129.62,
-    "opp_projected": 128.5
+    "my_projected": 130.44,
+    "opp_projected": 132.18
   },
   "lineup": {
     "recommended_starters": [
@@ -122,7 +122,7 @@
           "pro_team": "PHI",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 4.03,
+          "proj_week_pts": 4.07,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -173,7 +173,7 @@
         "pro_team": "LAR",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 14.85,
+        "proj_week_pts": 15.63,
         "lineup_slot": "WR",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -195,15 +195,15 @@
         "total_points": 0
       },
       {
-        "id": 3121422,
-        "name": "Terry McLaurin",
+        "id": 2976212,
+        "name": "Stefon Diggs",
         "pos": "WR",
         "pro_team": "WSH",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 13.03,
+        "proj_week_pts": 12.78,
         "lineup_slot": "BE",
-        "injury_status": "QUESTIONABLE",
+        "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -223,20 +223,6 @@
         "total_points": 0
       },
       {
-        "id": 2976212,
-        "name": "Stefon Diggs",
-        "pos": "WR",
-        "pro_team": "WSH",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 11.64,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
         "id": 4429160,
         "name": "De'Von Achane",
         "pos": "RB",
@@ -246,6 +232,20 @@
         "proj_week_pts": 0,
         "lineup_slot": "BE",
         "injury_status": "INJURY_RESERVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
+        "id": 3121422,
+        "name": "Terry McLaurin",
+        "pos": "WR",
+        "pro_team": "WSH",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "BE",
+        "injury_status": "DOUBTFUL",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -282,34 +282,25 @@
     "reasoning": [
       "Start Drake London (WR) in WR -- 16.7 proj pts, currently on bench."
     ],
-    "projected_total": 131.49
+    "projected_total": 131.53
   },
   "waiver_targets": [
-    {
-      "id": 3917315,
-      "name": "Kyler Murray",
-      "pos": "QB",
-      "proj_value": 2.95,
-      "percent_owned": 64.33,
-      "percent_started": 29.09,
-      "recent_activity_note": null
-    },
     {
       "id": 3121023,
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 2.9,
-      "percent_owned": 78.75,
-      "percent_started": 5.82,
+      "percent_owned": 78.66,
+      "percent_started": 5.75,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
-      "id": 3046779,
-      "name": "Jared Goff",
+      "id": 3917315,
+      "name": "Kyler Murray",
       "pos": "QB",
-      "proj_value": 0.0,
-      "percent_owned": 82.02,
-      "percent_started": 44.11,
+      "proj_value": 0.76,
+      "percent_owned": 64.43,
+      "percent_started": 29.26,
       "recent_activity_note": null
     },
     {
@@ -317,8 +308,17 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 74.15,
-      "percent_started": 43.42,
+      "percent_owned": 74.39,
+      "percent_started": 43.83,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3046779,
+      "name": "Jared Goff",
+      "pos": "QB",
+      "proj_value": -2.19,
+      "percent_owned": 82.06,
+      "percent_started": 44.19,
       "recent_activity_note": null
     },
     {
@@ -326,26 +326,26 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -9.6,
-      "percent_owned": 57.93,
-      "percent_started": 17.1,
+      "percent_owned": 58.01,
+      "percent_started": 17.12,
       "recent_activity_note": null
     },
     {
       "id": 4036378,
       "name": "Jordan Love",
       "pos": "QB",
-      "proj_value": -17.17,
-      "percent_owned": 51.81,
-      "percent_started": 17.73,
+      "proj_value": -19.36,
+      "percent_owned": 51.71,
+      "percent_started": 17.62,
       "recent_activity_note": null
     },
     {
       "id": 3912547,
       "name": "Sam Darnold",
       "pos": "QB",
-      "proj_value": -17.43,
-      "percent_owned": 51.53,
-      "percent_started": 23.74,
+      "proj_value": -19.62,
+      "percent_owned": 51.76,
+      "percent_started": 24.03,
       "recent_activity_note": null
     },
     {
@@ -353,8 +353,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -19.93,
-      "percent_owned": 44.41,
-      "percent_started": 9.63,
+      "percent_owned": 44.29,
+      "percent_started": 9.58,
       "recent_activity_note": null
     },
     {
@@ -362,8 +362,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -21.19,
-      "percent_owned": 58.73,
-      "percent_started": 26.74,
+      "percent_owned": 58.57,
+      "percent_started": 26.62,
       "recent_activity_note": null
     },
     {
@@ -371,8 +371,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -22.56,
-      "percent_owned": 62.75,
-      "percent_started": 14.15,
+      "percent_owned": 62.67,
+      "percent_started": 14.1,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -380,8 +380,8 @@
       "name": "AJ Barner",
       "pos": "TE",
       "proj_value": -24.69,
-      "percent_owned": 8.11,
-      "percent_started": 2.62,
+      "percent_owned": 8.18,
+      "percent_started": 2.66,
       "recent_activity_note": null
     },
     {
@@ -389,8 +389,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -26.4,
-      "percent_owned": 24.71,
-      "percent_started": 6.75,
+      "percent_owned": 25.28,
+      "percent_started": 7.39,
       "recent_activity_note": null
     },
     {
@@ -398,17 +398,8 @@
       "name": "RJ Harvey",
       "pos": "RB",
       "proj_value": -27.71,
-      "percent_owned": 71.03,
-      "percent_started": 12.28,
-      "recent_activity_note": null
-    },
-    {
-      "id": 2578570,
-      "name": "Jacoby Brissett",
-      "pos": "QB",
-      "proj_value": -27.8,
-      "percent_owned": 9.09,
-      "percent_started": 3.65,
+      "percent_owned": 71.04,
+      "percent_started": 12.44,
       "recent_activity_note": null
     },
     {
@@ -416,9 +407,18 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -27.84,
-      "percent_owned": 74.48,
-      "percent_started": 12.35,
+      "percent_owned": 74.65,
+      "percent_started": 13.1,
       "recent_activity_note": "DROPPED by Torta pounders"
+    },
+    {
+      "id": 4243331,
+      "name": "Cade Otton",
+      "pos": "TE",
+      "proj_value": -28.54,
+      "percent_owned": 3.13,
+      "percent_started": 0.88,
+      "recent_activity_note": null
     }
   ]
 }
