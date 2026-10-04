@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-04T04:52:54.195789+00:00",
+  "generated_at": "2026-10-04T13:47:41.867941+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Gaza Goyim",
     "my_score": 0.0,
-    "opp_score": 0.0,
+    "opp_score": 1.5,
     "my_projected": 130.45,
-    "opp_projected": 134.3
+    "opp_projected": 133.84
   },
   "lineup": {
     "recommended_starters": [
@@ -245,7 +245,7 @@
         "proj_pts": 0,
         "proj_week_pts": 0,
         "lineup_slot": "BE",
-        "injury_status": "DOUBTFUL",
+        "injury_status": "OUT",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -290,8 +290,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 2.9,
-      "percent_owned": 78.47,
-      "percent_started": 5.62,
+      "percent_owned": 78.34,
+      "percent_started": 5.5,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -299,8 +299,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 0.76,
-      "percent_owned": 64.6,
-      "percent_started": 29.58,
+      "percent_owned": 64.78,
+      "percent_started": 29.93,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 74.79,
-      "percent_started": 44.53,
+      "percent_owned": 75.11,
+      "percent_started": 45.23,
       "recent_activity_note": null
     },
     {
@@ -317,8 +317,8 @@
       "name": "Jared Goff",
       "pos": "QB",
       "proj_value": -2.19,
-      "percent_owned": 82.11,
-      "percent_started": 44.37,
+      "percent_owned": 82.18,
+      "percent_started": 44.58,
       "recent_activity_note": null
     },
     {
@@ -326,8 +326,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -9.6,
-      "percent_owned": 58.08,
-      "percent_started": 17.04,
+      "percent_owned": 58.14,
+      "percent_started": 16.84,
       "recent_activity_note": null
     },
     {
@@ -335,8 +335,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -19.36,
-      "percent_owned": 51.53,
-      "percent_started": 17.42,
+      "percent_owned": 51.38,
+      "percent_started": 17.23,
       "recent_activity_note": null
     },
     {
@@ -344,8 +344,8 @@
       "name": "Sam Darnold",
       "pos": "QB",
       "proj_value": -19.68,
-      "percent_owned": 52.16,
-      "percent_started": 24.53,
+      "percent_owned": 52.53,
+      "percent_started": 25.04,
       "recent_activity_note": null
     },
     {
@@ -353,8 +353,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -19.93,
-      "percent_owned": 44.05,
-      "percent_started": 9.48,
+      "percent_owned": 43.86,
+      "percent_started": 9.36,
       "recent_activity_note": null
     },
     {
@@ -362,8 +362,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -20.14,
-      "percent_owned": 26.14,
-      "percent_started": 8.14,
+      "percent_owned": 26.93,
+      "percent_started": 8.9,
       "recent_activity_note": null
     },
     {
@@ -371,8 +371,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -21.19,
-      "percent_owned": 58.24,
-      "percent_started": 26.32,
+      "percent_owned": 58.05,
+      "percent_started": 26.11,
       "recent_activity_note": null
     },
     {
@@ -380,8 +380,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -21.58,
-      "percent_owned": 74.91,
-      "percent_started": 14.22,
+      "percent_owned": 75.15,
+      "percent_started": 15.51,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -389,8 +389,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -22.56,
-      "percent_owned": 62.47,
-      "percent_started": 13.88,
+      "percent_owned": 62.46,
+      "percent_started": 13.75,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -398,7 +398,7 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": -23.58,
-      "percent_owned": 57.26,
+      "percent_owned": 57.68,
       "percent_started": 0.14,
       "recent_activity_note": null
     },
@@ -407,8 +407,8 @@
       "name": "Courtland Sutton",
       "pos": "WR",
       "proj_value": -24.35,
-      "percent_owned": 82.63,
-      "percent_started": 19.81,
+      "percent_owned": 82.61,
+      "percent_started": 20.22,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -416,8 +416,8 @@
       "name": "AJ Barner",
       "pos": "TE",
       "proj_value": -24.63,
-      "percent_owned": 8.28,
-      "percent_started": 2.73,
+      "percent_owned": 8.38,
+      "percent_started": 2.81,
       "recent_activity_note": null
     }
   ]
