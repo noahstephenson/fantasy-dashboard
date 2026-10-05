@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-04T22:52:00.193356+00:00",
+  "generated_at": "2026-10-05T04:40:27.744479+00:00",
   "week": 4,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Gaza Goyim",
-    "my_score": 39.52,
-    "opp_score": 121.9,
-    "my_projected": 94.81,
-    "opp_projected": 161.42
+    "my_score": 70.52,
+    "opp_score": 197.26,
+    "my_projected": 110.21,
+    "opp_projected": 197.26
   },
   "lineup": {
     "recommended_starters": [
@@ -289,134 +289,134 @@
       "id": 3121023,
       "name": "Dallas Goedert",
       "pos": "TE",
-      "proj_value": 3.1,
-      "percent_owned": 78.12,
-      "percent_started": 5.28,
+      "proj_value": 7.81,
+      "percent_owned": 78.1,
+      "percent_started": 5.29,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
       "id": 3917315,
       "name": "Kyler Murray",
       "pos": "QB",
-      "proj_value": 0.76,
-      "percent_owned": 65.08,
-      "percent_started": 30.45,
+      "proj_value": 0.58,
+      "percent_owned": 65.06,
+      "percent_started": 30.43,
       "recent_activity_note": null
     },
     {
       "id": 3046779,
       "name": "Jared Goff",
       "pos": "QB",
-      "proj_value": -2.17,
-      "percent_owned": 82.29,
-      "percent_started": 44.97,
+      "proj_value": -2.19,
+      "percent_owned": 82.28,
+      "percent_started": 44.99,
       "recent_activity_note": null
     },
     {
-      "id": 5083315,
-      "name": "Kenyon Sadiq",
+      "id": 4036133,
+      "name": "T.J. Hockenson",
       "pos": "TE",
-      "proj_value": -9.62,
-      "percent_owned": 58.3,
-      "percent_started": 17.92,
+      "proj_value": -8.04,
+      "percent_owned": 54.73,
+      "percent_started": 13.39,
       "recent_activity_note": null
     },
     {
-      "id": 4036378,
-      "name": "Jordan Love",
-      "pos": "QB",
-      "proj_value": -19.37,
-      "percent_owned": 51.21,
-      "percent_started": 17.01,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3912547,
-      "name": "Sam Darnold",
-      "pos": "QB",
-      "proj_value": -19.75,
-      "percent_owned": 53.31,
-      "percent_started": 26.04,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3046439,
-      "name": "Hunter Henry",
+      "id": 4430539,
+      "name": "Brenton Strange",
       "pos": "TE",
-      "proj_value": -19.9,
-      "percent_owned": 43.62,
-      "percent_started": 9.17,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4569603,
-      "name": "Malik Washington",
-      "pos": "WR",
-      "proj_value": -20.14,
-      "percent_owned": 28.25,
-      "percent_started": 10.09,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3117256,
-      "name": "Dalton Schultz",
-      "pos": "TE",
-      "proj_value": -21.15,
-      "percent_owned": 57.77,
-      "percent_started": 25.7,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3916433,
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "proj_value": -21.62,
-      "percent_owned": 75.38,
-      "percent_started": 17.01,
-      "recent_activity_note": "DROPPED by Torta pounders"
-    },
-    {
-      "id": 4711533,
-      "name": "Ollie Gordon II",
-      "pos": "RB",
-      "proj_value": -22.54,
-      "percent_owned": 62.37,
-      "percent_started": 13.6,
-      "recent_activity_note": "DROPPED by Epstein Elementary"
-    },
-    {
-      "id": 3122840,
-      "name": "Deshaun Watson",
-      "pos": "QB",
-      "proj_value": -23.5,
-      "percent_owned": 8.56,
-      "percent_started": 3.56,
+      "proj_value": -8.76,
+      "percent_owned": 16.69,
+      "percent_started": 3.08,
       "recent_activity_note": null
     },
     {
       "id": 4426385,
       "name": "Zach Charbonnet",
       "pos": "RB",
-      "proj_value": -23.59,
-      "percent_owned": 58.06,
+      "proj_value": -10.62,
+      "percent_owned": 58.04,
       "percent_started": 0.14,
       "recent_activity_note": null
     },
     {
-      "id": 3128429,
-      "name": "Courtland Sutton",
+      "id": 4568490,
+      "name": "RJ Harvey",
+      "pos": "RB",
+      "proj_value": -13.87,
+      "percent_owned": 71.05,
+      "percent_started": 13.54,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4569603,
+      "name": "Malik Washington",
       "pos": "WR",
-      "proj_value": -24.42,
-      "percent_owned": 82.55,
-      "percent_started": 20.78,
-      "recent_activity_note": "DROPPED by Gaza Goyim"
+      "proj_value": -13.93,
+      "percent_owned": 28.24,
+      "percent_started": 10.08,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4036378,
+      "name": "Jordan Love",
+      "pos": "QB",
+      "proj_value": -14.4,
+      "percent_owned": 51.18,
+      "percent_started": 16.99,
+      "recent_activity_note": null
+    },
+    {
+      "id": 5083315,
+      "name": "Kenyon Sadiq",
+      "pos": "TE",
+      "proj_value": -14.93,
+      "percent_owned": 58.27,
+      "percent_started": 17.91,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4711533,
+      "name": "Ollie Gordon II",
+      "pos": "RB",
+      "proj_value": -16.13,
+      "percent_owned": 62.34,
+      "percent_started": 13.6,
+      "recent_activity_note": "DROPPED by Epstein Elementary"
+    },
+    {
+      "id": 3912547,
+      "name": "Sam Darnold",
+      "pos": "QB",
+      "proj_value": -17.44,
+      "percent_owned": 53.29,
+      "percent_started": 26.02,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3122840,
+      "name": "Deshaun Watson",
+      "pos": "QB",
+      "proj_value": -20.39,
+      "percent_owned": 8.56,
+      "percent_started": 3.56,
+      "recent_activity_note": null
+    },
+    {
+      "id": 2578570,
+      "name": "Jacoby Brissett",
+      "pos": "QB",
+      "proj_value": -26.29,
+      "percent_owned": 9.92,
+      "percent_started": 4.27,
+      "recent_activity_note": null
     },
     {
       "id": 4576297,
       "name": "AJ Barner",
       "pos": "TE",
-      "proj_value": -24.63,
-      "percent_owned": 8.6,
+      "proj_value": -27.17,
+      "percent_owned": 8.59,
       "percent_started": 2.93,
       "recent_activity_note": null
     }
