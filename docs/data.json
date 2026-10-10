@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T04:54:54.050441+00:00",
+  "generated_at": "2026-10-10T14:18:52.301632+00:00",
   "week": 5,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -276,8 +276,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 3.19,
-      "percent_owned": 77.65,
-      "percent_started": 17.3,
+      "percent_owned": 77.82,
+      "percent_started": 18.03,
       "recent_activity_note": null
     },
     {
@@ -285,8 +285,8 @@
       "name": "Jalen Hurts",
       "pos": "QB",
       "proj_value": 2.66,
-      "percent_owned": 96.42,
-      "percent_started": 59.73,
+      "percent_owned": 96.44,
+      "percent_started": 59.61,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -294,7 +294,7 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": -7.57,
-      "percent_owned": 57.83,
+      "percent_owned": 57.84,
       "percent_started": 0.15,
       "recent_activity_note": null
     },
@@ -303,8 +303,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -7.71,
-      "percent_owned": 69.73,
-      "percent_started": 36.05,
+      "percent_owned": 69.81,
+      "percent_started": 36.14,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -312,8 +312,8 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proj_value": -8.65,
-      "percent_owned": 18.54,
-      "percent_started": 11.82,
+      "percent_owned": 18.61,
+      "percent_started": 11.87,
       "recent_activity_note": null
     },
     {
@@ -321,8 +321,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -10.09,
-      "percent_owned": 26.78,
-      "percent_started": 12.17,
+      "percent_owned": 26.81,
+      "percent_started": 12.16,
       "recent_activity_note": null
     },
     {
@@ -330,8 +330,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -12.95,
-      "percent_owned": 59.07,
-      "percent_started": 25.67,
+      "percent_owned": 59.04,
+      "percent_started": 25.65,
       "recent_activity_note": null
     },
     {
@@ -339,8 +339,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -14.29,
-      "percent_owned": 72.63,
-      "percent_started": 39.79,
+      "percent_owned": 72.73,
+      "percent_started": 39.89,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -348,8 +348,8 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -16.28,
-      "percent_owned": 75.83,
-      "percent_started": 23.59,
+      "percent_owned": 75.88,
+      "percent_started": 23.64,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -357,8 +357,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -19.46,
-      "percent_owned": 50.54,
-      "percent_started": 13.84,
+      "percent_owned": 50.47,
+      "percent_started": 13.8,
       "recent_activity_note": null
     },
     {
@@ -366,7 +366,7 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -22.43,
-      "percent_owned": 48.23,
+      "percent_owned": 48.21,
       "percent_started": 18.12,
       "recent_activity_note": null
     },
@@ -375,8 +375,8 @@
       "name": "Jacoby Brissett",
       "pos": "QB",
       "proj_value": -22.87,
-      "percent_owned": 45.68,
-      "percent_started": 38.95,
+      "percent_owned": 46.03,
+      "percent_started": 39.3,
       "recent_activity_note": null
     },
     {
@@ -384,8 +384,8 @@
       "name": "Sam Darnold",
       "pos": "QB",
       "proj_value": -23.56,
-      "percent_owned": 48.84,
-      "percent_started": 21.5,
+      "percent_owned": 48.77,
+      "percent_started": 21.45,
       "recent_activity_note": null
     },
     {
@@ -393,8 +393,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -27.13,
-      "percent_owned": 41.66,
-      "percent_started": 19.94,
+      "percent_owned": 41.68,
+      "percent_started": 19.95,
       "recent_activity_note": null
     },
     {
@@ -403,7 +403,7 @@
       "pos": "WR",
       "proj_value": -31.35,
       "percent_owned": 74.03,
-      "percent_started": 19.74,
+      "percent_started": 19.77,
       "recent_activity_note": "DROPPED by Torta pounders"
     }
   ]
