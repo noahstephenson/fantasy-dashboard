@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-11T19:59:27.520477+00:00",
+  "generated_at": "2026-10-11T23:36:15.611044+00:00",
   "week": 5,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Torta pounders",
-    "my_score": 47.6,
-    "opp_score": 30.0,
-    "my_projected": 126.34,
-    "opp_projected": 120.18
+    "my_score": 83.76,
+    "opp_score": 95.2,
+    "my_projected": 131.28,
+    "opp_projected": 122.71
   },
   "lineup": {
     "recommended_starters": [
@@ -276,7 +276,7 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": 3.51,
-      "percent_owned": 78.72,
+      "percent_owned": 78.71,
       "percent_started": 24.5,
       "recent_activity_note": null
     },
@@ -285,7 +285,7 @@
       "name": "Jalen Hurts",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 96.27,
+      "percent_owned": 96.26,
       "percent_started": 58.38,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
@@ -294,7 +294,7 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -2.65,
-      "percent_owned": 27.17,
+      "percent_owned": 27.16,
       "percent_started": 12.27,
       "recent_activity_note": null
     },
@@ -303,8 +303,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": -7.56,
-      "percent_owned": 70.67,
-      "percent_started": 37.97,
+      "percent_owned": 70.65,
+      "percent_started": 37.95,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -312,7 +312,7 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": -7.68,
-      "percent_owned": 57.61,
+      "percent_owned": 57.59,
       "percent_started": 0.14,
       "recent_activity_note": null
     },
@@ -321,7 +321,7 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proj_value": -8.11,
-      "percent_owned": 19.8,
+      "percent_owned": 19.79,
       "percent_started": 12.89,
       "recent_activity_note": null
     },
@@ -331,7 +331,7 @@
       "pos": "QB",
       "proj_value": -12.4,
       "percent_owned": 58.8,
-      "percent_started": 25.55,
+      "percent_started": 25.54,
       "recent_activity_note": null
     },
     {
@@ -339,8 +339,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": -14.38,
-      "percent_owned": 73.63,
-      "percent_started": 41.14,
+      "percent_owned": 73.61,
+      "percent_started": 41.13,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -348,8 +348,8 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -16.39,
-      "percent_owned": 75.97,
-      "percent_started": 24.38,
+      "percent_owned": 75.96,
+      "percent_started": 24.39,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -357,8 +357,8 @@
       "name": "Kenyon Sadiq",
       "pos": "TE",
       "proj_value": -19.52,
-      "percent_owned": 49.95,
-      "percent_started": 13.77,
+      "percent_owned": 49.93,
+      "percent_started": 13.76,
       "recent_activity_note": null
     },
     {
@@ -366,7 +366,7 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -21.9,
-      "percent_owned": 47.94,
+      "percent_owned": 47.93,
       "percent_started": 18.07,
       "recent_activity_note": null
     },
@@ -375,8 +375,8 @@
       "name": "Jacoby Brissett",
       "pos": "QB",
       "proj_value": -22.31,
-      "percent_owned": 50.1,
-      "percent_started": 43.93,
+      "percent_owned": 50.18,
+      "percent_started": 44.02,
       "recent_activity_note": null
     },
     {
@@ -384,8 +384,8 @@
       "name": "Sam Darnold",
       "pos": "QB",
       "proj_value": -23.01,
-      "percent_owned": 48.45,
-      "percent_started": 20.95,
+      "percent_owned": 48.46,
+      "percent_started": 20.98,
       "recent_activity_note": null
     },
     {
@@ -393,8 +393,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -26.59,
-      "percent_owned": 42.07,
-      "percent_started": 20.33,
+      "percent_owned": 42.06,
+      "percent_started": 20.32,
       "recent_activity_note": null
     },
     {
@@ -402,8 +402,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -32.66,
-      "percent_owned": 41.81,
-      "percent_started": 13.16,
+      "percent_owned": 41.8,
+      "percent_started": 13.15,
       "recent_activity_note": null
     }
   ]
