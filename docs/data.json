@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T04:57:24.302813+00:00",
+  "generated_at": "2026-10-12T17:30:18.806279+00:00",
   "week": 5,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -272,138 +272,138 @@
   },
   "waiver_targets": [
     {
-      "id": 3121023,
-      "name": "Dallas Goedert",
-      "pos": "TE",
-      "proj_value": 4.48,
-      "percent_owned": 78.7,
-      "percent_started": 24.5,
+      "id": 4036378,
+      "name": "Jordan Love",
+      "pos": "QB",
+      "proj_value": 10.19,
+      "percent_owned": 47.9,
+      "percent_started": 18.06,
       "recent_activity_note": null
     },
     {
       "id": 4711533,
       "name": "Ollie Gordon II",
       "pos": "RB",
-      "proj_value": 1.57,
-      "percent_owned": 73.58,
-      "percent_started": 41.11,
-      "recent_activity_note": "DROPPED by Epstein Elementary"
-    },
-    {
-      "id": 4040715,
-      "name": "Jalen Hurts",
-      "pos": "QB",
-      "proj_value": 0.0,
-      "percent_owned": 96.24,
-      "percent_started": 58.37,
-      "recent_activity_note": "DROPPED by Epstein Elementary"
-    },
-    {
-      "id": 4036133,
-      "name": "T.J. Hockenson",
-      "pos": "TE",
-      "proj_value": 0.0,
-      "percent_owned": 70.62,
-      "percent_started": 37.93,
-      "recent_activity_note": "DROPPED by EDP445 Daddy"
-    },
-    {
-      "id": 4430539,
-      "name": "Brenton Strange",
-      "pos": "TE",
-      "proj_value": -0.45,
-      "percent_owned": 27.16,
-      "percent_started": 12.27,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4241985,
-      "name": "J.K. Dobbins",
-      "pos": "RB",
-      "proj_value": -4.2,
-      "percent_owned": 75.95,
-      "percent_started": 24.38,
+      "proj_value": 9.78,
+      "percent_owned": 73.57,
+      "percent_started": 41.13,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
       "id": 4426385,
       "name": "Zach Charbonnet",
       "pos": "RB",
-      "proj_value": -7.57,
-      "percent_owned": 57.57,
+      "proj_value": 2.14,
+      "percent_owned": 57.54,
       "percent_started": 0.14,
       "recent_activity_note": null
     },
     {
-      "id": 3122840,
-      "name": "Deshaun Watson",
-      "pos": "QB",
-      "proj_value": -11.91,
-      "percent_owned": 19.78,
-      "percent_started": 12.88,
+      "id": 4036133,
+      "name": "T.J. Hockenson",
+      "pos": "TE",
+      "proj_value": 0.92,
+      "percent_owned": 70.59,
+      "percent_started": 37.94,
+      "recent_activity_note": "DROPPED by EDP445 Daddy"
+    },
+    {
+      "id": 3121023,
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "proj_value": 0.56,
+      "percent_owned": 78.71,
+      "percent_started": 24.76,
       "recent_activity_note": null
+    },
+    {
+      "id": 4040715,
+      "name": "Jalen Hurts",
+      "pos": "QB",
+      "proj_value": -2.36,
+      "percent_owned": 96.23,
+      "percent_started": 58.33,
+      "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
       "id": 3917315,
       "name": "Kyler Murray",
       "pos": "QB",
-      "proj_value": -14.16,
-      "percent_owned": 58.79,
-      "percent_started": 25.53,
+      "proj_value": -2.82,
+      "percent_owned": 58.76,
+      "percent_started": 25.5,
       "recent_activity_note": null
     },
     {
-      "id": 4576297,
-      "name": "AJ Barner",
+      "id": 4241985,
+      "name": "J.K. Dobbins",
+      "pos": "RB",
+      "proj_value": -5.25,
+      "percent_owned": 75.93,
+      "percent_started": 24.38,
+      "recent_activity_note": "DROPPED by Epstein Elementary"
+    },
+    {
+      "id": 4430539,
+      "name": "Brenton Strange",
       "pos": "TE",
-      "proj_value": -15.04,
-      "percent_owned": 6.85,
-      "percent_started": 2.19,
+      "proj_value": -5.5,
+      "percent_owned": 27.17,
+      "percent_started": 12.27,
       "recent_activity_note": null
     },
     {
       "id": 2578570,
       "name": "Jacoby Brissett",
       "pos": "QB",
-      "proj_value": -20.85,
-      "percent_owned": 50.16,
-      "percent_started": 44.0,
+      "proj_value": -8.48,
+      "percent_owned": 50.21,
+      "percent_started": 44.07,
       "recent_activity_note": null
     },
     {
-      "id": 4036378,
-      "name": "Jordan Love",
+      "id": 3122840,
+      "name": "Deshaun Watson",
       "pos": "QB",
-      "proj_value": -21.13,
-      "percent_owned": 47.92,
-      "percent_started": 18.07,
+      "proj_value": -10.98,
+      "percent_owned": 19.79,
+      "percent_started": 12.89,
       "recent_activity_note": null
     },
     {
-      "id": 3912547,
-      "name": "Sam Darnold",
+      "id": 8439,
+      "name": "Aaron Rodgers",
       "pos": "QB",
-      "proj_value": -22.26,
-      "percent_owned": 48.44,
-      "percent_started": 20.97,
+      "proj_value": -11.11,
+      "percent_owned": 19.33,
+      "percent_started": 13.27,
       "recent_activity_note": null
     },
     {
       "id": 4432577,
       "name": "C.J. Stroud",
       "pos": "QB",
-      "proj_value": -22.64,
-      "percent_owned": 42.05,
+      "proj_value": -21.86,
+      "percent_owned": 42.04,
       "percent_started": 20.31,
       "recent_activity_note": null
     },
     {
-      "id": 4569603,
-      "name": "Malik Washington",
-      "pos": "WR",
-      "proj_value": -24.2,
-      "percent_owned": 39.2,
-      "percent_started": 18.98,
+      "id": 4576297,
+      "name": "AJ Barner",
+      "pos": "TE",
+      "proj_value": -22.73,
+      "percent_owned": 6.84,
+      "percent_started": 2.18,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3046439,
+      "name": "Hunter Henry",
+      "pos": "TE",
+      "proj_value": -27.78,
+      "percent_owned": 40.14,
+      "percent_started": 9.9,
       "recent_activity_note": null
     }
   ]
