@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-17T08:19:55.941250+00:00",
+  "generated_at": "2026-10-17T15:11:10.244708+00:00",
   "week": 6,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Diddy vein ",
     "my_score": 0.0,
     "opp_score": 0.0,
-    "my_projected": 132.22,
-    "opp_projected": 85.69
+    "my_projected": 132.23,
+    "opp_projected": 85.7
   },
   "lineup": {
     "recommended_starters": [
@@ -290,18 +290,18 @@
       "id": 4036378,
       "name": "Jordan Love",
       "pos": "QB",
-      "proj_value": 11.71,
-      "percent_owned": 83.09,
-      "percent_started": 64.47,
+      "proj_value": 11.54,
+      "percent_owned": 83.35,
+      "percent_started": 64.83,
       "recent_activity_note": null
     },
     {
       "id": 4711533,
       "name": "Ollie Gordon II",
       "pos": "RB",
-      "proj_value": 11.46,
-      "percent_owned": 72.55,
-      "percent_started": 2.32,
+      "proj_value": 11.47,
+      "percent_owned": 72.51,
+      "percent_started": 2.23,
       "recent_activity_note": null
     },
     {
@@ -317,18 +317,18 @@
       "id": 4036133,
       "name": "T.J. Hockenson",
       "pos": "TE",
-      "proj_value": 4.32,
-      "percent_owned": 58.16,
-      "percent_started": 4.39,
+      "proj_value": 3.9,
+      "percent_owned": 58.0,
+      "percent_started": 4.27,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
       "id": 4241985,
       "name": "J.K. Dobbins",
       "pos": "RB",
-      "proj_value": -2.75,
-      "percent_owned": 78.04,
-      "percent_started": 34.31,
+      "proj_value": -2.74,
+      "percent_owned": 78.03,
+      "percent_started": 34.3,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -336,53 +336,53 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -2.77,
-      "percent_owned": 50.61,
-      "percent_started": 4.31,
+      "percent_owned": 50.48,
+      "percent_started": 4.21,
       "recent_activity_note": null
     },
     {
       "id": 2578570,
       "name": "Jacoby Brissett",
       "pos": "QB",
-      "proj_value": -6.05,
-      "percent_owned": 30.97,
-      "percent_started": 13.43,
+      "proj_value": -6.04,
+      "percent_owned": 30.77,
+      "percent_started": 13.4,
       "recent_activity_note": null
     },
     {
       "id": 4430539,
       "name": "Brenton Strange",
       "pos": "TE",
-      "proj_value": -6.2,
-      "percent_owned": 42.27,
-      "percent_started": 22.74,
+      "proj_value": -6.61,
+      "percent_owned": 42.39,
+      "percent_started": 22.8,
       "recent_activity_note": null
     },
     {
       "id": 3122840,
       "name": "Deshaun Watson",
       "pos": "QB",
-      "proj_value": -11.04,
-      "percent_owned": 17.97,
-      "percent_started": 9.27,
+      "proj_value": -11.03,
+      "percent_owned": 18.02,
+      "percent_started": 9.34,
       "recent_activity_note": null
     },
     {
       "id": 8439,
       "name": "Aaron Rodgers",
       "pos": "QB",
-      "proj_value": -11.41,
-      "percent_owned": 25.35,
-      "percent_started": 14.21,
+      "proj_value": -11.4,
+      "percent_owned": 25.42,
+      "percent_started": 14.3,
       "recent_activity_note": null
     },
     {
       "id": 4576297,
       "name": "AJ Barner",
       "pos": "TE",
-      "proj_value": -19.09,
+      "proj_value": -19.5,
       "percent_owned": 7.5,
-      "percent_started": 3.26,
+      "percent_started": 3.25,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -22.08,
-      "percent_owned": 43.44,
-      "percent_started": 18.99,
+      "percent_owned": 43.47,
+      "percent_started": 19.04,
       "recent_activity_note": null
     },
     {
@@ -399,7 +399,7 @@
       "name": "Jadarian Price",
       "pos": "RB",
       "proj_value": -25.06,
-      "percent_owned": 69.31,
+      "percent_owned": 69.3,
       "percent_started": 4.6,
       "recent_activity_note": null
     },
@@ -407,18 +407,18 @@
       "id": 4360569,
       "name": "Jordan Mason",
       "pos": "RB",
-      "proj_value": -26.93,
+      "proj_value": -26.92,
       "percent_owned": 51.04,
-      "percent_started": 0.24,
+      "percent_started": 0.25,
       "recent_activity_note": null
     },
     {
       "id": 3046439,
       "name": "Hunter Henry",
       "pos": "TE",
-      "proj_value": -27.46,
-      "percent_owned": 41.68,
-      "percent_started": 15.11,
+      "proj_value": -27.87,
+      "percent_owned": 41.64,
+      "percent_started": 15.09,
       "recent_activity_note": null
     }
   ]
