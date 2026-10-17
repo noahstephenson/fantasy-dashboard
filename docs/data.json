@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T18:16:04.916998+00:00",
+  "generated_at": "2026-10-17T22:00:01.119725+00:00",
   "week": 6,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -217,7 +217,7 @@
         "proj_pts": 0,
         "proj_week_pts": 12.34,
         "lineup_slot": "BE",
-        "injury_status": "QUESTIONABLE",
+        "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -291,8 +291,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": 11.54,
-      "percent_owned": 83.6,
-      "percent_started": 65.21,
+      "percent_owned": 84.0,
+      "percent_started": 65.74,
       "recent_activity_note": null
     },
     {
@@ -300,8 +300,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": 11.47,
-      "percent_owned": 72.48,
-      "percent_started": 2.15,
+      "percent_owned": 72.44,
+      "percent_started": 2.04,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 3.9,
-      "percent_owned": 57.87,
-      "percent_started": 4.16,
+      "percent_owned": 57.7,
+      "percent_started": 4.01,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -327,7 +327,7 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -2.74,
-      "percent_owned": 78.03,
+      "percent_owned": 78.02,
       "percent_started": 34.29,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
@@ -336,8 +336,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -2.77,
-      "percent_owned": 50.35,
-      "percent_started": 4.11,
+      "percent_owned": 50.21,
+      "percent_started": 3.98,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Jacoby Brissett",
       "pos": "QB",
       "proj_value": -6.04,
-      "percent_owned": 30.6,
-      "percent_started": 13.38,
+      "percent_owned": 30.42,
+      "percent_started": 13.3,
       "recent_activity_note": null
     },
     {
@@ -354,8 +354,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -6.61,
-      "percent_owned": 42.66,
-      "percent_started": 23.01,
+      "percent_owned": 43.04,
+      "percent_started": 23.32,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proj_value": -11.03,
-      "percent_owned": 18.08,
-      "percent_started": 9.43,
+      "percent_owned": 18.21,
+      "percent_started": 9.53,
       "recent_activity_note": null
     },
     {
@@ -372,8 +372,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -11.4,
-      "percent_owned": 25.48,
-      "percent_started": 14.39,
+      "percent_owned": 25.65,
+      "percent_started": 14.47,
       "recent_activity_note": null
     },
     {
@@ -381,7 +381,7 @@
       "name": "AJ Barner",
       "pos": "TE",
       "proj_value": -19.5,
-      "percent_owned": 7.5,
+      "percent_owned": 7.49,
       "percent_started": 3.25,
       "recent_activity_note": null
     },
@@ -390,7 +390,7 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -22.08,
-      "percent_owned": 43.49,
+      "percent_owned": 43.59,
       "percent_started": 19.09,
       "recent_activity_note": null
     },
@@ -408,7 +408,7 @@
       "name": "Jordan Mason",
       "pos": "RB",
       "proj_value": -26.92,
-      "percent_owned": 51.03,
+      "percent_owned": 51.01,
       "percent_started": 0.25,
       "recent_activity_note": null
     },
@@ -417,8 +417,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -27.87,
-      "percent_owned": 41.63,
-      "percent_started": 15.08,
+      "percent_owned": 41.62,
+      "percent_started": 15.05,
       "recent_activity_note": null
     }
   ]
