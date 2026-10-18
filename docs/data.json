@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T03:36:16.025921+00:00",
+  "generated_at": "2026-10-18T08:40:52.848372+00:00",
   "week": 6,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -291,8 +291,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": 11.56,
-      "percent_owned": 84.44,
-      "percent_started": 66.35,
+      "percent_owned": 84.66,
+      "percent_started": 66.67,
       "recent_activity_note": null
     },
     {
@@ -300,8 +300,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": 11.45,
-      "percent_owned": 72.39,
-      "percent_started": 1.9,
+      "percent_owned": 72.4,
+      "percent_started": 1.82,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 3.93,
-      "percent_owned": 57.5,
-      "percent_started": 3.82,
+      "percent_owned": 57.38,
+      "percent_started": 3.72,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -336,8 +336,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -2.77,
-      "percent_owned": 50.04,
-      "percent_started": 3.78,
+      "percent_owned": 49.97,
+      "percent_started": 3.7,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Jacoby Brissett",
       "pos": "QB",
       "proj_value": -6.04,
-      "percent_owned": 30.2,
-      "percent_started": 13.17,
+      "percent_owned": 30.04,
+      "percent_started": 13.09,
       "recent_activity_note": null
     },
     {
@@ -354,8 +354,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -6.6,
-      "percent_owned": 43.48,
-      "percent_started": 23.71,
+      "percent_owned": 43.74,
+      "percent_started": 23.96,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proj_value": -11.02,
-      "percent_owned": 18.35,
-      "percent_started": 9.63,
+      "percent_owned": 18.41,
+      "percent_started": 9.69,
       "recent_activity_note": null
     },
     {
@@ -372,8 +372,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -11.4,
-      "percent_owned": 25.81,
-      "percent_started": 14.56,
+      "percent_owned": 25.87,
+      "percent_started": 14.61,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -22.08,
-      "percent_owned": 43.67,
-      "percent_started": 19.07,
+      "percent_owned": 43.72,
+      "percent_started": 19.08,
       "recent_activity_note": null
     },
     {
@@ -408,8 +408,8 @@
       "name": "Jordan Mason",
       "pos": "RB",
       "proj_value": -26.93,
-      "percent_owned": 50.98,
-      "percent_started": 0.24,
+      "percent_owned": 50.97,
+      "percent_started": 0.25,
       "recent_activity_note": null
     },
     {
@@ -417,8 +417,8 @@
       "name": "Hunter Henry",
       "pos": "TE",
       "proj_value": -27.83,
-      "percent_owned": 41.6,
-      "percent_started": 15.04,
+      "percent_owned": 41.59,
+      "percent_started": 15.03,
       "recent_activity_note": null
     }
   ]
