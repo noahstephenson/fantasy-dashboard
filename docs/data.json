@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19T03:46:33.998058+00:00",
+  "generated_at": "2026-10-19T09:41:44.807243+00:00",
   "week": 6,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Diddy vein ",
     "my_score": 66.3,
     "opp_score": 20.9,
-    "my_projected": 87.88,
+    "my_projected": 87.68,
     "opp_projected": 42.12
   },
   "lineup": {
@@ -290,7 +290,7 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 12.62,
-      "percent_owned": 55.83,
+      "percent_owned": 55.81,
       "percent_started": 2.67,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
@@ -326,7 +326,7 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 48.62,
+      "percent_owned": 48.63,
       "percent_started": 2.64,
       "recent_activity_note": null
     },
@@ -336,7 +336,7 @@
       "pos": "RB",
       "proj_value": -3.6,
       "percent_owned": 77.99,
-      "percent_started": 34.25,
+      "percent_started": 34.24,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -380,7 +380,7 @@
       "name": "Jameson Williams",
       "pos": "WR",
       "proj_value": -19.2,
-      "percent_owned": 89.62,
+      "percent_owned": 89.61,
       "percent_started": 7.53,
       "recent_activity_note": null
     },
@@ -389,7 +389,7 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -19.75,
-      "percent_owned": 32.09,
+      "percent_owned": 32.08,
       "percent_started": 0.65,
       "recent_activity_note": null
     },
