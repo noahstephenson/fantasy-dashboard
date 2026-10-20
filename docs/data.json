@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-20T03:58:05.456498+00:00",
-  "week": 6,
+  "generated_at": "2026-10-20T09:20:45.720563+00:00",
+  "week": 7,
   "team_name": "EDP445 Daddy",
   "matchup": {
-    "opponent_name": "Diddy vein ",
-    "my_score": 83.66,
-    "opp_score": 51.6,
-    "my_projected": 83.66,
-    "opp_projected": 51.6
+    "opponent_name": "Epstein Elementary",
+    "my_score": 0.0,
+    "opp_score": 0.0,
+    "my_projected": 103.04,
+    "opp_projected": 98.14
   },
   "lineup": {
     "recommended_starters": [
@@ -20,7 +20,7 @@
           "pro_team": "SF",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 21.38,
+          "proj_week_pts": 20.38,
           "lineup_slot": "QB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -37,7 +37,7 @@
           "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 22.99,
+          "proj_week_pts": 19.18,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -54,7 +54,7 @@
           "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 14.49,
+          "proj_week_pts": 7.79,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -65,14 +65,14 @@
       {
         "slot": "WR",
         "player": {
-          "id": 4361370,
-          "name": "Chris Olave",
+          "id": 4426502,
+          "name": "Drake London",
           "pos": "WR",
-          "pro_team": "NO",
+          "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 17.28,
-          "lineup_slot": "BE",
+          "proj_week_pts": 17.16,
+          "lineup_slot": "RB/WR/TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -88,7 +88,7 @@
           "pro_team": "GB",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 16.33,
+          "proj_week_pts": 16.69,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -99,14 +99,14 @@
       {
         "slot": "TE",
         "player": {
-          "id": 3121023,
-          "name": "Dallas Goedert",
+          "id": 4430027,
+          "name": "Sam LaPorta",
           "pos": "TE",
-          "pro_team": "PHI",
+          "pro_team": "DET",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 10.11,
-          "lineup_slot": "TE",
+          "proj_week_pts": 12.66,
+          "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -116,14 +116,14 @@
       {
         "slot": "D/ST",
         "player": {
-          "id": -16030,
-          "name": "Jaguars D/ST",
+          "id": -16021,
+          "name": "Eagles D/ST",
           "pos": "DST",
-          "pro_team": "JAX",
+          "pro_team": "PHI",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 5.59,
-          "lineup_slot": "D/ST",
+          "proj_week_pts": 4.57,
+          "lineup_slot": "BE",
           "injury_status": "NORMAL",
           "percent_owned": -1,
           "percent_started": -1,
@@ -139,7 +139,7 @@
           "pro_team": "NYG",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 10.91,
+          "proj_week_pts": 10.82,
           "lineup_slot": "K",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -150,15 +150,15 @@
       {
         "slot": "RB/WR/TE",
         "player": {
-          "id": 16800,
-          "name": "Davante Adams",
+          "id": 4361370,
+          "name": "Chris Olave",
           "pos": "WR",
-          "pro_team": "LAR",
+          "pro_team": "NO",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 16.04,
-          "lineup_slot": "WR",
-          "injury_status": "OUT",
+          "proj_week_pts": 15.72,
+          "lineup_slot": "BE",
+          "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -167,27 +167,13 @@
     ],
     "bench": [
       {
-        "id": 4426502,
-        "name": "Drake London",
-        "pos": "WR",
-        "pro_team": "ATL",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 15.76,
-        "lineup_slot": "RB/WR/TE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
         "id": 4569618,
         "name": "Garrett Wilson",
         "pos": "WR",
         "pro_team": "NYJ",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 14.8,
+        "proj_week_pts": 15.06,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -195,42 +181,14 @@
         "total_points": 0
       },
       {
-        "id": 4882093,
-        "name": "Bhayshul Tuten",
-        "pos": "RB",
-        "pro_team": "JAX",
+        "id": 3121023,
+        "name": "Dallas Goedert",
+        "pos": "TE",
+        "pro_team": "PHI",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 12.64,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 3121422,
-        "name": "Terry McLaurin",
-        "pos": "WR",
-        "pro_team": "WSH",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 12.34,
-        "lineup_slot": "BE",
-        "injury_status": "OUT",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 2976212,
-        "name": "Stefon Diggs",
-        "pos": "WR",
-        "pro_team": "WSH",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 10.61,
-        "lineup_slot": "IR",
+        "proj_week_pts": 11.03,
+        "lineup_slot": "TE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
@@ -243,7 +201,7 @@
         "pro_team": "NYG",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 8.99,
+        "proj_week_pts": 4.61,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -251,24 +209,38 @@
         "total_points": 0
       },
       {
-        "id": -16021,
-        "name": "Eagles D/ST",
-        "pos": "DST",
-        "pro_team": "PHI",
+        "id": 16800,
+        "name": "Davante Adams",
+        "pos": "WR",
+        "pro_team": "LAR",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 4.46,
-        "lineup_slot": "BE",
-        "injury_status": "NORMAL",
+        "proj_week_pts": 0,
+        "lineup_slot": "WR",
+        "injury_status": "OUT",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
       },
       {
-        "id": 4430027,
-        "name": "Sam LaPorta",
-        "pos": "TE",
-        "pro_team": "DET",
+        "id": 3121422,
+        "name": "Terry McLaurin",
+        "pos": "WR",
+        "pro_team": "WSH",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "BE",
+        "injury_status": "OUT",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
+        "id": 4882093,
+        "name": "Bhayshul Tuten",
+        "pos": "RB",
+        "pro_team": "JAX",
         "bye": null,
         "proj_pts": 0,
         "proj_week_pts": 0,
@@ -277,12 +249,42 @@
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
+      },
+      {
+        "id": 2976212,
+        "name": "Stefon Diggs",
+        "pos": "WR",
+        "pro_team": "WSH",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "IR",
+        "injury_status": "ACTIVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
+        "id": -16030,
+        "name": "Jaguars D/ST",
+        "pos": "DST",
+        "pro_team": "JAX",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "D/ST",
+        "injury_status": "NORMAL",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
       }
     ],
     "reasoning": [
-      "Start Chris Olave (WR) in WR -- 17.3 proj pts, currently on bench."
+      "Start Sam LaPorta (TE) in TE -- 12.7 proj pts, currently on bench.",
+      "Start Eagles D/ST (DST) in D/ST -- 4.6 proj pts, currently on bench.",
+      "Start Chris Olave (WR) in RB/WR/TE -- 15.7 proj pts, currently on bench."
     ],
-    "projected_total": 135.12
+    "projected_total": 124.97
   },
   "waiver_targets": [
     {
@@ -290,8 +292,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 12.62,
-      "percent_owned": 55.65,
-      "percent_started": 2.64,
+      "percent_owned": 55.58,
+      "percent_started": 2.81,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -299,8 +301,8 @@
       "name": "Ollie Gordon II",
       "pos": "RB",
       "proj_value": 10.53,
-      "percent_owned": 71.8,
-      "percent_started": 1.1,
+      "percent_owned": 71.76,
+      "percent_started": 1.81,
       "recent_activity_note": null
     },
     {
@@ -308,8 +310,8 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": 9.61,
-      "percent_owned": 57.37,
-      "percent_started": 0.17,
+      "percent_owned": 57.34,
+      "percent_started": 0.27,
       "recent_activity_note": null
     },
     {
@@ -317,8 +319,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 2.89,
-      "percent_owned": 48.59,
-      "percent_started": 2.61,
+      "percent_owned": 48.53,
+      "percent_started": 2.94,
       "recent_activity_note": null
     },
     {
@@ -326,8 +328,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -1.03,
-      "percent_owned": 85.89,
-      "percent_started": 68.79,
+      "percent_owned": 85.83,
+      "percent_started": 68.76,
       "recent_activity_note": null
     },
     {
@@ -335,8 +337,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -2.76,
-      "percent_owned": 43.72,
-      "percent_started": 19.08,
+      "percent_owned": 43.69,
+      "percent_started": 19.27,
       "recent_activity_note": null
     },
     {
@@ -344,8 +346,8 @@
       "name": "J.K. Dobbins",
       "pos": "RB",
       "proj_value": -4.63,
-      "percent_owned": 77.94,
-      "percent_started": 34.2,
+      "percent_owned": 77.89,
+      "percent_started": 34.49,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -353,8 +355,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -5.24,
-      "percent_owned": 44.23,
-      "percent_started": 24.61,
+      "percent_owned": 44.14,
+      "percent_started": 24.28,
       "recent_activity_note": null
     },
     {
@@ -362,8 +364,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -6.73,
-      "percent_owned": 0.88,
-      "percent_started": 0.09,
+      "percent_owned": 0.89,
+      "percent_started": 0.1,
       "recent_activity_note": null
     },
     {
@@ -372,7 +374,7 @@
       "pos": "WR",
       "proj_value": -14.93,
       "percent_owned": 44.39,
-      "percent_started": 23.49,
+      "percent_started": 23.7,
       "recent_activity_note": null
     },
     {
@@ -380,8 +382,8 @@
       "name": "Jameson Williams",
       "pos": "WR",
       "proj_value": -18.06,
-      "percent_owned": 89.55,
-      "percent_started": 7.48,
+      "percent_owned": 89.45,
+      "percent_started": 7.8,
       "recent_activity_note": null
     },
     {
@@ -389,8 +391,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -18.65,
-      "percent_owned": 31.95,
-      "percent_started": 0.63,
+      "percent_owned": 31.89,
+      "percent_started": 0.78,
       "recent_activity_note": null
     },
     {
@@ -398,7 +400,7 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -19.48,
-      "percent_owned": 24.46,
+      "percent_owned": 24.42,
       "percent_started": 0.67,
       "recent_activity_note": null
     },
@@ -407,8 +409,8 @@
       "name": "Rachaad White",
       "pos": "RB",
       "proj_value": -20.34,
-      "percent_owned": 59.36,
-      "percent_started": 20.03,
+      "percent_owned": 59.3,
+      "percent_started": 19.74,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -416,8 +418,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -21.06,
-      "percent_owned": 82.09,
-      "percent_started": 39.98,
+      "percent_owned": 82.03,
+      "percent_started": 39.69,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     }
   ]
