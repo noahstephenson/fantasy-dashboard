@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T09:10:43.485249+00:00",
+  "generated_at": "2026-10-23T16:40:33.234679+00:00",
   "week": 7,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -288,8 +288,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 12.64,
-      "percent_owned": 60.6,
-      "percent_started": 19.24,
+      "percent_owned": 60.78,
+      "percent_started": 19.61,
       "recent_activity_note": null
     },
     {
@@ -297,8 +297,8 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": 9.58,
-      "percent_owned": 66.98,
-      "percent_started": 7.0,
+      "percent_owned": 67.18,
+      "percent_started": 7.27,
       "recent_activity_note": null
     },
     {
@@ -306,8 +306,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 3.0,
-      "percent_owned": 59.54,
-      "percent_started": 28.35,
+      "percent_owned": 59.78,
+      "percent_started": 28.79,
       "recent_activity_note": null
     },
     {
@@ -315,8 +315,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -0.84,
-      "percent_owned": 89.9,
-      "percent_started": 71.24,
+      "percent_owned": 90.02,
+      "percent_started": 71.46,
       "recent_activity_note": null
     },
     {
@@ -324,8 +324,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -2.48,
-      "percent_owned": 75.48,
-      "percent_started": 56.6,
+      "percent_owned": 75.87,
+      "percent_started": 57.21,
       "recent_activity_note": null
     },
     {
@@ -333,8 +333,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -5.24,
-      "percent_owned": 37.81,
-      "percent_started": 2.38,
+      "percent_owned": 37.68,
+      "percent_started": 2.16,
       "recent_activity_note": null
     },
     {
@@ -342,8 +342,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -6.51,
-      "percent_owned": 18.95,
-      "percent_started": 10.82,
+      "percent_owned": 19.31,
+      "percent_started": 11.06,
       "recent_activity_note": null
     },
     {
@@ -351,8 +351,8 @@
       "name": "Rachaad White",
       "pos": "RB",
       "proj_value": -9.98,
-      "percent_owned": 57.74,
-      "percent_started": 3.53,
+      "percent_owned": 57.69,
+      "percent_started": 3.3,
       "recent_activity_note": null
     },
     {
@@ -360,8 +360,8 @@
       "name": "Matthew Stafford",
       "pos": "QB",
       "proj_value": -12.92,
-      "percent_owned": 92.76,
-      "percent_started": 66.05,
+      "percent_owned": 92.77,
+      "percent_started": 65.95,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -369,8 +369,8 @@
       "name": "Jameson Williams",
       "pos": "WR",
       "proj_value": -18.03,
-      "percent_owned": 90.23,
-      "percent_started": 36.04,
+      "percent_owned": 90.26,
+      "percent_started": 36.48,
       "recent_activity_note": null
     },
     {
@@ -378,8 +378,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -18.62,
-      "percent_owned": 38.25,
-      "percent_started": 14.03,
+      "percent_owned": 38.5,
+      "percent_started": 14.29,
       "recent_activity_note": null
     },
     {
@@ -387,8 +387,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -19.33,
-      "percent_owned": 25.13,
-      "percent_started": 3.54,
+      "percent_owned": 25.15,
+      "percent_started": 3.62,
       "recent_activity_note": null
     },
     {
@@ -396,8 +396,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -20.97,
-      "percent_owned": 79.04,
-      "percent_started": 8.26,
+      "percent_owned": 78.98,
+      "percent_started": 7.79,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -405,8 +405,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -21.7,
-      "percent_owned": 53.13,
-      "percent_started": 38.69,
+      "percent_owned": 53.65,
+      "percent_started": 39.22,
       "recent_activity_note": null
     },
     {
@@ -414,8 +414,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": -22.48,
-      "percent_owned": 4.86,
-      "percent_started": 0.27,
+      "percent_owned": 4.87,
+      "percent_started": 0.26,
       "recent_activity_note": null
     }
   ]
