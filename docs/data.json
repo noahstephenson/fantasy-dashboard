@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T22:56:52.606565+00:00",
+  "generated_at": "2026-10-24T03:46:03.785651+00:00",
   "week": 7,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -288,8 +288,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 14.09,
-      "percent_owned": 61.2,
-      "percent_started": 20.69,
+      "percent_owned": 61.5,
+      "percent_started": 21.38,
       "recent_activity_note": null
     },
     {
@@ -297,8 +297,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 3.0,
-      "percent_owned": 59.93,
-      "percent_started": 29.08,
+      "percent_owned": 60.01,
+      "percent_started": 29.27,
       "recent_activity_note": null
     },
     {
@@ -306,8 +306,8 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": 0.19,
-      "percent_owned": 67.27,
-      "percent_started": 5.66,
+      "percent_owned": 67.19,
+      "percent_started": 4.51,
       "recent_activity_note": null
     },
     {
@@ -315,8 +315,8 @@
       "name": "Jordan Love",
       "pos": "QB",
       "proj_value": -0.84,
-      "percent_owned": 90.12,
-      "percent_started": 71.7,
+      "percent_owned": 90.19,
+      "percent_started": 71.86,
       "recent_activity_note": null
     },
     {
@@ -324,8 +324,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -2.5,
-      "percent_owned": 76.17,
-      "percent_started": 57.68,
+      "percent_owned": 76.36,
+      "percent_started": 57.97,
       "recent_activity_note": null
     },
     {
@@ -333,8 +333,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -3.79,
-      "percent_owned": 37.47,
-      "percent_started": 2.03,
+      "percent_owned": 37.35,
+      "percent_started": 1.95,
       "recent_activity_note": null
     },
     {
@@ -342,8 +342,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -6.56,
-      "percent_owned": 19.53,
-      "percent_started": 11.2,
+      "percent_owned": 19.66,
+      "percent_started": 11.29,
       "recent_activity_note": null
     },
     {
@@ -351,8 +351,8 @@
       "name": "Rachaad White",
       "pos": "RB",
       "proj_value": -9.94,
-      "percent_owned": 57.59,
-      "percent_started": 3.16,
+      "percent_owned": 57.53,
+      "percent_started": 3.07,
       "recent_activity_note": null
     },
     {
@@ -360,8 +360,8 @@
       "name": "Matthew Stafford",
       "pos": "QB",
       "proj_value": -12.9,
-      "percent_owned": 92.74,
-      "percent_started": 65.77,
+      "percent_owned": 92.73,
+      "percent_started": 65.65,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -369,8 +369,8 @@
       "name": "Jameson Williams",
       "pos": "WR",
       "proj_value": -14.12,
-      "percent_owned": 90.28,
-      "percent_started": 37.36,
+      "percent_owned": 90.3,
+      "percent_started": 37.88,
       "recent_activity_note": null
     },
     {
@@ -378,8 +378,8 @@
       "name": "Malik Washington",
       "pos": "WR",
       "proj_value": -14.72,
-      "percent_owned": 38.79,
-      "percent_started": 14.96,
+      "percent_owned": 38.92,
+      "percent_started": 15.3,
       "recent_activity_note": null
     },
     {
@@ -387,8 +387,8 @@
       "name": "Baker Mayfield",
       "pos": "QB",
       "proj_value": -19.32,
-      "percent_owned": 25.24,
-      "percent_started": 3.8,
+      "percent_owned": 25.25,
+      "percent_started": 3.86,
       "recent_activity_note": null
     },
     {
@@ -396,8 +396,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -19.52,
-      "percent_owned": 78.83,
-      "percent_started": 7.47,
+      "percent_owned": 78.76,
+      "percent_started": 7.28,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -406,7 +406,7 @@
       "pos": "TE",
       "proj_value": -21.08,
       "percent_owned": 4.86,
-      "percent_started": 0.25,
+      "percent_started": 0.24,
       "recent_activity_note": null
     },
     {
@@ -414,8 +414,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -21.72,
-      "percent_owned": 54.03,
-      "percent_started": 39.61,
+      "percent_owned": 54.25,
+      "percent_started": 39.84,
       "recent_activity_note": null
     }
   ]
