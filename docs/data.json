@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:29:30.267539+00:00",
+  "generated_at": "2026-10-28T04:39:17.129567+00:00",
   "week": 8,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -293,8 +293,8 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": 16.0,
-      "percent_owned": 66.38,
-      "percent_started": 6.61,
+      "percent_owned": 66.35,
+      "percent_started": 8.24,
       "recent_activity_note": null
     },
     {
@@ -302,8 +302,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 7.75,
-      "percent_owned": 63.88,
-      "percent_started": 31.15,
+      "percent_owned": 63.87,
+      "percent_started": 32.66,
       "recent_activity_note": null
     },
     {
@@ -311,8 +311,8 @@
       "name": "Patrick Mahomes",
       "pos": "QB",
       "proj_value": 2.18,
-      "percent_owned": 92.72,
-      "percent_started": 41.74,
+      "percent_owned": 92.63,
+      "percent_started": 40.63,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -320,8 +320,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 61.34,
-      "percent_started": 29.44,
+      "percent_owned": 61.11,
+      "percent_started": 28.27,
       "recent_activity_note": null
     },
     {
@@ -330,7 +330,7 @@
       "pos": "RB",
       "proj_value": 0.0,
       "percent_owned": 56.45,
-      "percent_started": 8.87,
+      "percent_started": 11.36,
       "recent_activity_note": null
     },
     {
@@ -339,7 +339,7 @@
       "pos": "WR",
       "proj_value": 0.0,
       "percent_owned": 90.41,
-      "percent_started": 45.48,
+      "percent_started": 46.56,
       "recent_activity_note": null
     },
     {
@@ -347,8 +347,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 35.97,
-      "percent_started": 6.94,
+      "percent_owned": 35.93,
+      "percent_started": 8.46,
       "recent_activity_note": null
     },
     {
@@ -357,7 +357,7 @@
       "pos": "QB",
       "proj_value": -0.98,
       "percent_owned": 6.32,
-      "percent_started": 1.64,
+      "percent_started": 1.68,
       "recent_activity_note": null
     },
     {
@@ -365,8 +365,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -4.66,
-      "percent_owned": 21.09,
-      "percent_started": 8.99,
+      "percent_owned": 20.83,
+      "percent_started": 7.64,
       "recent_activity_note": null
     },
     {
@@ -374,8 +374,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": -9.08,
-      "percent_owned": 78.17,
-      "percent_started": 40.55,
+      "percent_owned": 77.78,
+      "percent_started": 34.17,
       "recent_activity_note": null
     },
     {
@@ -383,8 +383,8 @@
       "name": "Michael Penix Jr.",
       "pos": "QB",
       "proj_value": -11.73,
-      "percent_owned": 12.81,
-      "percent_started": 5.62,
+      "percent_owned": 12.78,
+      "percent_started": 5.64,
       "recent_activity_note": null
     },
     {
@@ -392,8 +392,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -14.14,
-      "percent_owned": 66.6,
-      "percent_started": 7.11,
+      "percent_owned": 66.57,
+      "percent_started": 8.87,
       "recent_activity_note": null
     },
     {
@@ -401,8 +401,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -15.65,
-      "percent_owned": 77.65,
-      "percent_started": 13.23,
+      "percent_owned": 77.59,
+      "percent_started": 15.87,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -410,8 +410,8 @@
       "name": "Matthew Stafford",
       "pos": "QB",
       "proj_value": -15.77,
-      "percent_owned": 92.62,
-      "percent_started": 63.81,
+      "percent_owned": 92.57,
+      "percent_started": 62.93,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -420,7 +420,7 @@
       "pos": "TE",
       "proj_value": -18.61,
       "percent_owned": 4.87,
-      "percent_started": 1.07,
+      "percent_started": 1.23,
       "recent_activity_note": null
     }
   ]
