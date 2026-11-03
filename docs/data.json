@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-02T17:57:42.426042+00:00",
+  "generated_at": "2026-11-03T02:04:31.553999+00:00",
   "week": 8,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Adolf ",
     "my_score": 116.78,
-    "opp_score": 60.1,
+    "opp_score": 80.88,
     "my_projected": 116.78,
-    "opp_projected": 104.57
+    "opp_projected": 104.52
   },
   "lineup": {
     "recommended_starters": [
@@ -158,7 +158,7 @@
           "proj_pts": 0,
           "proj_week_pts": 14.56,
           "lineup_slot": "BE",
-          "injury_status": "ACTIVE",
+          "injury_status": "QUESTIONABLE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -290,7 +290,7 @@
       "id": 4702555,
       "name": "Jonah Coleman",
       "pos": "RB",
-      "proj_value": 13.69,
+      "proj_value": 13.18,
       "percent_owned": 52.31,
       "percent_started": 18.27,
       "recent_activity_note": null
@@ -309,15 +309,15 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": 5.4,
-      "percent_owned": 67.88,
-      "percent_started": 3.09,
+      "percent_owned": 67.84,
+      "percent_started": 3.08,
       "recent_activity_note": null
     },
     {
       "id": 4433970,
       "name": "J.J. McCarthy",
       "pos": "QB",
-      "proj_value": 3.9,
+      "proj_value": 3.27,
       "percent_owned": 15.39,
       "percent_started": 0.62,
       "recent_activity_note": null
@@ -327,8 +327,8 @@
       "name": "Zach Charbonnet",
       "pos": "RB",
       "proj_value": 0.0,
-      "percent_owned": 72.97,
-      "percent_started": 18.76,
+      "percent_owned": 73.04,
+      "percent_started": 18.85,
       "recent_activity_note": null
     },
     {
@@ -337,7 +337,7 @@
       "pos": "TE",
       "proj_value": 0.0,
       "percent_owned": 50.2,
-      "percent_started": 27.22,
+      "percent_started": 27.21,
       "recent_activity_note": null
     },
     {
@@ -345,7 +345,7 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -1.75,
-      "percent_owned": 75.98,
+      "percent_owned": 75.97,
       "percent_started": 22.91,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
@@ -371,7 +371,7 @@
       "id": 4242512,
       "name": "Malik Willis",
       "pos": "QB",
-      "proj_value": -8.02,
+      "proj_value": -7.77,
       "percent_owned": 10.57,
       "percent_started": 4.62,
       "recent_activity_note": null
@@ -381,8 +381,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -8.39,
-      "percent_owned": 60.11,
-      "percent_started": 25.53,
+      "percent_owned": 60.1,
+      "percent_started": 25.52,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -9.64,
-      "percent_owned": 66.5,
-      "percent_started": 3.62,
+      "percent_owned": 66.47,
+      "percent_started": 3.61,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -399,8 +399,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -12.09,
-      "percent_owned": 24.86,
-      "percent_started": 1.45,
+      "percent_owned": 24.84,
+      "percent_started": 1.44,
       "recent_activity_note": null
     },
     {
@@ -409,7 +409,7 @@
       "pos": "TE",
       "proj_value": -13.26,
       "percent_owned": 1.4,
-      "percent_started": 0.56,
+      "percent_started": 0.57,
       "recent_activity_note": null
     },
     {
