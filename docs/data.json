@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T00:46:50.764550+00:00",
+  "generated_at": "2026-11-05T11:58:06.235640+00:00",
   "week": 9,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -291,8 +291,8 @@
       "name": "Jonah Coleman",
       "pos": "RB",
       "proj_value": 14.19,
-      "percent_owned": 75.05,
-      "percent_started": 47.79,
+      "percent_owned": 76.65,
+      "percent_started": 50.76,
       "recent_activity_note": null
     },
     {
@@ -300,8 +300,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": 8.83,
-      "percent_owned": 68.81,
-      "percent_started": 17.95,
+      "percent_owned": 69.01,
+      "percent_started": 19.09,
       "recent_activity_note": null
     },
     {
@@ -309,8 +309,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": 7.47,
-      "percent_owned": 24.47,
-      "percent_started": 10.18,
+      "percent_owned": 25.86,
+      "percent_started": 11.53,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 48.69,
-      "percent_started": 19.99,
+      "percent_owned": 48.7,
+      "percent_started": 19.73,
       "recent_activity_note": null
     },
     {
@@ -327,8 +327,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -1.68,
-      "percent_owned": 77.13,
-      "percent_started": 22.55,
+      "percent_owned": 77.25,
+      "percent_started": 22.66,
       "recent_activity_note": "DROPPED by Gaza Goyim"
     },
     {
@@ -336,8 +336,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": -1.72,
-      "percent_owned": 13.14,
-      "percent_started": 4.94,
+      "percent_owned": 13.08,
+      "percent_started": 4.89,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Malik Willis",
       "pos": "QB",
       "proj_value": -4.98,
-      "percent_owned": 16.92,
-      "percent_started": 8.96,
+      "percent_owned": 17.83,
+      "percent_started": 9.69,
       "recent_activity_note": null
     },
     {
@@ -354,8 +354,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -5.13,
-      "percent_owned": 68.23,
-      "percent_started": 15.6,
+      "percent_owned": 68.22,
+      "percent_started": 15.78,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Kyler Murray",
       "pos": "QB",
       "proj_value": -5.83,
-      "percent_owned": 57.81,
-      "percent_started": 20.71,
+      "percent_owned": 57.54,
+      "percent_started": 20.24,
       "recent_activity_note": null
     },
     {
@@ -372,8 +372,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -7.14,
-      "percent_owned": 65.72,
-      "percent_started": 11.28,
+      "percent_owned": 65.64,
+      "percent_started": 11.75,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -381,8 +381,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -11.8,
-      "percent_owned": 24.36,
-      "percent_started": 3.2,
+      "percent_owned": 24.31,
+      "percent_started": 3.4,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "Treylon Burks",
       "pos": "WR",
       "proj_value": -12.76,
-      "percent_owned": 10.53,
-      "percent_started": 3.22,
+      "percent_owned": 10.74,
+      "percent_started": 3.24,
       "recent_activity_note": null
     },
     {
@@ -399,8 +399,8 @@
       "name": "Greg Dulcich",
       "pos": "TE",
       "proj_value": -13.22,
-      "percent_owned": 3.18,
-      "percent_started": 1.65,
+      "percent_owned": 3.52,
+      "percent_started": 1.91,
       "recent_activity_note": null
     },
     {
@@ -408,8 +408,8 @@
       "name": "Khalil Shakir",
       "pos": "WR",
       "proj_value": -14.43,
-      "percent_owned": 60.29,
-      "percent_started": 13.17,
+      "percent_owned": 60.25,
+      "percent_started": 12.92,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -417,8 +417,8 @@
       "name": "Mike Gesicki",
       "pos": "TE",
       "proj_value": -16.44,
-      "percent_owned": 21.64,
-      "percent_started": 9.08,
+      "percent_owned": 22.53,
+      "percent_started": 9.6,
       "recent_activity_note": null
     }
   ]
