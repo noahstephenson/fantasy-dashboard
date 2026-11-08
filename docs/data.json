@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-08T14:50:53.979613+00:00",
+  "generated_at": "2026-11-08T20:16:05.024851+00:00",
   "week": 9,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "EDPs Cupcake",
-    "my_score": 17.9,
-    "opp_score": 14.1,
-    "my_projected": 135.68,
-    "opp_projected": 138.07
+    "my_score": 70.0,
+    "opp_score": 26.7,
+    "my_projected": 127.72,
+    "opp_projected": 138.33
   },
   "lineup": {
     "recommended_starters": [
@@ -181,6 +181,20 @@
         "total_points": 0
       },
       {
+        "id": 4040761,
+        "name": "Devin Singletary",
+        "pos": "RB",
+        "pro_team": "NYG",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 13.26,
+        "lineup_slot": "RB",
+        "injury_status": "ACTIVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
         "id": 2976212,
         "name": "Stefon Diggs",
         "pos": "WR",
@@ -202,7 +216,7 @@
         "bye": null,
         "proj_pts": 0,
         "proj_week_pts": 11.94,
-        "lineup_slot": "RB",
+        "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
@@ -216,20 +230,6 @@
         "bye": null,
         "proj_pts": 0,
         "proj_week_pts": 8.99,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 3121023,
-        "name": "Dallas Goedert",
-        "pos": "TE",
-        "pro_team": "PHI",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 8.67,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -273,7 +273,7 @@
         "proj_pts": 0,
         "proj_week_pts": 0,
         "lineup_slot": "BE",
-        "injury_status": "DOUBTFUL",
+        "injury_status": "OUT",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -289,18 +289,18 @@
       "id": 4432577,
       "name": "C.J. Stroud",
       "pos": "QB",
-      "proj_value": 8.79,
-      "percent_owned": 69.78,
-      "percent_started": 24.8,
+      "proj_value": 8.77,
+      "percent_owned": 69.79,
+      "percent_started": 25.31,
       "recent_activity_note": null
     },
     {
       "id": 4433970,
       "name": "J.J. McCarthy",
       "pos": "QB",
-      "proj_value": 7.43,
-      "percent_owned": 33.23,
-      "percent_started": 19.29,
+      "proj_value": 7.41,
+      "percent_owned": 33.95,
+      "percent_started": 20.01,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 49.09,
-      "percent_started": 19.72,
+      "percent_owned": 49.08,
+      "percent_started": 19.71,
       "recent_activity_note": null
     },
     {
@@ -317,8 +317,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": -1.2,
-      "percent_owned": 13.49,
-      "percent_started": 5.15,
+      "percent_owned": 13.75,
+      "percent_started": 5.38,
       "recent_activity_note": null
     },
     {
@@ -326,24 +326,24 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -1.67,
-      "percent_owned": 77.39,
-      "percent_started": 21.61,
+      "percent_owned": 77.41,
+      "percent_started": 21.9,
       "recent_activity_note": null
     },
     {
       "id": 4242512,
       "name": "Malik Willis",
       "pos": "QB",
-      "proj_value": -4.97,
-      "percent_owned": 23.12,
-      "percent_started": 14.62,
+      "proj_value": -4.99,
+      "percent_owned": 23.63,
+      "percent_started": 15.13,
       "recent_activity_note": null
     },
     {
       "id": 3916433,
       "name": "Jakobi Meyers",
       "pos": "WR",
-      "proj_value": -5.21,
+      "proj_value": -5.15,
       "percent_owned": 68.58,
       "percent_started": 17.34,
       "recent_activity_note": null
@@ -352,9 +352,9 @@
       "id": 4360689,
       "name": "Tyler Shough",
       "pos": "QB",
-      "proj_value": -7.46,
-      "percent_owned": 65.07,
-      "percent_started": 14.34,
+      "proj_value": -7.48,
+      "percent_owned": 64.92,
+      "percent_started": 14.53,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -362,8 +362,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -11.79,
-      "percent_owned": 24.14,
-      "percent_started": 4.8,
+      "percent_owned": 24.12,
+      "percent_started": 5.03,
       "recent_activity_note": null
     },
     {
@@ -371,17 +371,17 @@
       "name": "Greg Dulcich",
       "pos": "TE",
       "proj_value": -13.21,
-      "percent_owned": 5.44,
-      "percent_started": 3.56,
+      "percent_owned": 5.75,
+      "percent_started": 3.88,
       "recent_activity_note": null
     },
     {
       "id": 4373678,
       "name": "Khalil Shakir",
       "pos": "WR",
-      "proj_value": -14.5,
-      "percent_owned": 60.11,
-      "percent_started": 12.54,
+      "proj_value": -14.44,
+      "percent_owned": 60.04,
+      "percent_started": 13.04,
       "recent_activity_note": null
     },
     {
@@ -397,27 +397,27 @@
       "id": 4808766,
       "name": "Mason Taylor",
       "pos": "TE",
-      "proj_value": -18.04,
-      "percent_owned": 8.16,
-      "percent_started": 2.58,
+      "proj_value": -18.03,
+      "percent_owned": 8.14,
+      "percent_started": 2.56,
       "recent_activity_note": null
     },
     {
       "id": 5081432,
       "name": "Antonio Williams",
       "pos": "WR",
-      "proj_value": -19.19,
-      "percent_owned": 20.84,
-      "percent_started": 5.77,
+      "proj_value": -19.13,
+      "percent_owned": 21.42,
+      "percent_started": 6.59,
       "recent_activity_note": null
     },
     {
       "id": 15864,
       "name": "Geno Smith",
       "pos": "QB",
-      "proj_value": -19.27,
-      "percent_owned": 23.08,
-      "percent_started": 6.17,
+      "proj_value": -19.29,
+      "percent_owned": 22.68,
+      "percent_started": 5.65,
       "recent_activity_note": null
     }
   ]
