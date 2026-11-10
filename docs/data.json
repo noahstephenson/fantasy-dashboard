@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-09T18:28:15.395538+00:00",
+  "generated_at": "2026-11-10T02:35:47.051296+00:00",
   "week": 9,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "EDPs Cupcake",
     "my_score": 142.78,
-    "opp_score": 92.48,
+    "opp_score": 98.98,
     "my_projected": 142.78,
-    "opp_projected": 123.47
+    "opp_projected": 115.89
   },
   "lineup": {
     "recommended_starters": [
@@ -291,16 +291,16 @@
       "pos": "QB",
       "proj_value": 29.59,
       "percent_owned": 69.8,
-      "percent_started": 25.38,
+      "percent_started": 25.37,
       "recent_activity_note": null
     },
     {
       "id": 4047650,
       "name": "DK Metcalf",
       "pos": "WR",
-      "proj_value": 6.81,
-      "percent_owned": 87.75,
-      "percent_started": 7.83,
+      "proj_value": 8.34,
+      "percent_owned": 87.73,
+      "percent_started": 7.8,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -309,15 +309,15 @@
       "pos": "TE",
       "proj_value": 4.96,
       "percent_owned": 77.42,
-      "percent_started": 21.96,
+      "percent_started": 21.98,
       "recent_activity_note": null
     },
     {
       "id": 4360689,
       "name": "Tyler Shough",
       "pos": "QB",
-      "proj_value": 0.92,
-      "percent_owned": 64.9,
+      "proj_value": 1.01,
+      "percent_owned": 64.89,
       "percent_started": 14.53,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
@@ -326,8 +326,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": 0.26,
-      "percent_owned": 49.06,
-      "percent_started": 19.7,
+      "percent_owned": 49.04,
+      "percent_started": 19.69,
       "recent_activity_note": null
     },
     {
@@ -344,25 +344,25 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -0.11,
-      "percent_owned": 32.86,
-      "percent_started": 1.68,
+      "percent_owned": 32.94,
+      "percent_started": 1.66,
       "recent_activity_note": null
     },
     {
       "id": 3916433,
       "name": "Jakobi Meyers",
       "pos": "WR",
-      "proj_value": -3.74,
+      "proj_value": -2.22,
       "percent_owned": 68.57,
-      "percent_started": 17.33,
+      "percent_started": 17.32,
       "recent_activity_note": null
     },
     {
       "id": 4426385,
       "name": "Zach Charbonnet",
       "pos": "RB",
-      "proj_value": -5.14,
-      "percent_owned": 73.0,
+      "proj_value": -2.41,
+      "percent_owned": 72.99,
       "percent_started": 22.45,
       "recent_activity_note": null
     },
@@ -370,16 +370,25 @@
       "id": 4433970,
       "name": "J.J. McCarthy",
       "pos": "QB",
-      "proj_value": -5.37,
-      "percent_owned": 33.96,
-      "percent_started": 20.03,
+      "proj_value": -5.38,
+      "percent_owned": 33.95,
+      "percent_started": 20.02,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4373678,
+      "name": "Khalil Shakir",
+      "pos": "WR",
+      "proj_value": -8.49,
+      "percent_owned": 60.13,
+      "percent_started": 13.18,
       "recent_activity_note": null
     },
     {
       "id": 2576925,
       "name": "Darren Waller",
       "pos": "TE",
-      "proj_value": -9.78,
+      "proj_value": -9.79,
       "percent_owned": 7.69,
       "percent_started": 1.19,
       "recent_activity_note": null
@@ -388,25 +397,16 @@
       "id": 3117256,
       "name": "Dalton Schultz",
       "pos": "TE",
-      "proj_value": -9.91,
-      "percent_owned": 24.12,
+      "proj_value": -9.9,
+      "percent_owned": 24.11,
       "percent_started": 5.04,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4373678,
-      "name": "Khalil Shakir",
-      "pos": "WR",
-      "proj_value": -10.01,
-      "percent_owned": 60.09,
-      "percent_started": 13.16,
       "recent_activity_note": null
     },
     {
       "id": 4430802,
       "name": "Darnell Washington",
       "pos": "TE",
-      "proj_value": -10.2,
+      "proj_value": -10.19,
       "percent_owned": 4.27,
       "percent_started": 0.28,
       "recent_activity_note": null
@@ -417,7 +417,7 @@
       "pos": "TE",
       "proj_value": -11.02,
       "percent_owned": 5.77,
-      "percent_started": 3.9,
+      "percent_started": 3.89,
       "recent_activity_note": null
     }
   ]
