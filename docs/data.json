@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-14T11:16:07.760454+00:00",
+  "generated_at": "2026-11-14T17:45:32.403564+00:00",
   "week": 10,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Full Chubb",
     "my_score": 0.0,
     "opp_score": 0.0,
-    "my_projected": 128.89,
-    "opp_projected": 71.27
+    "my_projected": 128.9,
+    "opp_projected": 71.85
   },
   "lineup": {
     "recommended_starters": [
@@ -20,7 +20,7 @@
           "pro_team": "SF",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 20.73,
+          "proj_week_pts": 20.72,
           "lineup_slot": "QB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -88,7 +88,7 @@
           "pro_team": "GB",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 15.67,
+          "proj_week_pts": 15.69,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -280,7 +280,7 @@
       }
     ],
     "reasoning": [],
-    "projected_total": 128.91
+    "projected_total": 128.92
   },
   "waiver_targets": [
     {
@@ -288,8 +288,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": 29.08,
-      "percent_owned": 79.71,
-      "percent_started": 46.01,
+      "percent_owned": 79.77,
+      "percent_started": 46.13,
       "recent_activity_note": null
     },
     {
@@ -297,8 +297,8 @@
       "name": "DK Metcalf",
       "pos": "WR",
       "proj_value": 7.83,
-      "percent_owned": 88.23,
-      "percent_started": 38.08,
+      "percent_owned": 88.19,
+      "percent_started": 38.23,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -306,8 +306,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": 1.09,
-      "percent_owned": 52.54,
-      "percent_started": 28.16,
+      "percent_owned": 52.78,
+      "percent_started": 28.58,
       "recent_activity_note": null
     },
     {
@@ -316,7 +316,7 @@
       "pos": "QB",
       "proj_value": 0.83,
       "percent_owned": 70.03,
-      "percent_started": 31.2,
+      "percent_started": 31.37,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -324,8 +324,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": 0.68,
-      "percent_owned": 16.15,
-      "percent_started": 8.41,
+      "percent_owned": 16.14,
+      "percent_started": 8.4,
       "recent_activity_note": null
     },
     {
@@ -333,8 +333,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -0.44,
-      "percent_owned": 37.33,
-      "percent_started": 13.58,
+      "percent_owned": 37.28,
+      "percent_started": 13.65,
       "recent_activity_note": null
     },
     {
@@ -342,8 +342,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -2.2,
-      "percent_owned": 73.54,
-      "percent_started": 30.95,
+      "percent_owned": 73.71,
+      "percent_started": 31.4,
       "recent_activity_note": null
     },
     {
@@ -351,8 +351,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -2.6,
-      "percent_owned": 77.88,
-      "percent_started": 31.31,
+      "percent_owned": 77.97,
+      "percent_started": 31.78,
       "recent_activity_note": null
     },
     {
@@ -369,8 +369,8 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": -7.46,
-      "percent_owned": 64.01,
-      "percent_started": 23.8,
+      "percent_owned": 63.95,
+      "percent_started": 23.73,
       "recent_activity_note": null
     },
     {
@@ -378,8 +378,8 @@
       "name": "Darren Waller",
       "pos": "TE",
       "proj_value": -8.72,
-      "percent_owned": 27.84,
-      "percent_started": 18.21,
+      "percent_owned": 28.37,
+      "percent_started": 18.74,
       "recent_activity_note": null
     },
     {
@@ -387,8 +387,8 @@
       "name": "Darnell Washington",
       "pos": "TE",
       "proj_value": -8.75,
-      "percent_owned": 6.33,
-      "percent_started": 2.97,
+      "percent_owned": 6.51,
+      "percent_started": 3.14,
       "recent_activity_note": null
     },
     {
@@ -396,8 +396,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -9.2,
-      "percent_owned": 22.36,
-      "percent_started": 7.07,
+      "percent_owned": 22.3,
+      "percent_started": 7.11,
       "recent_activity_note": null
     },
     {
@@ -405,8 +405,8 @@
       "name": "Mike Gesicki",
       "pos": "TE",
       "proj_value": -10.7,
-      "percent_owned": 23.01,
-      "percent_started": 10.0,
+      "percent_owned": 22.94,
+      "percent_started": 10.01,
       "recent_activity_note": null
     },
     {
@@ -414,8 +414,8 @@
       "name": "Greg Dulcich",
       "pos": "TE",
       "proj_value": -10.82,
-      "percent_owned": 3.16,
-      "percent_started": 1.46,
+      "percent_owned": 3.12,
+      "percent_started": 1.44,
       "recent_activity_note": null
     }
   ]
