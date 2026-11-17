@@ -1,44 +1,27 @@
 {
-  "generated_at": "2026-11-17T02:49:08.034470+00:00",
-  "week": 10,
+  "generated_at": "2026-11-17T12:51:25.499900+00:00",
+  "week": 11,
   "team_name": "EDP445 Daddy",
   "matchup": {
-    "opponent_name": "Full Chubb",
-    "my_score": 112.86,
-    "opp_score": 120.3,
-    "my_projected": 112.86,
-    "opp_projected": 120.3
+    "opponent_name": "Gaza Goyim",
+    "my_score": 0.0,
+    "opp_score": 0.0,
+    "my_projected": 73.23,
+    "opp_projected": 115.95
   },
   "lineup": {
     "recommended_starters": [
       {
         "slot": "QB",
         "player": {
-          "id": 4361741,
-          "name": "Brock Purdy",
+          "id": 4426348,
+          "name": "Jayden Daniels",
           "pos": "QB",
-          "pro_team": "SF",
+          "pro_team": "WSH",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 20.72,
-          "lineup_slot": "QB",
-          "injury_status": "ACTIVE",
-          "percent_owned": -1,
-          "percent_started": -1,
-          "total_points": 0
-        }
-      },
-      {
-        "slot": "RB",
-        "player": {
-          "id": 4430807,
-          "name": "Bijan Robinson",
-          "pos": "RB",
-          "pro_team": "ATL",
-          "bye": null,
-          "proj_pts": 0,
-          "proj_week_pts": 18.63,
-          "lineup_slot": "RB",
+          "proj_week_pts": 19.57,
+          "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -54,8 +37,42 @@
           "pro_team": "JAX",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 17.26,
+          "proj_week_pts": 16.89,
           "lineup_slot": "RB",
+          "injury_status": "ACTIVE",
+          "percent_owned": -1,
+          "percent_started": -1,
+          "total_points": 0
+        }
+      },
+      {
+        "slot": "RB",
+        "player": {
+          "id": 4696981,
+          "name": "Cam Skattebo",
+          "pos": "RB",
+          "pro_team": "NYG",
+          "bye": null,
+          "proj_pts": 0,
+          "proj_week_pts": 14.43,
+          "lineup_slot": "BE",
+          "injury_status": "ACTIVE",
+          "percent_owned": -1,
+          "percent_started": -1,
+          "total_points": 0
+        }
+      },
+      {
+        "slot": "WR",
+        "player": {
+          "id": 4569618,
+          "name": "Garrett Wilson",
+          "pos": "WR",
+          "pro_team": "NYJ",
+          "bye": null,
+          "proj_pts": 0,
+          "proj_week_pts": 14.18,
+          "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -71,24 +88,7 @@
           "pro_team": "NO",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 15.78,
-          "lineup_slot": "WR",
-          "injury_status": "ACTIVE",
-          "percent_owned": -1,
-          "percent_started": -1,
-          "total_points": 0
-        }
-      },
-      {
-        "slot": "WR",
-        "player": {
-          "id": 4248528,
-          "name": "Christian Watson",
-          "pos": "WR",
-          "pro_team": "GB",
-          "bye": null,
-          "proj_pts": 0,
-          "proj_week_pts": 15.67,
+          "proj_week_pts": 14.13,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -105,7 +105,7 @@
           "pro_team": "DET",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 11.44,
+          "proj_week_pts": 9.52,
           "lineup_slot": "TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -122,7 +122,7 @@
           "pro_team": "JAX",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 6.23,
+          "proj_week_pts": 7.11,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -139,7 +139,7 @@
           "pro_team": "LV",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 8.33,
+          "proj_week_pts": 8.02,
           "lineup_slot": "K",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -150,14 +150,14 @@
       {
         "slot": "RB/WR/TE",
         "player": {
-          "id": 4426502,
-          "name": "Drake London",
+          "id": 2976212,
+          "name": "Stefon Diggs",
           "pos": "WR",
-          "pro_team": "ATL",
+          "pro_team": "WSH",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 14.84,
-          "lineup_slot": "RB/WR/TE",
+          "proj_week_pts": 12.85,
+          "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -167,56 +167,14 @@
     ],
     "bench": [
       {
-        "id": 4426348,
-        "name": "Jayden Daniels",
+        "id": 4361741,
+        "name": "Brock Purdy",
         "pos": "QB",
-        "pro_team": "WSH",
+        "pro_team": "SF",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 17.67,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 4426385,
-        "name": "Zach Charbonnet",
-        "pos": "RB",
-        "pro_team": "SEA",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 14.52,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 4569618,
-        "name": "Garrett Wilson",
-        "pos": "WR",
-        "pro_team": "NYJ",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 12.71,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 4696981,
-        "name": "Cam Skattebo",
-        "pos": "RB",
-        "pro_team": "NYG",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 11.52,
-        "lineup_slot": "BE",
+        "proj_week_pts": 17.57,
+        "lineup_slot": "QB",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
@@ -237,13 +195,13 @@
         "total_points": 0
       },
       {
-        "id": 2976212,
-        "name": "Stefon Diggs",
-        "pos": "WR",
-        "pro_team": "WSH",
+        "id": 4685247,
+        "name": "Braelon Allen",
+        "pos": "RB",
+        "pro_team": "NYJ",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 10.27,
+        "proj_week_pts": 8.01,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -251,14 +209,28 @@
         "total_points": 0
       },
       {
-        "id": 4685247,
-        "name": "Braelon Allen",
+        "id": 4430807,
+        "name": "Bijan Robinson",
         "pos": "RB",
-        "pro_team": "NYJ",
+        "pro_team": "ATL",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 7.86,
-        "lineup_slot": "BE",
+        "proj_week_pts": 0,
+        "lineup_slot": "RB",
+        "injury_status": "ACTIVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
+        "id": 4426502,
+        "name": "Drake London",
+        "pos": "WR",
+        "pro_team": "ATL",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "RB/WR/TE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
@@ -277,10 +249,43 @@
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
+      },
+      {
+        "id": 4248528,
+        "name": "Christian Watson",
+        "pos": "WR",
+        "pro_team": "GB",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "WR",
+        "injury_status": "ACTIVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
+        "id": 4426385,
+        "name": "Zach Charbonnet",
+        "pos": "RB",
+        "pro_team": "SEA",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "BE",
+        "injury_status": "ACTIVE",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
       }
     ],
-    "reasoning": [],
-    "projected_total": 128.9
+    "reasoning": [
+      "Start Jayden Daniels (QB) in QB -- 19.6 proj pts, currently on bench.",
+      "Start Cam Skattebo (RB) in RB -- 14.4 proj pts, currently on bench.",
+      "Start Garrett Wilson (WR) in WR -- 14.2 proj pts, currently on bench.",
+      "Start Stefon Diggs (WR) in RB/WR/TE -- 12.8 proj pts, currently on bench."
+    ],
+    "projected_total": 116.7
   },
   "waiver_targets": [
     {
@@ -288,8 +293,8 @@
       "name": "C.J. Stroud",
       "pos": "QB",
       "proj_value": 34.16,
-      "percent_owned": 80.06,
-      "percent_started": 46.73,
+      "percent_owned": 79.97,
+      "percent_started": 47.22,
       "recent_activity_note": null
     },
     {
@@ -297,8 +302,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": 13.43,
-      "percent_owned": 16.09,
-      "percent_started": 8.37,
+      "percent_owned": 16.06,
+      "percent_started": 8.53,
       "recent_activity_note": null
     },
     {
@@ -306,8 +311,8 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": 3.07,
-      "percent_owned": 63.54,
-      "percent_started": 23.18,
+      "percent_owned": 63.48,
+      "percent_started": 23.6,
       "recent_activity_note": null
     },
     {
@@ -315,8 +320,8 @@
       "name": "DK Metcalf",
       "pos": "WR",
       "proj_value": 1.24,
-      "percent_owned": 87.91,
-      "percent_started": 40.08,
+      "percent_owned": 87.82,
+      "percent_started": 40.73,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -324,8 +329,8 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 21.95,
-      "percent_started": 7.5,
+      "percent_owned": 21.91,
+      "percent_started": 7.66,
       "recent_activity_note": null
     },
     {
@@ -333,8 +338,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -0.93,
-      "percent_owned": 78.62,
-      "percent_started": 35.2,
+      "percent_owned": 78.53,
+      "percent_started": 35.53,
       "recent_activity_note": null
     },
     {
@@ -342,8 +347,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -2.25,
-      "percent_owned": 54.91,
-      "percent_started": 31.56,
+      "percent_owned": 54.78,
+      "percent_started": 31.28,
       "recent_activity_note": null
     },
     {
@@ -351,8 +356,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": -3.34,
-      "percent_owned": 73.4,
-      "percent_started": 8.19,
+      "percent_owned": 73.3,
+      "percent_started": 9.45,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -360,8 +365,8 @@
       "name": "Jordyn Tyson",
       "pos": "WR",
       "proj_value": -3.72,
-      "percent_owned": 42.17,
-      "percent_started": 9.41,
+      "percent_owned": 42.21,
+      "percent_started": 10.84,
       "recent_activity_note": null
     },
     {
@@ -369,8 +374,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -4.25,
-      "percent_owned": 70.14,
-      "percent_started": 32.62,
+      "percent_owned": 69.96,
+      "percent_started": 32.12,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -378,8 +383,8 @@
       "name": "Darren Waller",
       "pos": "TE",
       "proj_value": -4.4,
-      "percent_owned": 31.87,
-      "percent_started": 22.41,
+      "percent_owned": 31.67,
+      "percent_started": 21.93,
       "recent_activity_note": null
     },
     {
@@ -387,8 +392,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -4.84,
-      "percent_owned": 37.17,
-      "percent_started": 14.44,
+      "percent_owned": 37.06,
+      "percent_started": 14.39,
       "recent_activity_note": null
     },
     {
@@ -396,8 +401,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -5.15,
-      "percent_owned": 74.76,
-      "percent_started": 34.39,
+      "percent_owned": 74.65,
+      "percent_started": 34.37,
       "recent_activity_note": null
     },
     {
@@ -405,8 +410,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -6.38,
-      "percent_owned": 27.49,
-      "percent_started": 12.7,
+      "percent_owned": 27.44,
+      "percent_started": 12.64,
       "recent_activity_note": null
     },
     {
@@ -414,8 +419,8 @@
       "name": "Cade Otton",
       "pos": "TE",
       "proj_value": -8.72,
-      "percent_owned": 1.82,
-      "percent_started": 0.19,
+      "percent_owned": 1.81,
+      "percent_started": 0.21,
       "recent_activity_note": null
     }
   ]
