@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18T17:00:11.406452+00:00",
+  "generated_at": "2026-11-19T01:46:23.802584+00:00",
   "week": 11,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Gaza Goyim",
     "my_score": 0.0,
     "opp_score": 0.0,
-    "my_projected": 73.21,
-    "opp_projected": 116.09
+    "my_projected": 73.13,
+    "opp_projected": 116.32
   },
   "lineup": {
     "recommended_starters": [
@@ -39,7 +39,7 @@
           "proj_pts": 0,
           "proj_week_pts": 16.9,
           "lineup_slot": "RB",
-          "injury_status": "ACTIVE",
+          "injury_status": "QUESTIONABLE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -88,7 +88,7 @@
           "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 13.93,
+          "proj_week_pts": 14.11,
           "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -122,7 +122,7 @@
           "pro_team": "JAX",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 7.05,
+          "proj_week_pts": 6.96,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -141,7 +141,7 @@
           "proj_pts": 0,
           "proj_week_pts": 8.02,
           "lineup_slot": "K",
-          "injury_status": "ACTIVE",
+          "injury_status": "QUESTIONABLE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -201,7 +201,7 @@
         "pro_team": "NYJ",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 7.48,
+        "proj_week_pts": 7.52,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -282,28 +282,28 @@
     "reasoning": [
       "Start Jayden Daniels (QB) in QB -- 19.6 proj pts, currently on bench.",
       "Start Cam Skattebo (RB) in RB -- 14.5 proj pts, currently on bench.",
-      "Start Garrett Wilson (WR) in WR -- 13.9 proj pts, currently on bench.",
+      "Start Garrett Wilson (WR) in WR -- 14.1 proj pts, currently on bench.",
       "Start Stefon Diggs (WR) in RB/WR/TE -- 12.9 proj pts, currently on bench."
     ],
-    "projected_total": 116.5
+    "projected_total": 116.59
   },
   "waiver_targets": [
     {
       "id": 4036133,
       "name": "T.J. Hockenson",
       "pos": "TE",
-      "proj_value": 24.05,
-      "percent_owned": 79.15,
-      "percent_started": 28.88,
+      "proj_value": 24.06,
+      "percent_owned": 79.57,
+      "percent_started": 31.53,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
       "id": 4360635,
       "name": "Chig Okonkwo",
       "pos": "TE",
-      "proj_value": 13.72,
-      "percent_owned": 32.1,
-      "percent_started": 19.68,
+      "proj_value": 13.73,
+      "percent_owned": 36.73,
+      "percent_started": 25.1,
       "recent_activity_note": null
     },
     {
@@ -311,8 +311,8 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": 3.11,
-      "percent_owned": 65.3,
-      "percent_started": 27.75,
+      "percent_owned": 65.7,
+      "percent_started": 28.46,
       "recent_activity_note": null
     },
     {
@@ -320,44 +320,44 @@
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 25.68,
-      "percent_started": 11.62,
+      "percent_owned": 27.29,
+      "percent_started": 13.72,
       "recent_activity_note": null
     },
     {
       "id": 4385690,
       "name": "Dalton Kincaid",
       "pos": "TE",
-      "proj_value": -0.94,
-      "percent_owned": 79.86,
-      "percent_started": 39.79,
+      "proj_value": -0.91,
+      "percent_owned": 79.96,
+      "percent_started": 40.16,
       "recent_activity_note": null
     },
     {
       "id": 4430539,
       "name": "Brenton Strange",
       "pos": "TE",
-      "proj_value": -2.22,
-      "percent_owned": 53.55,
-      "percent_started": 29.09,
+      "proj_value": -2.21,
+      "percent_owned": 53.2,
+      "percent_started": 28.64,
       "recent_activity_note": null
     },
     {
       "id": 4047650,
       "name": "DK Metcalf",
       "pos": "WR",
-      "proj_value": -3.08,
-      "percent_owned": 88.05,
-      "percent_started": 45.71,
+      "proj_value": -3.22,
+      "percent_owned": 88.12,
+      "percent_started": 46.57,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
       "id": 4880281,
       "name": "Jordyn Tyson",
       "pos": "WR",
-      "proj_value": -3.28,
-      "percent_owned": 63.94,
-      "percent_started": 28.75,
+      "proj_value": -3.42,
+      "percent_owned": 66.45,
+      "percent_started": 31.98,
       "recent_activity_note": null
     },
     {
@@ -365,17 +365,17 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -4.22,
-      "percent_owned": 66.53,
-      "percent_started": 26.47,
+      "percent_owned": 65.84,
+      "percent_started": 25.4,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
       "id": 2576925,
       "name": "Darren Waller",
       "pos": "TE",
-      "proj_value": -4.35,
-      "percent_owned": 29.74,
-      "percent_started": 17.72,
+      "proj_value": -4.34,
+      "percent_owned": 28.99,
+      "percent_started": 16.82,
       "recent_activity_note": null
     },
     {
@@ -383,44 +383,44 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -4.71,
-      "percent_owned": 36.79,
-      "percent_started": 14.68,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3916433,
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "proj_value": -4.74,
-      "percent_owned": 74.26,
-      "percent_started": 33.79,
+      "percent_owned": 37.0,
+      "percent_started": 15.23,
       "recent_activity_note": null
     },
     {
       "id": 3121023,
       "name": "Dallas Goedert",
       "pos": "TE",
-      "proj_value": -4.76,
-      "percent_owned": 73.49,
-      "percent_started": 20.41,
+      "proj_value": -4.75,
+      "percent_owned": 73.54,
+      "percent_started": 22.57,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
+    },
+    {
+      "id": 3916433,
+      "name": "Jakobi Meyers",
+      "pos": "WR",
+      "proj_value": -4.88,
+      "percent_owned": 74.13,
+      "percent_started": 33.32,
+      "recent_activity_note": null
     },
     {
       "id": 4433970,
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -6.35,
-      "percent_owned": 26.88,
-      "percent_started": 11.93,
+      "percent_owned": 26.55,
+      "percent_started": 11.62,
       "recent_activity_note": null
     },
     {
       "id": 4243331,
       "name": "Cade Otton",
       "pos": "TE",
-      "proj_value": -8.73,
-      "percent_owned": 2.56,
-      "percent_started": 0.86,
+      "proj_value": -10.28,
+      "percent_owned": 2.71,
+      "percent_started": 1.07,
       "recent_activity_note": null
     }
   ]
