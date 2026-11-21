@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T01:09:53.061329+00:00",
+  "generated_at": "2026-11-21T12:15:56.133956+00:00",
   "week": 11,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -288,8 +288,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 24.06,
-      "percent_owned": 81.38,
-      "percent_started": 40.76,
+      "percent_owned": 81.73,
+      "percent_started": 41.58,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -297,8 +297,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": 13.73,
-      "percent_owned": 51.68,
-      "percent_started": 40.71,
+      "percent_owned": 52.43,
+      "percent_started": 41.37,
       "recent_activity_note": null
     },
     {
@@ -306,8 +306,8 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": 3.1,
-      "percent_owned": 67.17,
-      "percent_started": 30.48,
+      "percent_owned": 67.31,
+      "percent_started": 30.54,
       "recent_activity_note": null
     },
     {
@@ -324,8 +324,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -2.21,
-      "percent_owned": 53.12,
-      "percent_started": 28.23,
+      "percent_owned": 53.22,
+      "percent_started": 28.31,
       "recent_activity_note": null
     },
     {
@@ -333,8 +333,8 @@
       "name": "DK Metcalf",
       "pos": "WR",
       "proj_value": -3.23,
-      "percent_owned": 88.48,
-      "percent_started": 49.97,
+      "percent_owned": 88.5,
+      "percent_started": 49.99,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -342,8 +342,8 @@
       "name": "Jordyn Tyson",
       "pos": "WR",
       "proj_value": -3.42,
-      "percent_owned": 70.33,
-      "percent_started": 36.12,
+      "percent_owned": 70.66,
+      "percent_started": 36.48,
       "recent_activity_note": null
     },
     {
@@ -351,8 +351,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -4.25,
-      "percent_owned": 64.14,
-      "percent_started": 22.77,
+      "percent_owned": 64.09,
+      "percent_started": 22.67,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -360,7 +360,7 @@
       "name": "Darren Waller",
       "pos": "TE",
       "proj_value": -4.34,
-      "percent_owned": 27.01,
+      "percent_owned": 27.02,
       "percent_started": 13.72,
       "recent_activity_note": null
     },
@@ -369,8 +369,8 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proj_value": -4.66,
-      "percent_owned": 74.14,
-      "percent_started": 30.81,
+      "percent_owned": 74.22,
+      "percent_started": 31.16,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
     },
     {
@@ -378,8 +378,8 @@
       "name": "Aaron Rodgers",
       "pos": "QB",
       "proj_value": -4.67,
-      "percent_owned": 38.56,
-      "percent_started": 17.69,
+      "percent_owned": 38.64,
+      "percent_started": 17.77,
       "recent_activity_note": null
     },
     {
@@ -387,8 +387,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -4.89,
-      "percent_owned": 73.53,
-      "percent_started": 30.62,
+      "percent_owned": 73.57,
+      "percent_started": 30.66,
       "recent_activity_note": null
     },
     {
@@ -396,8 +396,8 @@
       "name": "Omarion Hampton",
       "pos": "RB",
       "proj_value": -5.04,
-      "percent_owned": 91.04,
-      "percent_started": 64.13,
+      "percent_owned": 91.16,
+      "percent_started": 64.47,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -405,8 +405,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -6.36,
-      "percent_owned": 25.57,
-      "percent_started": 10.53,
+      "percent_owned": 25.52,
+      "percent_started": 10.48,
       "recent_activity_note": null
     },
     {
@@ -414,8 +414,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -9.52,
-      "percent_owned": 78.29,
-      "percent_started": 32.54,
+      "percent_owned": 77.81,
+      "percent_started": 30.55,
       "recent_activity_note": null
     }
   ]
