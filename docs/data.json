@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-22T05:40:57.460995+00:00",
+  "generated_at": "2026-11-22T16:00:28.352601+00:00",
   "week": 11,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Gaza Goyim",
     "my_score": 6.0,
     "opp_score": 7.7,
-    "my_projected": 114.66,
-    "opp_projected": 98.05
+    "my_projected": 114.67,
+    "opp_projected": 98.21
   },
   "lineup": {
     "recommended_starters": [
@@ -20,7 +20,7 @@
           "pro_team": "WSH",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 19.57,
+          "proj_week_pts": 19.56,
           "lineup_slot": "QB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -88,7 +88,7 @@
           "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 14.09,
+          "proj_week_pts": 14.1,
           "lineup_slot": "RB/WR/TE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -122,7 +122,7 @@
           "pro_team": "JAX",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 7.05,
+          "proj_week_pts": 7.06,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -280,7 +280,7 @@
       }
     ],
     "reasoning": [],
-    "projected_total": 119.31
+    "projected_total": 119.32
   },
   "waiver_targets": [
     {
@@ -288,8 +288,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 24.06,
-      "percent_owned": 82.44,
-      "percent_started": 43.88,
+      "percent_owned": 82.98,
+      "percent_started": 45.51,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -297,17 +297,17 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": 13.73,
-      "percent_owned": 54.42,
-      "percent_started": 43.22,
+      "percent_owned": 55.79,
+      "percent_started": 44.47,
       "recent_activity_note": null
     },
     {
       "id": 14880,
       "name": "Kirk Cousins",
       "pos": "QB",
-      "proj_value": 3.1,
-      "percent_owned": 67.47,
-      "percent_started": 30.65,
+      "proj_value": 2.94,
+      "percent_owned": 67.59,
+      "percent_started": 30.74,
       "recent_activity_note": null
     },
     {
@@ -316,7 +316,7 @@
       "pos": "TE",
       "proj_value": 0.0,
       "percent_owned": 32.16,
-      "percent_started": 19.68,
+      "percent_started": 19.69,
       "recent_activity_note": null
     },
     {
@@ -324,53 +324,53 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -2.21,
-      "percent_owned": 53.45,
-      "percent_started": 28.43,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4360689,
-      "name": "Tyler Shough",
-      "pos": "QB",
-      "proj_value": -4.25,
-      "percent_owned": 63.83,
-      "percent_started": 22.33,
-      "recent_activity_note": "DROPPED by Torta pounders"
-    },
-    {
-      "id": 2576925,
-      "name": "Darren Waller",
-      "pos": "TE",
-      "proj_value": -4.34,
-      "percent_owned": 26.99,
-      "percent_started": 13.57,
+      "percent_owned": 53.74,
+      "percent_started": 28.58,
       "recent_activity_note": null
     },
     {
       "id": 3121023,
       "name": "Dallas Goedert",
       "pos": "TE",
-      "proj_value": -4.66,
-      "percent_owned": 74.4,
-      "percent_started": 32.19,
+      "proj_value": -3.73,
+      "percent_owned": 74.58,
+      "percent_started": 32.99,
       "recent_activity_note": "DROPPED by EDP445 Daddy"
+    },
+    {
+      "id": 2576925,
+      "name": "Darren Waller",
+      "pos": "TE",
+      "proj_value": -4.34,
+      "percent_owned": 26.98,
+      "percent_started": 13.4,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4360689,
+      "name": "Tyler Shough",
+      "pos": "QB",
+      "proj_value": -4.42,
+      "percent_owned": 63.72,
+      "percent_started": 22.06,
+      "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
       "id": 8439,
       "name": "Aaron Rodgers",
       "pos": "QB",
-      "proj_value": -4.67,
-      "percent_owned": 38.76,
-      "percent_started": 17.97,
+      "proj_value": -4.83,
+      "percent_owned": 38.9,
+      "percent_started": 18.14,
       "recent_activity_note": null
     },
     {
       "id": 3916433,
       "name": "Jakobi Meyers",
       "pos": "WR",
-      "proj_value": -4.89,
-      "percent_owned": 73.68,
-      "percent_started": 30.73,
+      "proj_value": -4.92,
+      "percent_owned": 73.81,
+      "percent_started": 30.77,
       "recent_activity_note": null
     },
     {
@@ -378,17 +378,17 @@
       "name": "Omarion Hampton",
       "pos": "RB",
       "proj_value": -5.04,
-      "percent_owned": 91.4,
-      "percent_started": 65.55,
+      "percent_owned": 91.55,
+      "percent_started": 66.32,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
       "id": 4433970,
       "name": "J.J. McCarthy",
       "pos": "QB",
-      "proj_value": -6.36,
-      "percent_owned": 25.36,
-      "percent_started": 10.3,
+      "proj_value": -6.49,
+      "percent_owned": 25.26,
+      "percent_started": 10.16,
       "recent_activity_note": null
     },
     {
@@ -396,26 +396,26 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": -9.52,
-      "percent_owned": 76.58,
-      "percent_started": 25.13,
+      "percent_owned": 75.85,
+      "percent_started": 21.13,
       "recent_activity_note": null
     },
     {
       "id": 4243331,
       "name": "Cade Otton",
       "pos": "TE",
-      "proj_value": -9.86,
-      "percent_owned": 3.86,
-      "percent_started": 2.35,
+      "proj_value": -9.87,
+      "percent_owned": 4.14,
+      "percent_started": 2.62,
       "recent_activity_note": null
     },
     {
       "id": 4688380,
       "name": "Cam Ward",
       "pos": "QB",
-      "proj_value": -11.12,
-      "percent_owned": 35.19,
-      "percent_started": 28.81,
+      "proj_value": -11.21,
+      "percent_owned": 36.01,
+      "percent_started": 29.68,
       "recent_activity_note": null
     }
   ]
