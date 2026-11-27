@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-26T13:38:02.174620+00:00",
+  "generated_at": "2026-11-27T00:22:26.882148+00:00",
   "week": 12,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Torta pounders",
-    "my_score": 0.0,
-    "opp_score": 16.5,
-    "my_projected": 126.64,
-    "opp_projected": 137.82
+    "my_score": 14.4,
+    "opp_score": 64.2,
+    "my_projected": 129.35,
+    "opp_projected": 149.43
   },
   "lineup": {
     "recommended_starters": [
@@ -38,7 +38,7 @@
           "bye": null,
           "proj_pts": 0,
           "proj_week_pts": 18.63,
-          "lineup_slot": "RB",
+          "lineup_slot": "BE",
           "injury_status": "QUESTIONABLE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -55,7 +55,7 @@
           "bye": null,
           "proj_pts": 0,
           "proj_week_pts": 17.74,
-          "lineup_slot": "BE",
+          "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -217,7 +217,7 @@
         "proj_pts": 0,
         "proj_week_pts": 12.62,
         "lineup_slot": "WR",
-        "injury_status": "QUESTIONABLE",
+        "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -280,7 +280,7 @@
       }
     ],
     "reasoning": [
-      "Start Bijan Robinson (RB) in RB -- 17.7 proj pts, currently on bench.",
+      "Start Bhayshul Tuten (RB) in RB -- 18.6 proj pts, currently on bench.",
       "Start Christian Watson (WR) in WR -- 14.1 proj pts, currently on bench."
     ],
     "projected_total": 131.78
@@ -291,8 +291,8 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proj_value": 9.65,
-      "percent_owned": 86.17,
-      "percent_started": 50.16,
+      "percent_owned": 86.45,
+      "percent_started": 50.55,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -300,8 +300,8 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proj_value": 1.93,
-      "percent_owned": 38.34,
-      "percent_started": 25.38,
+      "percent_owned": 42.04,
+      "percent_started": 29.11,
       "recent_activity_note": null
     },
     {
@@ -309,8 +309,8 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 70.24,
-      "percent_started": 37.89,
+      "percent_owned": 70.91,
+      "percent_started": 38.89,
       "recent_activity_note": null
     },
     {
@@ -318,8 +318,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 62.36,
-      "percent_started": 40.0,
+      "percent_owned": 63.02,
+      "percent_started": 39.68,
       "recent_activity_note": null
     },
     {
@@ -327,8 +327,8 @@
       "name": "Omarion Hampton",
       "pos": "RB",
       "proj_value": -1.72,
-      "percent_owned": 91.87,
-      "percent_started": 60.38,
+      "percent_owned": 91.92,
+      "percent_started": 60.1,
       "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
@@ -337,7 +337,7 @@
       "pos": "TE",
       "proj_value": -3.24,
       "percent_owned": 74.53,
-      "percent_started": 17.06,
+      "percent_started": 16.92,
       "recent_activity_note": null
     },
     {
@@ -345,8 +345,8 @@
       "name": "Antonio Williams",
       "pos": "WR",
       "proj_value": -4.08,
-      "percent_owned": 52.79,
-      "percent_started": 21.35,
+      "percent_owned": 54.95,
+      "percent_started": 23.33,
       "recent_activity_note": null
     },
     {
@@ -354,8 +354,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -4.11,
-      "percent_owned": 29.12,
-      "percent_started": 15.03,
+      "percent_owned": 30.34,
+      "percent_started": 16.18,
       "recent_activity_note": null
     },
     {
@@ -363,8 +363,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -4.51,
-      "percent_owned": 76.15,
-      "percent_started": 32.13,
+      "percent_owned": 76.25,
+      "percent_started": 31.51,
       "recent_activity_note": null
     },
     {
@@ -372,8 +372,8 @@
       "name": "Tyler Shough",
       "pos": "QB",
       "proj_value": -5.85,
-      "percent_owned": 60.77,
-      "percent_started": 17.98,
+      "percent_owned": 60.48,
+      "percent_started": 17.53,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -381,8 +381,8 @@
       "name": "Mason Rudolph",
       "pos": "QB",
       "proj_value": -6.55,
-      "percent_owned": 1.83,
-      "percent_started": 0.7,
+      "percent_owned": 2.19,
+      "percent_started": 0.89,
       "recent_activity_note": null
     },
     {
@@ -390,8 +390,8 @@
       "name": "Jaylen Waddle",
       "pos": "WR",
       "proj_value": -7.22,
-      "percent_owned": 84.86,
-      "percent_started": 31.13,
+      "percent_owned": 84.77,
+      "percent_started": 30.33,
       "recent_activity_note": "DROPPED by EDPs Cupcake"
     },
     {
@@ -399,8 +399,8 @@
       "name": "KC Concepcion",
       "pos": "WR",
       "proj_value": -9.32,
-      "percent_owned": 68.8,
-      "percent_started": 21.09,
+      "percent_owned": 69.42,
+      "percent_started": 23.59,
       "recent_activity_note": null
     },
     {
@@ -408,8 +408,8 @@
       "name": "Cam Ward",
       "pos": "QB",
       "proj_value": -9.48,
-      "percent_owned": 28.85,
-      "percent_started": 10.74,
+      "percent_owned": 27.82,
+      "percent_started": 9.24,
       "recent_activity_note": null
     },
     {
@@ -417,8 +417,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -9.92,
-      "percent_owned": 53.03,
-      "percent_started": 23.51,
+      "percent_owned": 53.21,
+      "percent_started": 23.23,
       "recent_activity_note": null
     }
   ]
