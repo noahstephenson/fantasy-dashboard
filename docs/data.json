@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T13:33:49.787478+00:00",
+  "generated_at": "2026-11-27T23:56:15.415727+00:00",
   "week": 12,
   "team_name": "EDP445 Daddy",
   "matchup": {
     "opponent_name": "Torta pounders",
     "my_score": 14.4,
-    "opp_score": 64.2,
-    "my_projected": 129.35,
-    "opp_projected": 149.43
+    "opp_score": 90.2,
+    "my_projected": 129.47,
+    "opp_projected": 156.07
   },
   "lineup": {
     "recommended_starters": [
@@ -31,15 +31,15 @@
       {
         "slot": "RB",
         "player": {
-          "id": 4882093,
-          "name": "Bhayshul Tuten",
+          "id": 4430807,
+          "name": "Bijan Robinson",
           "pos": "RB",
-          "pro_team": "JAX",
+          "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 18.63,
-          "lineup_slot": "BE",
-          "injury_status": "QUESTIONABLE",
+          "proj_week_pts": 17.79,
+          "lineup_slot": "RB",
+          "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -48,13 +48,13 @@
       {
         "slot": "RB",
         "player": {
-          "id": 4430807,
-          "name": "Bijan Robinson",
+          "id": 4696981,
+          "name": "Cam Skattebo",
           "pos": "RB",
-          "pro_team": "ATL",
+          "pro_team": "NYG",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 17.74,
+          "proj_week_pts": 17.42,
           "lineup_slot": "RB",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -71,7 +71,7 @@
           "pro_team": "NO",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 14.47,
+          "proj_week_pts": 14.48,
           "lineup_slot": "WR",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
@@ -82,15 +82,15 @@
       {
         "slot": "WR",
         "player": {
-          "id": 4248528,
-          "name": "Christian Watson",
+          "id": 4569618,
+          "name": "Garrett Wilson",
           "pos": "WR",
-          "pro_team": "GB",
+          "pro_team": "NYJ",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 14.12,
-          "lineup_slot": "BE",
-          "injury_status": "QUESTIONABLE",
+          "proj_week_pts": 14.27,
+          "lineup_slot": "RB/WR/TE",
+          "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
           "total_points": 0
@@ -122,7 +122,7 @@
           "pro_team": "JAX",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 6.86,
+          "proj_week_pts": 6.76,
           "lineup_slot": "D/ST",
           "injury_status": "NORMAL",
           "percent_owned": -1,
@@ -150,14 +150,14 @@
       {
         "slot": "RB/WR/TE",
         "player": {
-          "id": 4696981,
-          "name": "Cam Skattebo",
-          "pos": "RB",
-          "pro_team": "NYG",
+          "id": 4426502,
+          "name": "Drake London",
+          "pos": "WR",
+          "pro_team": "ATL",
           "bye": null,
           "proj_pts": 0,
-          "proj_week_pts": 17.43,
-          "lineup_slot": "RB",
+          "proj_week_pts": 14.19,
+          "lineup_slot": "BE",
           "injury_status": "ACTIVE",
           "percent_owned": -1,
           "percent_started": -1,
@@ -167,43 +167,15 @@
     ],
     "bench": [
       {
-        "id": 4361741,
-        "name": "Brock Purdy",
-        "pos": "QB",
-        "pro_team": "SF",
+        "id": 4248528,
+        "name": "Christian Watson",
+        "pos": "WR",
+        "pro_team": "GB",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 18.79,
+        "proj_week_pts": 14.12,
         "lineup_slot": "BE",
         "injury_status": "QUESTIONABLE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 4569618,
-        "name": "Garrett Wilson",
-        "pos": "WR",
-        "pro_team": "NYJ",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 14.11,
-        "lineup_slot": "RB/WR/TE",
-        "injury_status": "ACTIVE",
-        "percent_owned": -1,
-        "percent_started": -1,
-        "total_points": 0
-      },
-      {
-        "id": 4426502,
-        "name": "Drake London",
-        "pos": "WR",
-        "pro_team": "ATL",
-        "bye": null,
-        "proj_pts": 0,
-        "proj_week_pts": 13.97,
-        "lineup_slot": "BE",
-        "injury_status": "ACTIVE",
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
@@ -243,7 +215,7 @@
         "pro_team": "NYJ",
         "bye": null,
         "proj_pts": 0,
-        "proj_week_pts": 8.22,
+        "proj_week_pts": 8.25,
         "lineup_slot": "BE",
         "injury_status": "ACTIVE",
         "percent_owned": -1,
@@ -277,22 +249,58 @@
         "percent_owned": -1,
         "percent_started": -1,
         "total_points": 0
+      },
+      {
+        "id": 4882093,
+        "name": "Bhayshul Tuten",
+        "pos": "RB",
+        "pro_team": "JAX",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "BE",
+        "injury_status": "OUT",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
+      },
+      {
+        "id": 4361741,
+        "name": "Brock Purdy",
+        "pos": "QB",
+        "pro_team": "SF",
+        "bye": null,
+        "proj_pts": 0,
+        "proj_week_pts": 0,
+        "lineup_slot": "BE",
+        "injury_status": "OUT",
+        "percent_owned": -1,
+        "percent_started": -1,
+        "total_points": 0
       }
     ],
     "reasoning": [
-      "Start Bhayshul Tuten (RB) in RB -- 18.6 proj pts, currently on bench.",
-      "Start Christian Watson (WR) in WR -- 14.1 proj pts, currently on bench."
+      "Start Drake London (WR) in RB/WR/TE -- 14.2 proj pts, currently on bench."
     ],
-    "projected_total": 131.78
+    "projected_total": 127.44
   },
   "waiver_targets": [
+    {
+      "id": 4360635,
+      "name": "Chig Okonkwo",
+      "pos": "TE",
+      "proj_value": 3.24,
+      "percent_owned": 63.41,
+      "percent_started": 39.68,
+      "recent_activity_note": null
+    },
     {
       "id": 3122840,
       "name": "Deshaun Watson",
       "pos": "QB",
-      "proj_value": 1.93,
-      "percent_owned": 43.03,
-      "percent_started": 30.02,
+      "proj_value": 1.91,
+      "percent_owned": 45.68,
+      "percent_started": 33.19,
       "recent_activity_note": null
     },
     {
@@ -300,44 +308,35 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 71.24,
-      "percent_started": 39.18,
+      "percent_owned": 71.93,
+      "percent_started": 40.68,
       "recent_activity_note": null
-    },
-    {
-      "id": 4360635,
-      "name": "Chig Okonkwo",
-      "pos": "TE",
-      "proj_value": 0.0,
-      "percent_owned": 63.35,
-      "percent_started": 39.59,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4685382,
-      "name": "Omarion Hampton",
-      "pos": "RB",
-      "proj_value": -1.72,
-      "percent_owned": 91.98,
-      "percent_started": 60.08,
-      "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
       "id": 4385690,
       "name": "Dalton Kincaid",
       "pos": "TE",
-      "proj_value": -3.24,
-      "percent_owned": 74.59,
+      "proj_value": 0.0,
+      "percent_owned": 74.58,
       "percent_started": 17.78,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3916433,
+      "name": "Jakobi Meyers",
+      "pos": "WR",
+      "proj_value": -1.29,
+      "percent_owned": 77.37,
+      "percent_started": 33.3,
       "recent_activity_note": null
     },
     {
       "id": 5081432,
       "name": "Antonio Williams",
       "pos": "WR",
-      "proj_value": -4.08,
-      "percent_owned": 55.57,
-      "percent_started": 23.8,
+      "proj_value": -2.52,
+      "percent_owned": 56.86,
+      "percent_started": 26.81,
       "recent_activity_note": null
     },
     {
@@ -345,81 +344,81 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -4.11,
-      "percent_owned": 30.74,
-      "percent_started": 16.49,
-      "recent_activity_note": null
-    },
-    {
-      "id": 3916433,
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "proj_value": -4.51,
-      "percent_owned": 76.32,
-      "percent_started": 31.35,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4360689,
-      "name": "Tyler Shough",
-      "pos": "QB",
-      "proj_value": -5.85,
-      "percent_owned": 60.43,
-      "percent_started": 17.44,
-      "recent_activity_note": "DROPPED by Torta pounders"
-    },
-    {
-      "id": 3116407,
-      "name": "Mason Rudolph",
-      "pos": "QB",
-      "proj_value": -6.55,
-      "percent_owned": 2.29,
-      "percent_started": 0.95,
+      "percent_owned": 32.32,
+      "percent_started": 18.35,
       "recent_activity_note": null
     },
     {
       "id": 4372016,
       "name": "Jaylen Waddle",
       "pos": "WR",
-      "proj_value": -7.22,
-      "percent_owned": 84.77,
-      "percent_started": 30.19,
+      "proj_value": -5.85,
+      "percent_owned": 84.75,
+      "percent_started": 30.89,
       "recent_activity_note": "DROPPED by EDPs Cupcake"
     },
     {
-      "id": 4870653,
-      "name": "KC Concepcion",
-      "pos": "WR",
-      "proj_value": -9.32,
-      "percent_owned": 69.66,
-      "percent_started": 24.06,
-      "recent_activity_note": null
-    },
-    {
-      "id": 4688380,
-      "name": "Cam Ward",
+      "id": 4360689,
+      "name": "Tyler Shough",
       "pos": "QB",
-      "proj_value": -9.48,
-      "percent_owned": 27.58,
-      "percent_started": 8.92,
-      "recent_activity_note": null
+      "proj_value": -5.87,
+      "percent_owned": 60.3,
+      "percent_started": 17.7,
+      "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
       "id": 4430539,
       "name": "Brenton Strange",
       "pos": "TE",
-      "proj_value": -9.92,
-      "percent_owned": 53.34,
-      "percent_started": 23.15,
+      "proj_value": -5.89,
+      "percent_owned": 53.64,
+      "percent_started": 23.44,
       "recent_activity_note": null
     },
     {
-      "id": 4575131,
-      "name": "Jacory Croskey-Merritt",
-      "pos": "RB",
-      "proj_value": -10.57,
-      "percent_owned": 64.23,
-      "percent_started": 19.67,
+      "id": 3116407,
+      "name": "Mason Rudolph",
+      "pos": "QB",
+      "proj_value": -6.57,
+      "percent_owned": 2.35,
+      "percent_started": 0.99,
       "recent_activity_note": null
+    },
+    {
+      "id": 4870653,
+      "name": "KC Concepcion",
+      "pos": "WR",
+      "proj_value": -6.71,
+      "percent_owned": 70.22,
+      "percent_started": 26.34,
+      "recent_activity_note": null
+    },
+    {
+      "id": 4576297,
+      "name": "AJ Barner",
+      "pos": "TE",
+      "proj_value": -7.83,
+      "percent_owned": 9.64,
+      "percent_started": 2.18,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3117256,
+      "name": "Dalton Schultz",
+      "pos": "TE",
+      "proj_value": -8.38,
+      "percent_owned": 29.33,
+      "percent_started": 9.5,
+      "recent_activity_note": null
+    },
+    {
+      "id": 3121023,
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "proj_value": -8.62,
+      "percent_owned": 73.38,
+      "percent_started": 30.42,
+      "recent_activity_note": "DROPPED by EDP445 Daddy"
     }
   ]
 }
