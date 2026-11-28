@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T07:08:18.130554+00:00",
+  "generated_at": "2026-11-28T16:41:16.167630+00:00",
   "week": 12,
   "team_name": "EDP445 Daddy",
   "matchup": {
@@ -290,8 +290,8 @@
       "name": "Chig Okonkwo",
       "pos": "TE",
       "proj_value": 3.24,
-      "percent_owned": 63.34,
-      "percent_started": 39.68,
+      "percent_owned": 63.39,
+      "percent_started": 39.7,
       "recent_activity_note": null
     },
     {
@@ -299,8 +299,8 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proj_value": 1.91,
-      "percent_owned": 47.27,
-      "percent_started": 35.12,
+      "percent_owned": 47.92,
+      "percent_started": 35.82,
       "recent_activity_note": null
     },
     {
@@ -308,8 +308,8 @@
       "name": "Kirk Cousins",
       "pos": "QB",
       "proj_value": 0.0,
-      "percent_owned": 72.39,
-      "percent_started": 41.65,
+      "percent_owned": 72.62,
+      "percent_started": 42.0,
       "recent_activity_note": null
     },
     {
@@ -317,8 +317,8 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proj_value": 0.0,
-      "percent_owned": 74.57,
-      "percent_started": 17.77,
+      "percent_owned": 74.59,
+      "percent_started": 17.78,
       "recent_activity_note": null
     },
     {
@@ -326,8 +326,8 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proj_value": -1.29,
-      "percent_owned": 77.84,
-      "percent_started": 34.34,
+      "percent_owned": 78.19,
+      "percent_started": 35.0,
       "recent_activity_note": null
     },
     {
@@ -335,8 +335,8 @@
       "name": "Antonio Williams",
       "pos": "WR",
       "proj_value": -2.52,
-      "percent_owned": 56.96,
-      "percent_started": 27.17,
+      "percent_owned": 57.08,
+      "percent_started": 27.33,
       "recent_activity_note": null
     },
     {
@@ -344,8 +344,8 @@
       "name": "J.J. McCarthy",
       "pos": "QB",
       "proj_value": -4.11,
-      "percent_owned": 33.23,
-      "percent_started": 19.46,
+      "percent_owned": 33.6,
+      "percent_started": 19.85,
       "recent_activity_note": null
     },
     {
@@ -353,7 +353,7 @@
       "name": "Jaylen Waddle",
       "pos": "WR",
       "proj_value": -5.85,
-      "percent_owned": 84.74,
+      "percent_owned": 84.75,
       "percent_started": 30.89,
       "recent_activity_note": "DROPPED by EDPs Cupcake"
     },
@@ -363,7 +363,7 @@
       "pos": "QB",
       "proj_value": -5.87,
       "percent_owned": 60.25,
-      "percent_started": 17.89,
+      "percent_started": 17.96,
       "recent_activity_note": "DROPPED by Torta pounders"
     },
     {
@@ -371,8 +371,8 @@
       "name": "Brenton Strange",
       "pos": "TE",
       "proj_value": -5.89,
-      "percent_owned": 53.67,
-      "percent_started": 23.54,
+      "percent_owned": 53.77,
+      "percent_started": 23.64,
       "recent_activity_note": null
     },
     {
@@ -388,9 +388,9 @@
       "id": 4870653,
       "name": "KC Concepcion",
       "pos": "WR",
-      "proj_value": -6.71,
-      "percent_owned": 70.43,
-      "percent_started": 27.0,
+      "proj_value": -6.7,
+      "percent_owned": 70.6,
+      "percent_started": 27.38,
       "recent_activity_note": null
     },
     {
@@ -398,27 +398,27 @@
       "name": "AJ Barner",
       "pos": "TE",
       "proj_value": -7.83,
-      "percent_owned": 9.66,
-      "percent_started": 2.2,
+      "percent_owned": 9.69,
+      "percent_started": 2.22,
       "recent_activity_note": null
+    },
+    {
+      "id": 4685382,
+      "name": "Omarion Hampton",
+      "pos": "RB",
+      "proj_value": -7.99,
+      "percent_owned": 91.92,
+      "percent_started": 60.48,
+      "recent_activity_note": "DROPPED by Epstein Elementary"
     },
     {
       "id": 3117256,
       "name": "Dalton Schultz",
       "pos": "TE",
       "proj_value": -8.38,
-      "percent_owned": 29.29,
-      "percent_started": 9.53,
+      "percent_owned": 29.28,
+      "percent_started": 9.54,
       "recent_activity_note": null
-    },
-    {
-      "id": 3121023,
-      "name": "Dallas Goedert",
-      "pos": "TE",
-      "proj_value": -8.62,
-      "percent_owned": 73.37,
-      "percent_started": 30.41,
-      "recent_activity_note": "DROPPED by EDP445 Daddy"
     }
   ]
 }
